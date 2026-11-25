@@ -157,9 +157,41 @@ def coletar():
             registrar("erro", c["chave"], f"Nao consegui ler o perfil: {e}", ok=False)
         saida["clientes"].append(item)
     gravar("dados/google.json", saida)
+    painel(saida)
     novas = sum(len(x.get("sem_resposta", [])) for x in saida["clientes"] if x["ativo"])
     registrar("rodada", "todos", f"{len(saida['clientes'])} perfis lidos, {novas} avaliacoes sem resposta nos clientes ativos")
     print("Coleta ok:", novas, "sem resposta")
+
+
+def painel(saida):
+    """Resumo pronto para o painel (google/estado). A tarefa do Claude so copia este arquivo."""
+    cl = {c["chave"]: c for c in ler("clientes.json", [])}
+    rk = ler("dados/ranking.json", {})
+    cut = lambda t, n: (t or "")[:n]
+    out = []
+    for c in saida["clientes"]:
+        o = {"chave": c["chave"], "nome": c["nome"], "ativo": c["ativo"], "media": round(c["media"], 1) if c.get("media") else None,
+             "total": c.get("total"), "whatsapp": cl.get(c["chave"], {}).get("whatsapp"), "erro": c.get("erro")}
+        if c["ativo"]:
+            o["sem_resposta"] = [{"id": a["id"], "autor": a["autor"], "nota": a["nota"], "data": a["data"][:19], "texto": cut(a["texto"], 160)} for a in c.get("sem_resposta", [])]
+            o["recentes"] = [{"autor": a["autor"], "nota": a["nota"], "data": a["data"][:19], "texto": cut(a["texto"], 150), "resposta": cut(a["resposta"], 220) or None} for a in c.get("recentes", [])[:6]]
+            o["posts"] = [{"texto": cut(x["texto"], 160), "data": x["data"][:19], "link": x.get("link")} for x in c.get("posts", [])[:4]]
+            p = c.get("perfil") or {}
+            o["perfil"] = {k: p.get(k) for k in ["categoria", "categorias_extra", "telefone", "site", "dias_com_horario", "feriados", "status", "endereco", "area_atendida", "servicos", "mapa", "avaliar"]}
+            o["perfil"]["descricao"] = cut(p.get("descricao"), 750)
+            f = c.get("fotos") or {}
+            o["fotos"] = {"total": f.get("total"), "ultima": f.get("ultima")}
+            sd = c.get("saude")
+            if sd:
+                sd = dict(sd); sd["checks"] = [{k: v for k, v in x.items() if v is not None and k != "peso"} for x in sd["checks"]]
+            o["saude"], o["evolucao"], o["novas_30d"] = sd, c.get("evolucao", [])[-8:], c.get("novas_30d")
+            if c["chave"] in rk:
+                r = rk[c["chave"]]
+                o["ranking"] = {k: r.get(k) for k in ["em", "raio_km", "grade_n", "palavras"]}
+                o["ranking"]["concorrentes"] = r.get("concorrentes", [])[:6]
+                o["ranking"]["historico"] = r.get("historico", [])[-8:]
+        out.append(o)
+    gravar("dados/painel.json", {"atualizado": saida["atualizado"], "clientes": out})
 
 
 def publicar():
@@ -256,14 +288,14 @@ def saude(item, rk):
         chk.append({"area": area, "ok": ok, "peso": peso, "titulo": titulo, "detalhe": detalhe if ok is not True else None, "acao": acao if ok is not True else None})
     nota, total = round(item.get("media") or 0, 1), item.get("total") or 0
     todas = item.get("_todas", [])
-    neg = [a for a in todas if a["nota"] and a["nota"] <= 3 and dias_desde(a["data"]) <= 180]
+    neg = [a for a in todas if a["nota"] and a["nota"] <= 3 and not a["resposta"]]
     novas = len([a for a in todas if dias_desde(a["data"]) <= 30])
     conc = (rk or {}).get("concorrentes", [])[:3]
     lider = max([x.get("total") or 0 for x in conc] + [0])
     ck("reputacao", nota >= 4.5, 9, f"Nota {str(nota).replace('.', ',')}" + (": excelente" if nota >= 4.5 else ": abaixo de 4,5"), "Notas abaixo de 4,5 fazem muita gente escolher o concorrente.", "Pedir avaliações a clientes satisfeitos")
     meta = max(50, lider)
     ck("reputacao", total >= meta, 10, f"{total} avaliações", f"O 1º da região tem {lider}: faltam {lider - total}." if lider > total else f"Meta inicial: 50 (faltam {max(0, 50 - total)}).", "Pedir avaliações agora")
-    ck("reputacao", not neg, 8, f"{len(neg)} avaliação(ões) de 1 a 3 estrelas nos últimos 6 meses" if neg else "Nenhuma avaliação negativa recente", "Responda com calma: quem lê a resposta decide se confia.", "Responder as negativas")
+    ck("reputacao", not neg, 8, f"{len(neg)} avaliação(ões) de 1 a 3 estrelas sem resposta" if neg else "Nenhuma avaliação negativa sem resposta", "Responda com calma: quem lê a resposta decide se confia.", "Responder as negativas")
     ck("atividade", novas >= 4, 9, f"{novas} avaliação(ões) nova(s) no último mês", "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.", "Pedir avaliações esta semana")
     posts = item.get("posts") or []
     ult_post = dias_desde(posts[0]["data"]) if posts else 9999
