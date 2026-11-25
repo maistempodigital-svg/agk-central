@@ -2,9 +2,11 @@ name: Google Meu Negocio
 
 on:
   schedule:
-    - cron: "40 11 * * *"   # 08:40 Brasilia
-    - cron: "40 15 * * *"   # 12:40 Brasilia
-    - cron: "40 21 * * *"   # 18:40 Brasilia
+    # Horario de Brasilia. Sexta 15h ate sabado 20h: nenhum trabalho (Adriano e adventista).
+    - cron: "40 11 * * 0-5"   # dom a sex 08:40
+    - cron: "40 15 * * 0-5"   # dom a sex 12:40
+    - cron: "40 21 * * 0-4"   # dom a qui 18:40 (sexta nao)
+    - cron: "5 23 * * 6"      # sabado 20:05, fim do sabado
   workflow_dispatch: {}
   push:
     paths: ["fila/**"]
