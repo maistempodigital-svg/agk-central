@@ -397,6 +397,8 @@ def ranking(so=None):
         print("Sem PLACES_KEY")
         return
     import math
+    chave_api = chave_api.strip()
+    print("Chave Places: tamanho", len(chave_api), "| formato de chave de API:", chave_api.startswith("AIza"))
     tudo = ler("dados/ranking.json", {})
     for c in ler("clientes.json", []):
         if not c.get("ativo") or not c.get("ranking") or (so and c["chave"] != so):
