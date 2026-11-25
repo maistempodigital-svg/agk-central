@@ -254,7 +254,7 @@ def saude(item, rk):
     chk = []
     def ck(area, ok, peso, titulo, detalhe=None, acao=None):
         chk.append({"area": area, "ok": ok, "peso": peso, "titulo": titulo, "detalhe": detalhe if ok is not True else None, "acao": acao if ok is not True else None})
-    nota, total = item.get("media") or 0, item.get("total") or 0
+    nota, total = round(item.get("media") or 0, 1), item.get("total") or 0
     todas = item.get("_todas", [])
     neg = [a for a in todas if a["nota"] and a["nota"] <= 3 and dias_desde(a["data"]) <= 180]
     novas = len([a for a in todas if dias_desde(a["data"]) <= 30])
@@ -336,7 +336,7 @@ def historico(item):
     h = ler("dados/historico.json", {})
     sem = datetime.now(timezone.utc).strftime("%G-S%V")
     lst = [x for x in h.get(item["chave"], []) if x["semana"] != sem]
-    lst.append({"semana": sem, "media": item.get("media"), "total": item.get("total"), "saude": (item.get("saude") or {}).get("geral"),
+    lst.append({"semana": sem, "media": round(item.get("media") or 0, 1), "total": item.get("total"), "saude": (item.get("saude") or {}).get("geral"),
                 "fotos": (item.get("fotos") or {}).get("total"), "posts30": len([p for p in item.get("posts") or [] if dias_desde(p["data"]) <= 30])})
     h[item["chave"]] = lst[-26:]
     gravar("dados/historico.json", h)
