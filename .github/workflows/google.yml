@@ -7,7 +7,13 @@ on:
     - cron: "40 15 * * 0-5"   # dom a sex 12:40
     - cron: "40 21 * * 0-4"   # dom a qui 18:40 (sexta nao)
     - cron: "5 23 * * 6"      # sabado 20:05, fim do sabado
-  workflow_dispatch: {}
+    - cron: "20 11 * * 1"     # segunda 08:20: ranking no mapa (Places API)
+  workflow_dispatch:
+    inputs:
+      ranking:
+        description: "Medir o ranking no mapa? (todos ou a chave do cliente)"
+        required: false
+        default: ""
   push:
     paths: ["fila/**"]
 
@@ -21,7 +27,7 @@ concurrency:
 jobs:
   rodar:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,6 +37,14 @@ jobs:
         env:
           GOOGLE_SEGREDOS: ${{ secrets.GOOGLE_SEGREDOS }}
         run: python gmb.py publicar
+      - name: Medir ranking no mapa
+        if: github.event.schedule == '20 11 * * 1' || github.event.inputs.ranking != ''
+        env:
+          GOOGLE_SEGREDOS: ${{ secrets.GOOGLE_SEGREDOS }}
+          PLACES_KEY: ${{ secrets.PLACES_KEY }}
+        run: |
+          ALVO="${{ github.event.inputs.ranking }}"
+          if [ "$ALVO" = "todos" ] || [ -z "$ALVO" ]; then python gmb.py ranking; else python gmb.py ranking "$ALVO"; fi
       - name: Ler perfis e avaliacoes
         env:
           GOOGLE_SEGREDOS: ${{ secrets.GOOGLE_SEGREDOS }}

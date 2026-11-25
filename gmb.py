@@ -4,6 +4,7 @@ Central AGK - robo do Google Meu Negocio (so Python puro, nada para instalar).
 
   python gmb.py coletar   -> le perfis, avaliacoes e posts e grava dados/google.json
   python gmb.py publicar  -> publica SO o que o Adriano aprovou (fila/aprovadas.json)
+  python gmb.py ranking [chave] -> mede a posicao no mapa (Places API, chave PLACES_KEY)
 
 Chaves: variavel GOOGLE_SEGREDOS (o conteudo do segredos.json) ou o arquivo segredos.json ao lado.
 Nada aqui escreve texto sozinho: quem escreve as respostas e o Claude, e so sai o que foi aprovado.
@@ -140,6 +141,17 @@ def coletar():
                                  for x in p.get("localPosts", [])]
             except RuntimeError as e:
                 item["posts"], item["erro_posts"] = [], str(e)
+            if item["ativo"]:
+                for nome, fn in (("perfil", perfil), ("fotos", fotos)):
+                    try:
+                        item[nome] = fn(c)
+                    except Exception as e:
+                        item["erro_" + nome] = str(e)
+                item["_todas"] = todas
+                item["saude"] = saude(item, ler("dados/ranking.json", {}).get(c["chave"]))
+                item.pop("_todas")
+                item["evolucao"] = historico(item)
+                item["novas_30d"] = len([a for a in todas if dias_desde(a["data"]) <= 30])
         except Exception as e:
             item["erro"] = str(e)
             registrar("erro", c["chave"], f"Nao consegui ler o perfil: {e}", ok=False)
@@ -186,11 +198,207 @@ def publicar():
     print("Publicados:", n)
 
 
+# ---------------------------------------------------------------- perfil, fotos e saude
+INFO = "https://mybusinessbusinessinformation.googleapis.com/v1"
+MASCARA = "title,categories,phoneNumbers,websiteUri,regularHours,specialHours,profile,latlng,openInfo,storefrontAddress,serviceArea,metadata,serviceItems"
+
+
+def perfil(c):
+    d = g("GET", f"{INFO}/{c['local']}?readMask={MASCARA}")
+    cat = d.get("categories", {})
+    horas = (d.get("regularHours") or {}).get("periods", [])
+    end = d.get("storefrontAddress") or {}
+    return {
+        "titulo": d.get("title"), "categoria": (cat.get("primaryCategory") or {}).get("displayName"),
+        "categorias_extra": [x.get("displayName") for x in cat.get("additionalCategories", [])],
+        "telefone": (d.get("phoneNumbers") or {}).get("primaryPhone"), "site": d.get("websiteUri"),
+        "descricao": (d.get("profile") or {}).get("description", ""),
+        "dias_com_horario": len({p.get("openDay") for p in horas}), "feriados": bool((d.get("specialHours") or {}).get("specialHourPeriods")),
+        "status": (d.get("openInfo") or {}).get("status"), "latlng": d.get("latlng"),
+        "endereco": ", ".join(filter(None, [" ".join(end.get("addressLines", [])), end.get("sublocality"), end.get("locality")])),
+        "area_atendida": len(((d.get("serviceArea") or {}).get("places") or {}).get("placeInfos", [])),
+        "servicos": len(d.get("serviceItems", [])),
+        "place_id": (d.get("metadata") or {}).get("placeId"), "mapa": (d.get("metadata") or {}).get("mapsUri"),
+        "avaliar": (d.get("metadata") or {}).get("newReviewUri"),
+    }
+
+
+def fotos(c):
+    d = g("GET", f"{v4(c)}/media?pageSize=100")
+    itens = d.get("mediaItems", [])
+    datas = sorted([m.get("createTime", "") for m in itens], reverse=True)
+    return {"total": d.get("totalMediaItemCount", len(itens)), "ultima": datas[0] if datas else None,
+            "recentes": [{"url": m.get("thumbnailUrl") or m.get("googleUrl"), "data": m.get("createTime")} for m in itens[:6]]}
+
+
+def dias_desde(iso):
+    if not iso:
+        return 9999
+    try:
+        return (datetime.now(timezone.utc) - datetime.fromisoformat(iso.replace("Z", "+00:00"))).days
+    except Exception:
+        return 9999
+
+
+def saude(item, rk):
+    """Mesmas 5 areas do Avalia+: reputacao, atividade, perfil, visibilidade, concorrencia."""
+    chk = []
+    def ck(area, ok, peso, titulo, detalhe=None, acao=None):
+        chk.append({"area": area, "ok": ok, "peso": peso, "titulo": titulo, "detalhe": detalhe if ok is not True else None, "acao": acao if ok is not True else None})
+    nota, total = item.get("media") or 0, item.get("total") or 0
+    todas = item.get("_todas", [])
+    neg = [a for a in todas if a["nota"] and a["nota"] <= 3 and dias_desde(a["data"]) <= 180]
+    novas = len([a for a in todas if dias_desde(a["data"]) <= 30])
+    conc = (rk or {}).get("concorrentes", [])[:3]
+    lider = max([x.get("total") or 0 for x in conc] + [0])
+    ck("reputacao", nota >= 4.5, 9, f"Nota {str(nota).replace('.', ',')}" + (": excelente" if nota >= 4.5 else ": abaixo de 4,5"), "Notas abaixo de 4,5 fazem muita gente escolher o concorrente.", "Pedir avaliações a clientes satisfeitos")
+    meta = max(50, lider)
+    ck("reputacao", total >= meta, 10, f"{total} avaliações", f"O 1º da região tem {lider}: faltam {lider - total}." if lider > total else f"Meta inicial: 50 (faltam {max(0, 50 - total)}).", "Pedir avaliações agora")
+    ck("reputacao", not neg, 8, f"{len(neg)} avaliação(ões) de 1 a 3 estrelas nos últimos 6 meses" if neg else "Nenhuma avaliação negativa recente", "Responda com calma: quem lê a resposta decide se confia.", "Responder as negativas")
+    ck("atividade", novas >= 4, 9, f"{novas} avaliação(ões) nova(s) no último mês", "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.", "Pedir avaliações esta semana")
+    posts = item.get("posts") or []
+    ult_post = dias_desde(posts[0]["data"]) if posts else 9999
+    ck("atividade", ult_post <= 7, 8, "Postou nos últimos 7 dias" if ult_post <= 7 else (f"Último post há {ult_post} dias" if posts else "Nenhum post no Google"), "Postar 1 vez por semana mostra ao Google que a empresa está ativa.", "Criar post")
+    f = item.get("fotos") or {}
+    ult_foto = dias_desde(f.get("ultima"))
+    ck("atividade", ult_foto <= 30, 4, "Foto nova no último mês" if ult_foto <= 30 else "Nenhuma foto nova há mais de 1 mês", "Fotos novas todo mês ajudam no ranking e nos cliques.", "Postar fotos novas")
+    p = item.get("perfil")
+    if p:
+        ck("perfil", bool(p.get("categoria")), 7, f"Categoria: {p.get('categoria')}" if p.get("categoria") else "Sem categoria principal", "A categoria é o fator nº 1 para aparecer nas buscas.", "Arrumar categoria")
+        ck("perfil", len(p.get("categorias_extra") or []) >= 2, 3, f"{len(p.get('categorias_extra') or [])} categoria(s) extra", "Categorias extras certas fazem aparecer em mais buscas.", "Adicionar categorias")
+        ck("perfil", p.get("dias_com_horario", 0) >= 5, 6, "Horário de funcionamento completo" if p.get("dias_com_horario", 0) >= 5 else "Horário incompleto", "Sem horário, o Google mostra menos a empresa.", "Arrumar horário")
+        ck("perfil", p.get("feriados"), 2, "Horário de feriados cadastrado" if p.get("feriados") else "Sem horário de feriados", "O Google valoriza quem informa feriados.", "Cadastrar feriados")
+        ck("perfil", bool(p.get("telefone")), 5, "Telefone cadastrado" if p.get("telefone") else "Sem telefone", "Muitos clientes ligam direto pelo Google.", "Cadastrar telefone")
+        site = p.get("site") or ""
+        real = bool(site) and not re.search(r"instagram|facebook|wa\.me|whatsapp|linktr", site, re.I)
+        ck("perfil", real, 5, "Tem site próprio" if real else ("O site é rede social/WhatsApp" if site else "Sem site"), "Site próprio aumenta a confiança e a relevância.", "Colocar o site")
+        dl = len(p.get("descricao") or "")
+        ck("perfil", dl >= 250, 4, "Descrição completa" if dl >= 250 else (f"Descrição curta ({dl} letras)" if dl else "Sem descrição"), "Diga o que faz, para quem e em qual bairro, com as palavras-chave.", "Reescrever descrição")
+        ck("perfil", f.get("total", 0) >= 10, 6, f"{f.get('total', 0)} fotos no perfil", "Perfis com muitas fotos recebem mais cliques e rotas.", "Postar fotos")
+        ck("perfil", p.get("servicos", 0) >= 3, 3, f"{p.get('servicos', 0)} serviço(s) cadastrados", "Serviços cadastrados ajudam o Google a entender o que você faz.", "Cadastrar serviços")
+        if p.get("status") == "CLOSED_TEMPORARILY":
+            ck("perfil", False, 10, "Aparece como FECHADO TEMPORARIAMENTE", "Isso derruba quase todas as buscas.", "Reabrir o perfil")
+    res = (rk or {}).get("palavras", [])
+    if res:
+        for r in res:
+            pts = [min(x if x else 21, 21) for x in r["grade"]]
+            top3 = round(100 * len([x for x in pts if x <= 3]) / len(pts))
+            ck("visibilidade", top3 >= 50, 8, f"{top3}% da região no top 3 para “{r['palavra']}”", f"Posição média {sum(pts) / len(pts):.1f}".replace(".", ","), "Melhorar posição no mapa")
+    else:
+        ck("visibilidade", None, 5, "Posição no mapa ainda não medida", None, "Medir posição")
+    if conc:
+        mn = sum((x.get("nota") or 0) for x in conc) / len(conc)
+        mt = sum((x.get("total") or 0) for x in conc) / len(conc)
+        ck("concorrencia", nota >= mn, 5, f"Nota {nota} × média dos 3 primeiros {mn:.1f}".replace(".", ","))
+        ck("concorrencia", total >= mt, 6, f"{total} avaliações × média dos 3 primeiros {round(mt)}", "Diminuir a diferença em avaliações.", "Pedir avaliações")
+    else:
+        ck("concorrencia", None, 4, "Concorrentes ainda não analisados", None, "Ver concorrentes")
+
+    def nota_area(a):
+        if a == "reputacao":
+            n = max(0, min(1, (nota - 3.5) / 1.5)) * 60
+            v = min(1, total / lider) * 40 if lider else min(40, (__import__("math").log10(total + 1) / __import__("math").log10(301)) * 40)
+            return round(max(0, n + v - min(15, len(neg) * 5)))
+        if a == "atividade":
+            return round(min(100, novas / 8 * 100) * 0.6 + (40 if ult_post <= 7 else 20 if ult_post <= 30 else 0))
+        if a == "visibilidade":
+            if not res:
+                return None
+            pts = [min(x if x else 21, 21) for r in res for x in r["grade"]]
+            return round(len([x for x in pts if x <= 3]) / len(pts) * 60 + (1 - min(sum(pts) / len(pts), 20) / 20) * 40)
+        if a == "concorrencia":
+            if not conc:
+                return None
+            mn = sum((x.get("nota") or 0) for x in conc) / len(conc) or 1
+            mt = sum((x.get("total") or 0) for x in conc) / len(conc) or 1
+            return round(min(1, nota / mn) * 50 + min(1, total / mt) * 50)
+        l = [x for x in chk if x["area"] == a and x["ok"] is not None]
+        tot = sum(x["peso"] for x in l)
+        return round(100 * sum(x["peso"] for x in l if x["ok"]) / tot) if tot else None
+    nomes = {"reputacao": "Reputação", "atividade": "Atividade", "perfil": "Perfil completo", "visibilidade": "Visibilidade", "concorrencia": "Concorrência"}
+    areas = [{"id": a, "nome": n, "nota": nota_area(a)} for a, n in nomes.items()]
+    val = [a["nota"] for a in areas if a["nota"] is not None]
+    plano = sorted([x for x in chk if x["ok"] is False and x["acao"]], key=lambda x: -x["peso"]) + sorted([x for x in chk if x["ok"] is None and x["acao"]], key=lambda x: -x["peso"])
+    return {"geral": round(sum(val) / len(val)) if val else 0, "areas": areas, "checks": chk,
+            "plano": [{"titulo": x["titulo"], "detalhe": x["detalhe"], "acao": x["acao"]} for x in plano[:6]]}
+
+
+def historico(item):
+    h = ler("dados/historico.json", {})
+    sem = datetime.now(timezone.utc).strftime("%G-S%V")
+    lst = [x for x in h.get(item["chave"], []) if x["semana"] != sem]
+    lst.append({"semana": sem, "media": item.get("media"), "total": item.get("total"), "saude": (item.get("saude") or {}).get("geral"),
+                "fotos": (item.get("fotos") or {}).get("total"), "posts30": len([p for p in item.get("posts") or [] if dias_desde(p["data"]) <= 30])})
+    h[item["chave"]] = lst[-26:]
+    gravar("dados/historico.json", h)
+    return h[item["chave"]]
+
+
+# ---------------------------------------------------------------- ranking (Places API)
+def places_busca(chave_api, texto, lat, lng, raio_m):
+    return http("POST", "https://places.googleapis.com/v1/places:searchText",
+                {"textQuery": texto, "languageCode": "pt-BR", "regionCode": "BR", "pageSize": 20,
+                 "locationBias": {"circle": {"center": {"latitude": lat, "longitude": lng}, "radius": raio_m}}},
+                {"X-Goog-Api-Key": chave_api, "X-Goog-FieldMask": "places.id,places.displayName,places.rating,places.userRatingCount,places.googleMapsUri,places.formattedAddress"}).get("places", [])
+
+
+def ranking(so=None):
+    chave_api = os.environ.get("PLACES_KEY") or segredos().get("PLACES_KEY")
+    if not chave_api:
+        registrar("erro", "todos", "Ranking não medido: falta a chave PLACES_KEY no GitHub.", ok=False)
+        print("Sem PLACES_KEY")
+        return
+    import math
+    tudo = ler("dados/ranking.json", {})
+    for c in ler("clientes.json", []):
+        if not c.get("ativo") or not c.get("ranking") or (so and c["chave"] != so):
+            continue
+        try:
+            p = perfil(c)
+            lat, lng, meu = p["latlng"]["latitude"], p["latlng"]["longitude"], p.get("place_id")
+            cfg = c["ranking"]; n = cfg.get("grade", 5); raio = cfg.get("raio_km", 3)
+            passo = (2 * raio) / (n - 1)
+            pontos = [(lat + (raio - i * passo) / 111.0, lng + (-raio + j * passo) / (111.0 * math.cos(math.radians(lat)))) for i in range(n) for j in range(n)]
+            saida = {"em": agora(), "centro": {"lat": lat, "lng": lng}, "raio_km": raio, "grade_n": n, "palavras": [], "concorrentes": []}
+            vistos = {}
+            for palavra in cfg["palavras"]:
+                grade = []
+                for (a, b) in pontos:
+                    res = places_busca(chave_api, palavra, a, b, max(500, passo * 1000))
+                    pos = next((k + 1 for k, x in enumerate(res) if x.get("id") == meu), None)
+                    grade.append(pos)
+                    for k, x in enumerate(res[:5]):
+                        if x.get("id") == meu:
+                            continue
+                        v = vistos.setdefault(x["id"], {"nome": x.get("displayName", {}).get("text"), "nota": x.get("rating"), "total": x.get("userRatingCount"),
+                                                        "link": x.get("googleMapsUri"), "endereco": x.get("formattedAddress"), "vezes": 0, "soma": 0})
+                        v["vezes"] += 1; v["soma"] += k + 1
+                    time.sleep(0.2)
+                saida["palavras"].append({"palavra": palavra, "grade": grade})
+            conc = sorted(vistos.values(), key=lambda v: (-v["vezes"], v["soma"] / v["vezes"]))[:8]
+            for v in conc:
+                v["pos_media"] = round(v.pop("soma") / v["vezes"], 1)
+            saida["concorrentes"] = conc
+            hist = tudo.get(c["chave"], {}).get("historico", [])
+            for r in saida["palavras"]:
+                pts = [min(x or 21, 21) for x in r["grade"]]
+                hist.append({"em": saida["em"][:10], "palavra": r["palavra"], "media": round(sum(pts) / len(pts), 1), "top3": round(100 * len([x for x in pts if x <= 3]) / len(pts))})
+            saida["historico"] = hist[-40:]
+            tudo[c["chave"]] = saida
+            registrar("ranking", c["chave"], "Ranking medido: " + ", ".join(f"{h['palavra']} média {h['media']}" for h in hist[-len(cfg['palavras']):]))
+        except Exception as e:
+            registrar("erro", c["chave"], f"Ranking falhou: {e}", ok=False)
+    gravar("dados/ranking.json", tudo)
+    print("Ranking ok")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "coletar":
         coletar()
     elif cmd == "publicar":
         publicar()
+    elif cmd == "ranking":
+        ranking(sys.argv[2] if len(sys.argv) > 2 else None)
     else:
         print(__doc__)
