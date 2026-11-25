@@ -1,0 +1,853 @@
+{
+  "atualizado": "2026-11-25T15:27:18+00:00",
+  "clientes": [
+    {
+      "chave": "equilibrio",
+      "nome": "Equilíbrio da Coluna",
+      "ativo": true,
+      "media": 5,
+      "total": 51,
+      "sem_resposta": [
+        {
+          "id": "AbFvOqkQIlUAOg6Wl_nkYQ--NqjkMNGad5P9v8cQ9Jqfk8b_Jx6ueplsVIrB8pmKEeYJPyi8B5MnWA",
+          "autor": "Ricardo Ferreira",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIZJcZ-jBonHLMUK4AiPWVOerhSe-mxLrTL8crmxc5kEWI6GA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Ótima",
+          "data": "2026-11-17T20:48:06.272036Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqkqismFolMX7fAXaHzJSH05IJcbeuZjsA1bTUvMTZfLmTTlScJIBbmt5qzKqRSsaLuFntjNIA",
+          "autor": "Caio Sabino",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUlpSXEIt1j2udbwDq6UNR6PIUfhvK0Ydy93OB9hLm6jPNstoZrIA=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "",
+          "data": "2026-10-29T18:56:15.512598Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqkw1sm0stTj7ME2pgm0Au3znaRHUKz5KmsgivVVhkIuaotwnpuxC1zNYGqrEbkxfYfoXtqT",
+          "autor": "Jheniffer Martins",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIcZFLTSq1qqDIB6EdoxbbJ6ffytJ0TrId_zkn0GUrS74PdyMy0=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Fui muito bem atendida pela recepcionista, com direito a café muito gostoso. Na hora de falar com o quiro, ela foi muito simpática e me explicou tudo, tirando todas as minhas dúvidas.\nSuper recomendo.",
+          "data": "2026-10-29T18:28:07.247733Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqn52Nd77tDPI0qyEhD3zrIhnY3bfRgE925fjVSoJQ6W8o0IvkujFE-suNnxscJqNou37QvY",
+          "autor": "Luana Barbosa",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWbpIKGZW4DmDc2hXCbJC1RVmh5kDHfvM3YKcwgpzZFRbLteA32Tg=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Clínica com profissionais experientes. Ambiente acolhedor e muito próximo da estação e do shopping.",
+          "data": "2026-10-29T15:26:19.241928Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqlwgsf291zvx90YfTJaw0fm58oO-0joDKsKlJJx8faP8OmOcizbPWFs_5paFpAeAXTQKmK3Tg",
+          "autor": "Rodrigo Rodrigues",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocI_u7tNuRrc1nvriCTLz7JwqAcB7yGxAnSMQTKAFZpnVYcECw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Atendimento maravilhoso, entrei com dor e sai 100% sem dor.\n\nProfissionais atenciosos e recepção que acolhe\n\nNota 1000",
+          "data": "2026-10-14T18:27:33.576515Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx",
+          "autor": "jr assessoria esportiva",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVQWwV8Oxtcpcemez77uPdct7OOvu5WfNqspYWjo9OFgHnKfMU=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Já passo com o Lucas a  um ano e sempre saio restaurado. Profissional estudioso, com ótima energia.\nSuper recomendo!",
+          "data": "2026-04-24T20:25:19.085576Z",
+          "resposta": null
+        }
+      ],
+      "recentes": [
+        {
+          "id": "AbFvOqkQIlUAOg6Wl_nkYQ--NqjkMNGad5P9v8cQ9Jqfk8b_Jx6ueplsVIrB8pmKEeYJPyi8B5MnWA",
+          "autor": "Ricardo Ferreira",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIZJcZ-jBonHLMUK4AiPWVOerhSe-mxLrTL8crmxc5kEWI6GA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Ótima",
+          "data": "2026-11-17T20:48:06.272036Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqkqismFolMX7fAXaHzJSH05IJcbeuZjsA1bTUvMTZfLmTTlScJIBbmt5qzKqRSsaLuFntjNIA",
+          "autor": "Caio Sabino",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUlpSXEIt1j2udbwDq6UNR6PIUfhvK0Ydy93OB9hLm6jPNstoZrIA=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "",
+          "data": "2026-10-29T18:56:15.512598Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqkw1sm0stTj7ME2pgm0Au3znaRHUKz5KmsgivVVhkIuaotwnpuxC1zNYGqrEbkxfYfoXtqT",
+          "autor": "Jheniffer Martins",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIcZFLTSq1qqDIB6EdoxbbJ6ffytJ0TrId_zkn0GUrS74PdyMy0=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Fui muito bem atendida pela recepcionista, com direito a café muito gostoso. Na hora de falar com o quiro, ela foi muito simpática e me explicou tudo, tirando todas as minhas dúvidas.\nSuper recomendo.",
+          "data": "2026-10-29T18:28:07.247733Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqn52Nd77tDPI0qyEhD3zrIhnY3bfRgE925fjVSoJQ6W8o0IvkujFE-suNnxscJqNou37QvY",
+          "autor": "Luana Barbosa",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWbpIKGZW4DmDc2hXCbJC1RVmh5kDHfvM3YKcwgpzZFRbLteA32Tg=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Clínica com profissionais experientes. Ambiente acolhedor e muito próximo da estação e do shopping.",
+          "data": "2026-10-29T15:26:19.241928Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqlwgsf291zvx90YfTJaw0fm58oO-0joDKsKlJJx8faP8OmOcizbPWFs_5paFpAeAXTQKmK3Tg",
+          "autor": "Rodrigo Rodrigues",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocI_u7tNuRrc1nvriCTLz7JwqAcB7yGxAnSMQTKAFZpnVYcECw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Atendimento maravilhoso, entrei com dor e sai 100% sem dor.\n\nProfissionais atenciosos e recepção que acolhe\n\nNota 1000",
+          "data": "2026-10-14T18:27:33.576515Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx",
+          "autor": "jr assessoria esportiva",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVQWwV8Oxtcpcemez77uPdct7OOvu5WfNqspYWjo9OFgHnKfMU=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Já passo com o Lucas a  um ano e sempre saio restaurado. Profissional estudioso, com ótima energia.\nSuper recomendo!",
+          "data": "2026-04-24T20:25:19.085576Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqlbu_YgX5aGXqKh8BtI-sq5-kLxl0pFuBfO5g9txEiu7_fSPNbc5XMiyYcXsZIMfijctNuweA",
+          "autor": "Cacilda Brandao Garcia",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjX6Ay4u0bY1xLj4cNHO6C0_uNK_Odm1WwoZMs5JzVddc4x7MhZ0=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Atendimento perfeito, profissionais responsáveis e muito atenciosos. Eu super indico. 😉",
+          "data": "2026-04-18T20:08:17.311156Z",
+          "resposta": "Cacilda, muito obrigado pela sua avaliação e confiança! 💙\n\nFicamos muito felizes em saber que você teve uma experiência positiva conosco. Na Clínica Equilíbrio da Coluna, nosso propósito é justamente proporcionar uma verdadeira experiência de saúde, unindo quiropraxia e massoterapia dentro de um conceito de saúde integrativa.\n\nAcreditamos que cada pessoa é única, por isso trabalhamos com serviços personalizados e um olhar atento ao seu acompanhamento de saúde, sempre priorizando cuidado, atenção e resultado.\n\nÉ uma alegria enorme ter você conosco aqui na Vila Olímpia. Conte sempre com a gente nessa jornada de autocuidado! ✨"
+        },
+        {
+          "id": "AbFvOqlBfD5vk-xXlrX_uh2jFZbTa8otvXtI3mMTNaY-c-1Lz_m3jsYyOPQffsGBBeI1NMiItSsS",
+          "autor": "Tiago Ferrer",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVVBc4F68Zogsq-OKJNskRIVpmbKPekVXWr9jjiO-qViJ_uWuWn=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Cuidado pessoal com afeto!! Salvou meus dias de trabalho!!",
+          "data": "2026-04-17T17:52:29.075193Z",
+          "resposta": "Que mensagem especial, muito obrigado! 💙\n\nFicamos muito felizes em saber que nosso cuidado fez diferença no seu dia a dia — é exatamente isso que buscamos: oferecer uma verdadeira experiência de saúde, com quiropraxia e massoterapia realizadas com técnica, atenção e muito afeto.\n\nNosso compromisso é com um acompanhamento de saúde contínuo, dentro de uma visão de saúde integrativa, sempre com serviços personalizados para atender o que você realmente precisa.\n\nÉ um prazer cuidar de você aqui na Vila Olímpia. Conte com a gente sempre! ✨"
+        },
+        {
+          "id": "AbFvOqnOkka1dr4myP9_3AOmhBNB0ZKDbOjvSTAm7nwecTUFHmygsaIDsF7S2_GA2ihRHvx4JYIhCA",
+          "autor": "Hugo Garcia",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUVIejLKfLW1JLi_hPj4yLlObTLY5ippJSoesCoGshL4FeVAeQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "O atendimento é excelente!!!",
+          "data": "2026-04-17T13:27:30.393813Z",
+          "resposta": "Muito obrigado pelo seu feedback! 💙\n\nFicamos muito felizes em saber que você teve uma excelente experiência com a gente. Nosso objetivo é sempre proporcionar uma verdadeira experiência de saúde, unindo quiropraxia e massoterapia com qualidade, atenção e cuidado em cada detalhe.\n\nSeguimos comprometidos com seu acompanhamento de saúde, dentro de uma abordagem de saúde integrativa e com serviços personalizados, pensados especialmente para você.\n\nSerá sempre um prazer te receber aqui na Vila Olímpia"
+        },
+        {
+          "id": "AbFvOqmFT-n_dR9Fds98zK-zt742I6KS-b9jqy6Ecyswxzdm7wtuiO9QbwT4ndlHBqUPcJRzueoR",
+          "autor": "Beatriz Borges",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUBXKxIvnJqJG52mGim6L1jmUbaHxUuZVcpvODVsDHQA5mTkIkz=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Recomendo 1000%! O Lucas é um excelente profissional. Tenho tratado dores nas costas, pescoço e quadril desde o ano passado. Estou grávida e as sessões tem me ajudado MUITO com as dores. Saio outra pessoa da maca. A massagem também é ótima.",
+          "data": "2026-02-13T12:17:29.031902Z",
+          "resposta": "Ficamos imensamente felizes com o seu relato! 💛\n\nNa Clínica Equilíbrio da Coluna, nosso propósito é oferecer uma verdadeira experiência de saúde, com foco em cuidado individualizado e seguro — especialmente em momentos tão especiais como a gestação.\n\nAtravés da Quiropraxia e da Massoterapia, buscamos aliviar dores nas costas, pescoço e quadril de forma eficaz, respeitando cada fase do seu corpo. Nosso compromisso é proporcionar serviços personalizados e um acompanhamento de saúde contínuo, para que você se sinta cada vez melhor a cada sessão.\n\nÉ uma alegria saber que você sai “outra pessoa” da maca — essa é exatamente a transformação que queremos proporcionar aqui na Vila Olímpia.\n\nConte sempre com a gente nessa fase tão importante da sua vida! ✨"
+        },
+        {
+          "id": "AbFvOqmYbiIUwLjgRh-psyGo65dVeTmpkAYAt2dc6NWlwIK9uoJ7hKGnN_URt5QaAE5i_LKFeUFjAw",
+          "autor": "Vinicius Grispan Klein",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUIArpnWjJb4EeATirAKQABldiPfiT64lJRvuoeSjBl1IooVYKitQ=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Eu Amo tudo lá: o ambiente, as pessoas, a energia... tudo!\nConheci o Lucas há alguns anos já e continuo com ele desde então: alem de um quiro maravilhosos e competente, é sempre muito atencioso, didático e informativo. Sempre saio de lá com tudo no lugar e um aprendizado novo sobre meu corpo e minha coluna. Altamente recomendado!",
+          "data": "2025-12-06T21:26:01.338895Z",
+          "resposta": "Somos muito gratos pelo seu depoimento e pela confiança ao longo desses anos. 💙\nNa Clínica Equilíbrio da Coluna, acreditamos que o cuidado vai além da sessão — ele envolve acolhimento, conhecimento e constância. Nosso trabalho em quiropraxia e massoterapia é pensado como um verdadeiro acompanhamento de saúde, ajudando você a entender melhor o seu corpo e a cuidar da sua coluna de forma consciente.\n\nAqui na Vila Olímpia, buscamos proporcionar uma experiência de saúde completa, com serviços personalizados que respeitam a individualidade de cada paciente. Saber que você sai de cada sessão se sentindo bem e ainda aprendendo mais sobre o seu corpo nos confirma que estamos no caminho certo.\n\nMuito obrigado pela recomendação e por fazer parte da nossa história! ✨"
+        },
+        {
+          "id": "AbFvOqkvnyEi4OJLcMLjE2hAvds8NWuGNy__TunywVTblMqcAy-fPore9nLGt5zdyc_VUonYgqRHvA",
+          "autor": "Quackoo Quackeroo",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjV6zM1CUm-lTGMcnfDf7RQ8742P1v2c69V_Rn4zXm91QO3Za8vX=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "1 hora de ajustes e 30 minutos de massoterapia com liberação miofascial das regiões escapulares que estavam absurdamente traumatizadas. Serviço sério. Obrigado!",
+          "data": "2025-11-26T12:51:59.330024Z",
+          "resposta": "\nNa Clínica Equilíbrio da Coluna, acreditamos que o cuidado vai além da sessão — ele envolve acolhimento, conhecimento e constância. Nosso trabalho em quiropraxia e massoterapia é pensado como um verdadeiro acompanhamento de saúde, ajudando você a entender melhor o seu corpo e a cuidar da sua coluna de forma consciente.\n\nAqui na Vila Olímpia, buscamos proporcionar uma experiência de saúde completa, com serviços personalizados que respeitam a individualidade de cada paciente. Saber que você sai de cada sessão se sentindo bem e ainda aprendendo mais sobre o seu corpo nos confirma que estamos no caminho certo.\n\n"
+        },
+        {
+          "id": "AbFvOqkK_abSBRRKF7Qws-3chuZK1uAsYrjfHbDox1IUwtoGX0bEP3SKEfdSaDU41UPtWL7DxrHXVQ",
+          "autor": "Nathany Petrin",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWmu1k2WzKoF2bHB6vj2rbGRSrWHRHsHClaDUx_F4YM_dq6nqtUuw=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Estou amando a Clínica! Fiz reflexologia podal e auriculoterapia. Os profissionais são atenciosos e dedicados!",
+          "data": "2025-11-12T17:36:00.445764Z",
+          "resposta": "Ficamos muito felizes com seu feedback! 💙\nÉ ótimo saber que você está amando a Clínica Equilíbrio da Coluna e que as sessões de reflexologia podal e auriculoterapia têm feito diferença no seu bem-estar.\n\nNosso objetivo é proporcionar uma experiência de saúde completa aqui na Vila Olímpia, com serviços personalizados e um acompanhamento de saúde que une técnicas de massoterapia e quiropraxia para cuidar do corpo de forma integral.\n\nAgradecemos pela confiança e seguimos juntos nessa jornada de equilíbrio e autocuidado. ✨"
+        },
+        {
+          "id": "AbFvOqldzwqt6jr5ylV-S0wf5-nR7NEUH0MPgB0MQ8E2eiFS4kGEiLOULWwGMI2vOtvcxHnp8ELD",
+          "autor": "Rodrigo Melo",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocI7MbRGV4nbbPWgVIcyvvnUv_9-rSSkvqeFrtABrulAmcoWAdNo=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Top! Iniciando pelo atendimento da recepcionista Sol, me ajudou em todo o processo ate chegar as mãos do Lucas para quiropraxia. Na avaliação inicial o Lucas foi incrivel, educado, entende muito do que faz e foi bem esclarecedor, mostrando análise no em 3d no Ipad. Fiz apenas uma sessão, mas gostei muito do resultado. Podem ir de olhos fechados.",
+          "data": "2025-11-12T15:33:42.163621Z",
+          "resposta": "Agradecemos imensamente pelo seu relato e pela confiança! 💙\nFicamos muito felizes em saber que desde o primeiro contato com a Sol, até sua sessão de quiropraxia com o Lucas, sua experiência de saúde foi positiva.\n\nNa Clínica Equilíbrio da Coluna, aqui na Vila Olímpia, buscamos oferecer serviços personalizados e um acompanhamento de saúde completo — desde o acolhimento até as técnicas aplicadas em cada atendimento.\n\nÉ ótimo saber que você já sentiu bons resultados logo na primeira sessão! Seguimos à disposição para continuar cuidando do seu equilíbrio e bem-estar. ✨"
+        },
+        {
+          "id": "AbFvOqnOF3rSaKTTIm06cK0Meh9H7Xy7X2rf3CbSq17f6V9V2Be9eK0UlgAJrHiFC5HunL-JFNR79w",
+          "autor": "Jéssica Brasil",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKWqU565a5NAULrv8xcumbIwO5FCqdrsgT-gqecPWrTwies5Q=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "O atendimento para a quiropraxia e para massagem relaxante/terapêutica são excelentes! O Lucas e o Daniel são super atenciosos e sempre explicam certinho sobre as técnicas! Indico!",
+          "data": "2025-11-12T13:29:32.632193Z",
+          "resposta": "Agradecemos muito pelo seu retorno e pela confiança no nosso trabalho! 💙\nFicamos felizes em saber que sua experiência de saúde conosco tem sido positiva. Nosso propósito na Clínica Equilíbrio da Coluna, aqui na Vila Olímpia, é oferecer serviços personalizados em quiropraxia e massoterapia, sempre com um cuidado próximo e um acompanhamento de saúde completo.\n\nO Lucas e o Daniel vão adorar saber do seu reconhecimento — seguimos comprometidos em proporcionar momentos de bem-estar e equilíbrio em cada sessão. ✨"
+        }
+      ],
+      "posts": []
+    },
+    {
+      "chave": "quiroleste",
+      "nome": "Quiro Leste",
+      "ativo": true,
+      "media": 4.900000095367432,
+      "total": 265,
+      "sem_resposta": [],
+      "recentes": [
+        {
+          "id": "AbFvOqnbFzO1DGawbavsrOjEI3rLfkPumiUFszKJDPu7N-wFupDxJDuqbRmzf16-s4Rq3cJlM9GeXg",
+          "autor": "Marisa Cruz",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVZdaXtX3KgKT8EcPIPhgeRzE5jmVN_xQB56pmgTC3O-_AptRgZ=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Excelente atendimento, sou atendida por Thiago  massagem e já passei Quiro com Bruno, minha mãe passou com Renato, recomendo!",
+          "data": "2026-10-30T17:18:44.629060Z",
+          "resposta": "Marisa, muito obrigado por compartilhar sua experiência e recomendar a Quiro Leste! Ficamos felizes com a confiança sua e da sua mãe em nossa equipe. Vamos compartilhar seu carinho com o Thiago, o Bruno e o Renato. Será sempre um prazer receber vocês!"
+        },
+        {
+          "id": "AbFvOqnodbYGYCWWzni-L7Iz9KNQ_-uBe2VCLgaJFOtYhJ_rUH3vqWURTi4FfKm_MAFkYePVgrBp",
+          "autor": "Gilsimas Santana",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLDNZpgqSTL6kN0XGb2jQjMR17L3wtMNsUwL26cZfIaIuByww=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Muito boa essa eu recomendo",
+          "data": "2026-10-17T18:27:00.207468Z",
+          "resposta": "Gilsimas, muito obrigado pela recomendação e pela confiança no nosso trabalho. Ficamos felizes em saber que sua experiência na Quiro Leste Quiropraxia, no Tatuapé, São Paulo, foi positiva. Será sempre um prazer receber você e continuar oferecendo um atendimento cuidadoso e profissional."
+        },
+        {
+          "id": "AbFvOqnyI0fXLOa7jSRzNOtTn3h02vnAubWYPEzlys3dZp_NcSRONTPmLIrqmjUAfcIpNVy_N-km-w",
+          "autor": "kah reis",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUZJ9sKO3sRfBZ3wTViZcv54mAdzvA_KlZLc7a3Tu_o80XGnPgECw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "",
+          "data": "2026-10-17T18:26:08.657090Z",
+          "resposta": "Kah, agradecemos muito pela sua avaliação. Sua confiança é muito importante para toda a equipe da Quiro Leste Quiropraxia, no Tatuapé, São Paulo. Esperamos continuar proporcionando um atendimento acolhedor, profissional e focado no seu bem-estar. Será sempre muito bem-vinda."
+        },
+        {
+          "id": "AbFvOqlEKUZN6ZgWEF0D3AR9vj4PeipciIBZLS7lfLhQry9SFOJqtjUaH4AzqwYuCWpDFM6MxyJQkQ",
+          "autor": "Leonardo Colombo",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocJUD-OsThMDf0C7c8ix1APD9DaeOf8XYwob0yFRmlk4Xu7CAQ=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Fui muito bem atendido, excelente ambiente, extremamente profissionais.",
+          "data": "2026-10-02T16:42:18.648249Z",
+          "resposta": "Leonardo, agradecemos pelas palavras e pela confiança. Ficamos muito felizes em saber que você se sentiu bem atendido, encontrou um ambiente agradável e percebeu o profissionalismo da nossa equipe. Na Quiro Leste Quiropraxia, no Tatuapé, São Paulo, buscamos oferecer um atendimento humanizado, cuidadoso e de qualidade em cada visita. Será um prazer receber você novamente."
+        },
+        {
+          "id": "AbFvOqkqQAQOXHUg6OeyD71VPPrBZWy4kOogAnJWXvx6z96G-3IM_jmcjCVvvhfiiVoqNb6mTkN85A",
+          "autor": "Marília Jéssica Silva Cunha",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKRB5RafDUcEa7ivqZznsDBiZR_YAyEmyZEKyjhJomssQNxQQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Super recomendo a quiropraxia! 🙌✨ Eu sentia muitas dores na lombar, no pescoço e no meio das costas. Tenho uma leve escoliose e, depois das sessões, senti uma melhora enorme! As dores diminuíram muito e fiquei impressionada com o resultado. É incrível o que as mãos certas podem fazer! ❤️\n\nSuper recomendo! 🫶",
+          "data": "2026-09-26T18:25:20.797164Z",
+          "resposta": "Marília, muito obrigado por compartilhar sua experiência e por recomendar a Quiro Leste Quiropraxia! Ficamos muito felizes em saber que as sessões contribuíram para diminuir seus desconfortos na lombar, pescoço e região das costas e que você percebeu uma melhora tão significativa.\nNosso trabalho é realizado com atenção, avaliação individualizada e cuidado profissional, buscando entender as necessidades de cada paciente antes de cada atendimento. É muito gratificante acompanhar sua evolução e saber que você está se sentindo melhor.\nAgradecemos pela confiança em nossa equipe e por deixar esse relato tão especial. Será sempre um prazer receber você aqui na Quiro Leste, no Tatuapé. Conte conosco para continuar cuidando do seu bem-estar e da sua qualidade de vida!"
+        },
+        {
+          "id": "AbFvOqnrAVwzRT8IOU8NXQ2qp3BdwAs2jwm3FTVMpW7VQbsMuA5dn2d41vEqbjOmjVEm4jTzQp482g",
+          "autor": "Denis Leardi",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUYgZCIISjKqQqTvdV2PSiBzcke3rai7tY620eZc8RX36lNqKWUKw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Muito bom recomendo",
+          "data": "2026-08-08T18:19:43.600921Z",
+          "resposta": "Denis, muito obrigado pelas 5 estrelas e pela recomendação! Ficamos muito felizes em saber que você teve uma ótima experiência com a Quiro Leste Quiropraxia. Nossa equipe trabalha com atenção, cuidado e profissionalismo para proporcionar bem-estar e qualidade em cada atendimento. Agradecemos pela confiança e esperamos receber você novamente!"
+        },
+        {
+          "id": "AbFvOqmeS3xIicOaZYGkIN76IiNPjknPaNOxqgwyI9paMH1uTS199pxTWGYf1m05T_921LVtS7yPEA",
+          "autor": "Matheus Moralia",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKHI8qLXDSKDAX1ks7jZL700LtDJC2Y9XXLsUFS8LXVbQ08hQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Ótimo atendimento. Sai renovado. Vale muito a pena. Só venham conhecer esses profissionais incríveis.",
+          "data": "2026-08-08T18:16:49.273401Z",
+          "resposta": "Matheus, muito obrigado pelo carinho e pela recomendação! Saber que você saiu renovado e teve uma ótima experiência com nossa equipe é motivo de muita satisfação. Agradecemos pela confiança e por incentivar outras pessoas a conhecerem nosso trabalho. Esperamos você novamente!"
+        },
+        {
+          "id": "AbFvOql4fazRf1oZr9Hq6HnTRYFfhVnyQbC1Cr7sB89vzE2f95CoIvH4O-G5lAZebimjy3Di8-WPyA",
+          "autor": "Amanda Pereira",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIWWLDuiommk6pTyqx5Egyy56s2Ds484pTiIPjGmqqdDf1pYSr6=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "",
+          "data": "2026-08-08T18:12:02.369164Z",
+          "resposta": "Amanda, agradecemos muito pelas 5 estrelas! Sua avaliação é muito importante para toda a equipe da Quiro Leste. Ficamos felizes com sua confiança e esperamos proporcionar novas experiências positivas em seus próximos atendimentos."
+        },
+        {
+          "id": "AbFvOql_UHxSt4DlYo4meKiU02GqEDqkoz6d4LxPFqpOLW_rYdHoHJjtBLwHZoT51yUpXT8ZnEgtMg",
+          "autor": "Tatiane Idalgo",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKmkQ-8dvaz3CX3F9JbPdfkyXkwaVqcq5VM5V_sf45zv4RkcQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Maravilhosoooo",
+          "data": "2026-08-08T17:59:59.819163Z",
+          "resposta": "Tatiane, muito obrigado! Ficamos felizes demais em receber seu “maravilhosoooo”! É uma satisfação saber que sua experiência foi tão positiva. Esperamos receber você novamente em breve!"
+        },
+        {
+          "id": "AbFvOqneZiPgaiGuLNZHWUOgi1I8GV1HbFXR_zlhOzJ_zr7VMRd6GaQ7jdeaKuUrSmQK8l1G46PmNw",
+          "autor": "Thalita Anjos",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjXOOluLrVfGbH7M6In-FQNIFUEfgDDKKBB-NRB4RkJLVtSziORG1g=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Ótima experiência e ótima profissional Estefani",
+          "data": "2026-08-08T17:48:10.755462Z",
+          "resposta": "Thalita, agradecemos pelo carinho e pelas 5 estrelas! Ficamos muito felizes em saber que você teve uma ótima experiência com a Estefani. Seu reconhecimento ao trabalho dela é muito especial para toda a nossa equipe!"
+        },
+        {
+          "id": "AbFvOqnPpEm_nZhHu8dvgg5_sCa5a3ie16sUrI9xGKZPOsfe-5icO90bqsTmRru62Nsmo7P3hESI",
+          "autor": "Joy Marques",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUUCI5mf5HLSawrYG8sDSbztR15rhpsCLxR3b9LDWxNI9bY2WI78A=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "A Histefany é maravilhosa! Muito atenciosa, mesmo após muitos atendimentos na doação de sangue corinthiano, exatamente profissional!",
+          "data": "2026-08-08T17:46:56.163932Z",
+          "resposta": "Joy, muito obrigado por compartilhar sua experiência! Ficamos muito felizes com seu reconhecimento ao atendimento da Histefany. Mesmo durante uma ação com tantos atendimentos, buscamos manter o cuidado, a atenção e o profissionalismo com cada pessoa. Foi uma satisfação participar da campanha de doação de sangue corinthiano!"
+        },
+        {
+          "id": "AbFvOqk60OhfMSGuKdHqMkgthzSEU__ztijI_rg-MWBEdN2SLF5zC9wLDxkM31iYBla8D5Cv4zyGfQ",
+          "autor": "Cleide Macêdo",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVCZsgaaeDJyCrhErDaSErLjW5cRmRNyIfbl1vvv44oINiBZM4=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Muito boa, rápida e muito relaxante!!!",
+          "data": "2026-08-08T17:30:12.810649Z",
+          "resposta": "Cleide, que bom saber que você gostou! Ficamos felizes que o atendimento tenha proporcionado uma experiência agradável e relaxante. Muito obrigado pelas 5 estrelas e pela confiança em nosso trabalho!"
+        },
+        {
+          "id": "AbFvOqn5KD05lFXZc_GGlhABgT8SmLXdjiQ7i8o6hJJPaCNjtusBmZKqs_DE4UUk5UHcSTnbYqcF",
+          "autor": "thiago vasconcelos nunes",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKzjtyxKw8rXanw8ECcKvMmi_eSNqjLz6ZfrMb95JuHIT_QHQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Muito bom e relaxante muito recomendado, fiz aqui na campanha de doação de sangue Corinthiano na neo química arena",
+          "data": "2026-08-08T17:18:23.215234Z",
+          "resposta": "Thiago, agradecemos muito pela recomendação! Foi especial poder atendê-lo durante a campanha de doação de sangue corinthiano na Neo Química Arena. Ficamos felizes em saber que a experiência foi relaxante e positiva. Obrigado pela confiança!"
+        },
+        {
+          "id": "AbFvOqkjAGu4Ldp5PXfjAi4F5sAaBiXffJiisoRz5FigCq1qrwd_rVBKnrDY3OeyH2vCj4h88ZXkqA",
+          "autor": "Nilce Beraldo",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjXUu9W4do1inMWGSq8P_N80NZ2ZN_vBf6LmE903JfrxjIIaeMo8pw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Muito bom! Farei mais vezes",
+          "data": "2026-08-08T17:11:19.514009Z",
+          "resposta": "Nilce, ficamos muito felizes em saber que você gostou e pretende repetir a experiência! Será um prazer receber você novamente. Muito obrigado pelo carinho e pelas 5 estrelas!"
+        },
+        {
+          "id": "AbFvOqm9qepQgE6holEx3EqaZuXdSS-zsgNESdVgB2JNN50bLmvD0HxJZv82lQmyBt8tM0lvZNukYA",
+          "autor": "Andreza Cardoso",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjW2ZXSxBmMF29nTyqonnf6DVnk7evyp5gvGgXf3xz0Mb7UI6uaGVQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Sensacional, pegou nos lugares certos e alívio demais.",
+          "data": "2026-08-08T17:06:55.959386Z",
+          "resposta": "Andreza, que satisfação ler sua avaliação! Saber que o atendimento alcançou exatamente os pontos que precisavam de atenção e proporcionou alívio é muito gratificante. Agradecemos pela confiança e esperamos você novamente!"
+        }
+      ],
+      "posts": [
+        {
+          "id": "1414205570293036906",
+          "texto": "Quantas sessões de quiropraxia são necessárias para sentir alívio? Essa é uma das perguntas mais comuns de quem procura atendimento pela primeira vez. A verdade é que não existe uma resposta única, porque cada corpo responde de um jeito e cada caso tem uma história diferente. Algumas pessoas percebem melhora já nas primeiras sessões, enquanto outras precisam de um acompanhamento mais contínuo, especialmente quando convivem há mais tempo com dor lombar, dor cervical, tensão muscular, limitações de movimento ou alterações posturais.\n\nNa Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo, o atendimento começa com uma avaliação individualizada. Esse primeiro passo é essencial para entender sua rotina, seus hábitos, a intensidade do desconforto e quais fatores podem estar contribuindo para o problema. É justamente essa avaliação que ajuda a definir qual cuidado faz mais sentido para cada paciente e quantas sessões podem ser indicadas ao longo do processo.\n\nPara quem procura quiropraxia no Tatuapé, São Paulo, é importante entender que o foco não está apenas em aliviar a dor, mas também em melhorar mobilidade, postura, conforto e qualidade de vida. Cada atendimento é pensado de forma personalizada, respeitando a necessidade de cada pessoa e o que o corpo apresenta.\n\nSe você quer entender melhor o seu caso e descobrir qual caminho pode trazer mais alívio para a sua rotina, agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo, e comece a cuidar da sua coluna com mais aten",
+          "data": "2026-11-19T14:03:15.245004893Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDo0LXN4cHJZUFVYZ3RLamtfc2VJUm13",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipN2w-J8HelAiJDiVT1D-O928pTZ8TZW8GKeAIpz"
+        },
+        {
+          "id": "5773987809906141501",
+          "texto": "Seu corpo dá sinais todos os dias. Às vezes, eles aparecem como uma dor nas costas depois de horas de trabalho, uma tensão no pescoço, rigidez ao acordar ou dificuldade para realizar movimentos que antes eram simples. A questão é: você está prestando atenção nesses sinais ou esperando o desconforto aumentar para buscar ajuda?\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, cada atendimento começa com uma avaliação individualizada. O objetivo é entender a sua rotina, a sua postura, seus movimentos e as necessidades específicas do seu corpo para direcionar um cuidado mais adequado e personalizado.\n\nDores lombares, desconforto cervical, tensão muscular, postura inadequada e limitações de movimento podem afetar diretamente o trabalho, o sono, a disposição e a qualidade de vida. Por isso, cuidar da coluna também é cuidar da sua liberdade para caminhar, trabalhar, treinar e aproveitar melhor o dia a dia.\n\nPara quem procura **quiropraxia no Tatuapé, São Paulo**, a Quiro Leste oferece atendimento humanizado, profissional e focado em mais mobilidade, conforto e bem-estar.\n\n**Não espere a dor virar parte da sua rotina. Agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo, e descubra como a quiropraxia pode contribuir para uma vida com mais movimento e qualidade de vida.**",
+          "data": "2026-11-18T00:09:12.230638619Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDpRMW9sNmxKNjd3REg4blVvdEE4U3Jn",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMmkr0WTxE2hlI6cHxuJWawjhPcXGhgG2NOXCoB"
+        },
+        {
+          "id": "554473440947705030",
+          "texto": "Você sabe qual hábito pode estar prejudicando a sua coluna todos os dias? Muitas vezes, o problema não começa em um grande esforço, mas em pequenas atitudes repetidas por horas: ficar muito tempo sentado, usar o celular com a cabeça inclinada, trabalhar sem apoio adequado, dirigir por longos períodos ou ignorar os sinais de tensão no corpo.\n\nCom o tempo, esses hábitos podem contribuir para dor lombar, desconforto cervical, tensão muscular, rigidez e dificuldade de movimento. E o mais comum é que muita gente só procure ajuda quando a dor já começou a interferir na rotina, no trabalho, no sono e na qualidade de vida.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, o cuidado começa com uma avaliação individualizada para entender postura, mobilidade, rotina e hábitos que podem estar relacionados ao desconforto. A proposta é olhar para o corpo de forma mais completa e orientar cada paciente de acordo com a sua necessidade.\n\nPara quem procura **quiropraxia no Tatuapé, São Paulo**, perto do **metrô Carrão**, cuidar da coluna também é investir em prevenção, movimento e bem-estar.\n\n**Assista ao vídeo até o final, descubra qual hábito pode estar prejudicando sua coluna e agende sua avaliação na Quiro Leste. Seu corpo dá sinais todos os dias; a diferença está em prestar atenção antes que a dor vire rotina.**",
+          "data": "2026-11-17T23:54:53.691184283Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDo5ZGVlWnJYSlRZZ1drNXpkVDZsZjRn",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipOPTSLvqyVI7tdG5A2FHefG4TxPEXe8y9kKafRx"
+        },
+        {
+          "id": "5426354483953620238",
+          "texto": "Será que a Quiro Leste foi aprovada? Dessa vez, recebemos a visita do Rapaligo do Arturo para viver de perto a experiência de uma sessão de quiropraxia na **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**.\n\nPara quem nunca passou por uma sessão, é comum chegar com curiosidade e várias perguntas: como funciona a avaliação? O que acontece durante os ajustes? Como o corpo pode se sentir depois? Por aqui, tudo começa com atenção individualizada. Primeiro entendemos a rotina, os movimentos e as necessidades de cada pessoa. Depois, o atendimento é direcionado de acordo com o que foi observado na avaliação.\n\nO Rapaligo passou por essa experiência: teve avaliação, conheceu os ajustes realizados pela equipe e, no final, respondeu à pergunta que todo mundo quer saber: como ele se sentiu depois da sessão e será que recomenda a Quiro Leste? A resposta você confere no vídeo.\n\nPara quem pesquisa por **quiropraxia no Tatuapé, São Paulo**, atendimento para **dor lombar, dor cervical, postura, tensão muscular, mobilidade e qualidade de vida**, conhecer como funciona uma primeira sessão pode ajudar a tomar uma decisão com mais segurança e informação.\n\nE você, já imaginou como seria seu primeiro contato com a quiropraxia?\n\n**Agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo, e venha viver essa experiência também.**",
+          "data": "2026-11-11T20:02:11.580983337Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDozM2dHTHVFbWlsOHM4M0tZTzhnWHVR",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMxT0U3p21aJ-uxvQ6u6R2qwGFStP-arMnphp28"
+        },
+        {
+          "id": "584733323141688518",
+          "texto": "Quando a dor na coluna começa a atrapalhar sua rotina, o corpo está pedindo atenção. O desconforto pode aparecer depois de horas no computador, ao dirigir, ao levantar da cama, durante exercícios ou até em movimentos simples do dia a dia. Aos poucos, a pessoa começa a evitar atividades, mudar a postura e limitar seus movimentos para tentar conviver com a dor.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, cada atendimento começa com uma avaliação individualizada. O cuidado considera postura, mobilidade, rotina, hábitos e as necessidades de cada paciente. O objetivo não é apenas olhar para onde dói, mas entender melhor os fatores que podem estar relacionados ao desconforto e buscar mais equilíbrio para o movimento.\n\nPara quem procura **quiropraxia no Tatuapé, São Paulo**, atendimento para **dor lombar, dor cervical, tensão muscular, ciática, postura e mobilidade**, a Quiro Leste oferece atendimento humanizado e profissional, com foco em bem-estar e qualidade de vida.\n\nCuidar da coluna significa preservar sua liberdade para trabalhar, caminhar, treinar, descansar e continuar fazendo aquilo que faz parte da sua vida.\n\n**Agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo, e não espere a dor se tornar parte da sua rotina. Dê atenção ao seu corpo e cuide do seu movimento com acompanhamento profissional.**",
+          "data": "2026-11-09T11:54:05.698749561Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDpWUWRpRER6UjZfMG9GdkpRcUd2cHBn",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipPGL5swvweLEz2jQDfxCzf78liFCy2dPt2hUBiF"
+        },
+        {
+          "id": "7144978812570839468",
+          "texto": "Conviver com dor na coluna não deveria ser algo normal. Muitas vezes, o desconforto começa leve, aparece depois de um dia intenso ou após horas sentado, e aos poucos passa a interferir na rotina. A pessoa começa a evitar movimentos, reduz atividades e muda a forma de trabalhar, dormir ou se exercitar para tentar fugir da dor.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, o cuidado começa entendendo o que o corpo está sinalizando. Cada paciente passa por uma avaliação individualizada, considerando postura, mobilidade, rotina, hábitos e necessidades específicas. Esse olhar mais completo ajuda a direcionar o atendimento de forma mais responsável e personalizada.\n\nPara quem procura **quiropraxia no Tatuapé, São Paulo**, atendimento para **dor na coluna, dor lombar, dor cervical, tensão muscular, postura e mobilidade**, a Quiro Leste oferece um atendimento humanizado, profissional e focado em qualidade de vida.\n\nCuidar da coluna não significa apenas pensar no desconforto. Significa preservar movimento, disposição, autonomia e confiança para continuar fazendo aquilo que faz parte da sua rotina.\n\n**Agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo, e dê o primeiro passo para cuidar melhor da sua coluna, do seu movimento e da sua qualidade de vida.**",
+          "data": "2026-11-05T02:39:58.585040640Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDpsS0NtTGt5dDViSGdnS2JlQjdEYzdB",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipP38UBHNfUBSPzVMh4FLZgQGhWk3cK7SpSfu1P0"
+        },
+        {
+          "id": "3258513699651247123",
+          "texto": "Seu corpo pede cuidado, principalmente quando a rotina começa a acumular tensão, cansaço e desconforto. Horas trabalhando, usando computador, dirigindo, em pé ou realizando movimentos repetitivos podem fazer com que o corpo termine o dia mais pesado, rígido e sem a mesma disposição. É nesse momento que a massagem pode ser uma aliada importante para quem busca relaxamento, bem-estar e mais qualidade de vida.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, cada atendimento é pensado para respeitar as necessidades de cada pessoa. A massagem ajuda a proporcionar sensação de relaxamento, reduzir tensões musculares e criar um momento de recuperação para o corpo, especialmente para quem enfrenta uma rotina intensa.\n\nPara quem procura **massagem no Tatuapé, São Paulo**, atendimento para tensão muscular, cansaço, desconforto corporal, relaxamento e bem-estar, a Quiro Leste oferece cuidado profissional em um ambiente acolhedor e preparado para receber você.\n\nCuidar do corpo não é luxo. É uma forma de preservar disposição, mobilidade e equilíbrio para viver melhor todos os dias.\n\n**Agende seu atendimento na Quiro Leste, no Tatuapé, São Paulo, e reserve um momento para cuidar de quem sustenta sua rotina todos os dias: você.**",
+          "data": "2026-11-05T02:32:23.789433636Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDpnSnczYUFBY3VvN0R3Nm9oMHhyME9n",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipP_bHjxc0CaPfMvBagApuf0T1AewgHg1kGT56Hi"
+        },
+        {
+          "id": "671377832927819552",
+          "texto": "A rotina pode deixar marcas no corpo. Horas trabalhando, dirigindo, usando computador ou celular, além do estresse do dia a dia, podem aumentar a sensação de tensão muscular, cansaço e desconforto. É nesse momento que a massagem pode se tornar uma importante aliada para quem busca mais relaxamento, bem-estar e qualidade de vida.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, o atendimento é pensado de forma individualizada, respeitando as necessidades e a rotina de cada pessoa. A massagem pode ajudar a reduzir tensões musculares, proporcionar sensação de relaxamento e contribuir para momentos de recuperação do corpo depois de uma semana intensa.\n\nMais do que reservar alguns minutos para descansar, cuidar do corpo é uma forma de preservar disposição, mobilidade e equilíbrio para continuar enfrentando a rotina com mais conforto. Para quem procura **massagem no Tatuapé, São Paulo**, atendimento para tensão muscular, relaxamento e bem-estar, a Quiro Leste oferece um ambiente acolhedor e cuidado profissional.\n\nSe o seu corpo anda acumulando tensão e você sente que precisa desacelerar, talvez seja hora de dar mais atenção a esses sinais.\n\n**Agende seu atendimento na Quiro Leste, no Tatuapé, São Paulo, e descubra como a massagem pode fazer parte de uma rotina com mais relaxamento, leveza e qualidade de vida.**",
+          "data": "2026-11-03T20:35:28.174854558Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDpiVEtjNEIwUXBFajl6Y2gyU25SbWRR",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipOH2byUvl_V9Y2JpEAE2KF0qEL-jVBZRERHuFck"
+        },
+        {
+          "id": "5863336494218440007",
+          "texto": "Estralar a coluna faz mal ou é seguro? Essa é uma dúvida muito comum para quem sente tensão, rigidez ou aquela vontade frequente de “estalar” as costas e o pescoço. Mas é importante entender uma coisa: nem todo estalo significa que algo saiu do lugar e está sendo recolocado. Muitas vezes, o som está relacionado ao movimento das articulações e não deve ser usado como sinal de que o corpo “precisa” ser manipulado.\n\nQuando a pessoa força movimentos repetitivos, tenta estalar a própria coluna ou faz isso sem entender a origem do desconforto, pode acabar irritando a região ou mascarando um problema que merece avaliação.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, os ajustes quiropráticos são realizados de forma técnica, direcionada e somente após avaliação profissional. O objetivo não é simplesmente produzir um estalo, mas entender mobilidade, postura, rotina, limitações e necessidades de cada paciente para definir o cuidado mais adequado.\n\nPara quem procura **quiropraxia no Tatuapé, São Paulo**, atendimento para **dor na coluna, dor cervical, dor lombar, postura e mobilidade**, informação também faz parte de um atendimento responsável.\n\nQuer entender melhor o que acontece durante um ajuste quiroprático? **Assista ao vídeo até o final e, se o seu corpo vem dando sinais, agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo.**",
+          "data": "2026-10-30T18:18:50.510146461Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDoxS1B5RXBKTkloNF9GVUJNMnNnWmRR",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipND-j6x0TmjUVesXTyQl2w0cPcmQRy55mbFrAWA"
+        },
+        {
+          "id": "5039906283165972212",
+          "texto": "Cuidar da coluna é cuidar da liberdade de viver sua rotina com mais conforto. Quando aparecem dor lombar, tensão no pescoço, rigidez, má postura ou dificuldade para se movimentar, atividades simples como trabalhar, dirigir, caminhar, treinar ou até descansar podem se tornar mais difíceis. O corpo dá sinais, e reconhecer esses sinais antes que o desconforto vire parte do dia a dia faz toda a diferença.\n\nNa **Quiro Leste Quiropraxia & Massagem, no Tatuapé, São Paulo**, o atendimento começa com uma avaliação individualizada. Cada paciente possui uma rotina, hábitos e necessidades diferentes, por isso o cuidado não deve ser igual para todos. O objetivo é compreender melhor os movimentos, a postura e os fatores que podem estar relacionados ao desconforto, sempre com atendimento humanizado e profissional.\n\nPara quem procura **quiropraxia no Tatuapé, São Paulo**, atendimento para **dor na coluna, dor lombar, dor cervical, postura, tensão muscular e mobilidade**, a Quiro Leste oferece um cuidado pensado para proporcionar mais bem-estar e qualidade de vida.\n\nUma coluna bem cuidada ajuda você a manter autonomia, disposição e confiança para continuar fazendo aquilo que faz parte da sua vida.\n\n**Agende sua avaliação na Quiro Leste, no Tatuapé, São Paulo, e dê o primeiro passo para cuidar da sua coluna, do seu movimento e da sua qualidade de vida.**",
+          "data": "2026-10-27T21:08:26.034763415Z",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDprckxvM0o0dk9ESnREYWdIQXV5bmd3",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMR93NwjCvPbYK_wfGi5rca2dWyoDOiPl0xHowo"
+        }
+      ]
+    },
+    {
+      "chave": "desentupidora",
+      "nome": "Desentupidora Rápida",
+      "ativo": true,
+      "media": 5,
+      "total": 12,
+      "sem_resposta": [],
+      "recentes": [
+        {
+          "id": "AbFvOqk89v0BGLJHuNsSrnOGHZGBcoi8tzIb-LlsMxV5NMfOupLLDq6bc-joTfrMGpq92MELye-uSA",
+          "autor": "Cássio Aparecido Vitório Vitório",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLLIHie0pKCpFNrAIpWq7oycgpjQ9Fxj_nZ2OBSRD72aESfvA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Só tenho que agradecer uma excelente Desitupidora eu indico pra qualquer pessoa",
+          "data": "2026-10-21T02:21:12.552465Z",
+          "resposta": "Nosso objetivo é sempre resolver o problema dos nossos clientes muito obrigado."
+        },
+        {
+          "id": "AbFvOqkBfFSkQd3zsez37HIpnGL5KmyxEMD6KPjTEnW2QqqHbyeJ-l9jQ82ZfJSkqfBj8gmZUTYInQ",
+          "autor": "Jean Santos",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVwDAL_U6A79lcjkUWJpLpqsZXcQLZjZwW5-PNVnlm2nfxtpRFKWw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Obrigado pelo serviço,  muito bom trabalho !",
+          "data": "2026-10-20T16:16:52.324419Z",
+          "resposta": "Nosso objetivo é sempre resolver o problema do nosso cliente aqui em Itanhaém e obrigado "
+        },
+        {
+          "id": "AbFvOqnRKDjvN--5GBw5KGjQ8NLecxKVlUSgw8zob2SEzcOWpBXwzGuqH1PSrMSaVZfbF7zbFDPO",
+          "autor": "Julio Neto",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLFoawYss9PqHWW3xNAYY0HIrxwW-zJd6G3fSPVtfZRZuchhA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Essa eu confio pôde acreditar deixaram a minha casa 🏠 Limpinha depois que limparam a minha Caixa de gordura em Itanhaém obrigado",
+          "data": "2026-10-18T19:54:56.202955Z",
+          "resposta": "Obrigado seu julho por confiar pela segunda vez em aqui em Itanhaém obrigado."
+        },
+        {
+          "id": "AbFvOqkJtz8g9DLjoE38JVHlL2zkVpbtLD4y3I1KUVR76BR5ipozeUhaVPA3g15_aVb9gfdiBCPp",
+          "autor": "fabio molero",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocITNBHf7FpTEAdM74oP_xixz2S1T9LoH4La6AYxNVFm0NoQeQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Obrigado pela ótima  prestação de serviços prestados",
+          "data": "2026-10-17T03:45:00.223933Z",
+          "resposta": "Muito obrigado pela confiança "
+        },
+        {
+          "id": "AbFvOqni48_eLPpdUe0YwsCSwImWcahrzVIcOFAaINdvceagzc13PQWtEFiWCNkCiWJU3uyopUpmDg",
+          "autor": "Katarina Rocha",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLwWfZu1wqYnc2XM_j8alGUeX-K4MbmdW3k4XJFBsKGKRih1A=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "empresa maravilhosa excelente trabalho super recomendo",
+          "data": "2026-10-16T16:58:18.544263Z",
+          "resposta": "Muito obrigado dona Katarina estamos sempre aqui em Itanhaém "
+        },
+        {
+          "id": "AbFvOqldUIGVb_o9ZtumAo0JBH9yuwK6OPBCdvFQYj4YhBQc48oOPb3v-8j-me-m26VJn6Ro0M0wuQ",
+          "autor": "Hudson Ferreira",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjV9qXdU6KvlWskCy-KYPbGxM4X2jAXqvrBKvRAhUR-6x8RlAqMAAA=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Super profissionais e um ótimo preço, recomendo para quem estiver precisando.",
+          "data": "2026-10-06T23:57:52.464422Z",
+          "resposta": "Obrigado Hudson! Agradaçemos a sua avaliação. A desentupidora rapida está a suas ordens."
+        },
+        {
+          "id": "AbFvOqlUXaeA8yOduqeszLOkZY4DoGnfwipUjfUBpgJ-RCX3m9-yvTuXbuLd_RdUpT4raaYJeUABKw",
+          "autor": "Luana Costa",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocK3GeTn1TSPInW1YS6yjrE1fDhLKvkrR4yO9suLTTjj3cHL5Q=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "⭐⭐⭐⭐⭐\n\nExcelente atendimento! Fui muito bem atendida pela Desentupidora Rápida, serviço rápido, eficiente e com preço justo. Resolveram o problema com muita profissionalidade e agilidade. Super recomendo! 👏😊",
+          "data": "2026-10-06T15:43:09.614511Z",
+          "resposta": "Nós agradecemos! O objetivo da Desentupidora Rápida e tem o melhor preço com o melhor serviço"
+        },
+        {
+          "id": "AbFvOqkB4zV2Mv6C2r3ktKk9whoWAKYe1LlrNWI999DirW-mJLYaAeNxi_xbZXZnCKFg1Pqx09JM",
+          "autor": "Lucia Santos",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKExi0PMIAh1eIy8M9clZPjV5ygVkGbz4enzGDwYCfgFyt8ww=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Melhor prestação de serviço,o nome ja diz tudo Desintupidora rápida ,chamei vieram rápido estou muito satisfeitaessa eu super indico",
+          "data": "2026-10-06T14:00:05.015696Z",
+          "resposta": "Olá Lucia. Obrigado pelo seu feedback. A Desentupidora Rápida se empenha em ser sempre rápida para melhor atender."
+        },
+        {
+          "id": "AbFvOqmK_gK_ZvvaPPvR9TuIrKeuPTYCGuSWr-0p6sgCDvIIdEWrh6lIlRcphGesTZjq9HaDIXevfg",
+          "autor": "Vanessa Rocha",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLz-I0BvuAoG11MLoJ8uauM3OlDdObP2QzsnVGevxrJNRejk65A=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Parabéns à equipe pelo atendimento impecável! Fui muito bem atendida do início ao fim, com rapidez, clareza e muita simpatia. Recomendo de olhos fechados!\"",
+          "data": "2026-10-06T03:28:52.530056Z",
+          "resposta": "Olá Vanessa ficamos felizes pelo seu depoimento, a desentupidora rápida fica feliz pelo seu feedback."
+        },
+        {
+          "id": "AbFvOqkVAvCFbm65hmSd59t8XqIEdIIEp-dl8toqrXssHm5hxv4doyyT2rH-rBPmTvuy_QoZxQs-mw",
+          "autor": "Marcelo Calixto",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWKEs-J9Ax_1yoIvlpQ_ZXMGxeurBU83q_uWhQWrf2MIZ2gQWlwZA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Excelente serviço!\nSuper indico!",
+          "data": "2026-10-05T22:14:46.804466Z",
+          "resposta": "Obrigado Marcelo. Nosso objetivo é realmente agradar. Desentupidora rápida está a seu dispor."
+        },
+        {
+          "id": "AbFvOqmtfye_VH6YIjrSFwT5Vh75-cFaZc9FnTVbYKVxlvKWcHOQXWmpj6X8SkU4HqJzU8PEXs_eqA",
+          "autor": "Cassio Santos",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIi-rwLunmGwOxPt7-x_KNPzo9pTBov62EMg92dZVLKooJTwg=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Trabalho muito bom os funcionários são profissionais trabalho excelente.",
+          "data": "2026-10-05T17:20:58.865427Z",
+          "resposta": "Obrigado Cássio. A desentupidora rápida agradece seu depoimento. "
+        },
+        {
+          "id": "AbFvOqmwzGKlfOOQriC3ohBIKTfVl0mYW7d_TeEM01-uvReRh9O76xxkzttW1zqUyWKkvY2AWODP",
+          "autor": "Uirisvan1 Mota",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLssu77w0MaKk_uYrhbe6SoX-3vA6VqeUG4w14werQqECPS6Q=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Atendimento com educação qualidade garantia, indico sim !!!",
+          "data": "2026-10-05T17:00:09.245297Z",
+          "resposta": "Obrigado! Nosso objetivo aqui na desentupidora rápida é realmente fazer serviço e com excelência."
+        }
+      ],
+      "posts": []
+    },
+    {
+      "chave": "agk",
+      "nome": "AGK Vendas",
+      "ativo": false,
+      "media": 5,
+      "total": 6,
+      "sem_resposta": [],
+      "recentes": [
+        {
+          "id": "AbFvOqnMKgtizyx3VEyFFJ7QLBxn5vQbBtWthLlP3jSKrkq-NCIUN-wkc38SNfIEN6U0qWNBEAiL",
+          "autor": "Pedro Henrique",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWgr_BtdRHYO-5LSDxjfaaKTx0yG1knwmTmiordB6WrbHPLmlA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "O que mais gostei foi a organização e o comprometimento. Dá para perceber que existe uma estratégia por trás de cada postagem e campanha. Recomendo demais!",
+          "data": "2026-07-10T14:28:51.165064Z",
+          "resposta": "Que bom saber disso, Pedro! Cuidamos de cada detalhe do nosso espaço, que bom que você percebeu! Conte sempre com a AGK Vendas em São Paulo – São Paulo. Até breve! Equipe AGK Vendas"
+        },
+        {
+          "id": "AbFvOqlu7mFWDCVOdCLm8uQJXQS9UtKxTlUv5gpRoKRyPadJhb_XVU2Mm3dOG_lWgW9BqEpZIBCnEQ",
+          "autor": "marcia Santos",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjV7PgzpeoT_X7CZGwEEFGPmGCRZgM9hDws24n4prjuelS0k4uQn=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Serviço de qualidade",
+          "data": "2025-04-16T19:42:05.497174Z",
+          "resposta": "Márcia, muito obrigado pela confiança no meu trabalho como gestor de trafego. É um prazer ter você como cliente e ver os resultados que o trafego pago estratégico vem gerando para o seu negócio. Aqui na agência de marketing, seguimos focados em performance e crescimento. Conte sempre comigo!\n"
+        },
+        {
+          "id": "AbFvOqlO-uDO6CpB_MMBPLupIr8uQTgaEKMWaawY_Et05a1LbmdWTxoqEMji-TkknAFqrDyCw0DqNw",
+          "autor": "Thiago Laurentino",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocKVch-muIJUrkhUBFa3m7H9RQh3h5vYeg0ycdy1RJHZLz96gg=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "O melhor e entregar o que promete!",
+          "data": "2024-12-02T18:56:24.748704Z",
+          "resposta": "Obrigado. E o objetivo e permanecer assim para melhor. "
+        },
+        {
+          "id": "AbFvOqnRToq9CE4T-pD_bbMLZJQS3BAHPkBqCiewrIdomNoHhzI4qcoshRHc1xqzNSwkyyTbnEPn",
+          "autor": "Quiro Leste",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjW-CJIzS6EEnwOCnSJkilRHnH-JMLsSc2EvLRYQ-L7L9WJJlNUl=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Fico tranquila com a gestão do Adriano. Estamos com a parceria há mais de dois anos e ele presta um trabalho excelente.",
+          "data": "2024-12-02T18:39:43.120566Z",
+          "resposta": "Obrigado. Que bom ler comentarios assim. Vejo que ajudar negócios tem valido muito a pena."
+        },
+        {
+          "id": "AbFvOqmOefAtEy05bd_hY4boYRBGHDpHrg3N0Qodl2b36HEiav4WLRVOUd78dTyNU3L61CitJBS_",
+          "autor": "Junior Fideles",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVCkX6uers7E4Hb5XWtLdpNJzzXBdoxHmPXkG44SjI7T_yPVQLZ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Ótimo profissional dedicado e responsável\nAcompanha bem o desenvolvimento da empresa e\nProcura trazer as melhores experiências.",
+          "data": "2024-12-02T18:24:40.082795Z",
+          "resposta": "Obrigado Júnior. Vamos escalar ainda mais. Meu sucesso e gerar seu sucesso."
+        },
+        {
+          "id": "AbFvOqkMqmyN0Opm2btiUEp6_cQiU9roeSQWcADvdbRHgol7a8DZ6ao6teyIjAFhMFOQ1uuRMSaVjg",
+          "autor": "fernanda callais",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjV4B1_MKzrhC35xSS8yqJGE9k7TJLJpUR4hgPWfFYV2wkN28uFAPA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "O Adriano é um ótimo profissional, está me ajudando muito com as minhas demandas, obrigada ☺️",
+          "data": "2024-08-29T23:03:45.491081Z",
+          "resposta": "Muito obrigado pelo seu feedback, Fernanda! Fico muito feliz em saber que você está satisfeita com meu trabalho. Estou aqui para ajudar sempre que precisar."
+        }
+      ],
+      "posts": [
+        {
+          "id": "4471131533501849699",
+          "texto": "A MK Agência Marketing Digital atua com foco em estratégias que geram resultados reais para empresas que desejam crescer na internet. Com sede em São Paulo, oferecemos serviços completos de gestão de tráfego pago, anúncios online, redes sociais, Google Meu Negócio e presença digital estratégica. Utilizamos ferramentas avançadas, inteligência artificial e automação para impulsionar vendas e visibilidade, com campanhas segmentadas e personalizadas para cada tipo de negócio. Trabalhamos com criação de conteúdo, funis de vendas, monitoramento de métricas e otimização contínua. A MK Agência é ideal para quem busca resultados mensuráveis, posicionamento forte no Google e crescimento no Instagram, YouTube, WhatsApp e outras plataformas. Nossa missão é entregar uma estrutura digital completa, do planejamento à execução, sempre com transparência, inovação e foco em conversão.\n\nEntre em contato com nossa equipe e transforme seu negócio com marketing digital de verda",
+          "data": "2025-07-02T00:19:07.530926Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEJClsLiMzbzdRg",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipN0jCmqoDzzO7lmu9fdmZ8F1M30IxnIU-4bIyO6"
+        },
+        {
+          "id": "587900285297174511",
+          "texto": "Se sua empresa ainda não aparece no Google ou vive escondida nas últimas posições, é hora de mudar isso com estratégias profissionais. A MK Agência Marketing Digital, localizada na Av. Paulista, em São Paulo, é especialista em posicionar negócios no topo do Google, atrair mais clientes e transformar visibilidade em vendas reais. Trabalhamos com SEO local, gerenciamento de ficha do Google, campanhas segmentadas, tráfego pago para redes sociais e posicionamento orgânico. Nossa missão é ajudar empresas a deixarem de ser invisíveis no digital e ocuparem o lugar que merecem. Com um atendimento consultivo, desenvolvemos estratégias sob medida para cada negócio, com foco em resultados. Atendemos com agilidade, transparência e entregamos relatórios de performance com métricas reais. Está na hora de crescer no digital com quem entende do assunto. Clique no botão abaixo, fale com a nossa equipe e descubra como sua empresa pode chegar ao topo no Google.\n\n",
+          "data": "2025-06-26T16:01:58.093600Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEIGM2e_Q1trUhwE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipORGPR_uatZzx-k6qwTj_XsYWKmKpFz5pFnIDCj"
+        },
+        {
+          "id": "6114462419011235283",
+          "texto": "Você quer atrair mais clientes e aumentar sua presença nas redes sociais? Como especialista em gestão de tráfego pago, ajudo empresas e profissionais a serem encontrados com mais facilidade no Instagram, Facebook, Google e outras plataformas. Com estratégias inteligentes e segmentadas, você alcança o público certo, gera mais engajamento e aumenta suas conversões.\n\nA MK Agência oferece soluções personalizadas para quem quer crescer de forma profissional no ambiente digital. Atuamos com foco em performance, otimizando campanhas e analisando resultados para garantir o melhor retorno sobre investimento. Se você já investe em anúncios e não vê resultado, ou nunca anunciou e quer começar do jeito certo, esse é o momento ideal.\n\nEstamos localizados na Av. Paulista, em São Paulo, mas atendemos online em todo o Brasil. Chega de ficar invisível para o seu público. Potencialize agora a sua marca!\n\nAgende sua consultoria gratuita e dê o primeiro passo rumo ao crescimento digital com estratégia.\n\nMK Agência – Seja encontrado com mais facilidade.",
+          "data": "2025-06-24T12:10:04.689952Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEJasobHi8rD9yAE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipPp1R3W8RBx6NdHcjubZuye-TXxAvbok8diphSf"
+        },
+        {
+          "id": "4687020361690753541",
+          "texto": "Você já pensou em mostrar sua empresa na principal avenida de negócios do Brasil? A MK Agência é especializada em marketing digital com foco em resultados. Atuamos com gestão de redes sociais, tráfego pago, Google Ads, branding, design estratégico e posicionamento no Google Meu Negócio. Nosso escritório está localizado na Av. Paulista, um dos pontos mais estratégicos de São Paulo. Atendemos empresas de todos os segmentos que desejam crescer na internet, atrair mais clientes e aumentar sua autoridade digital. Transformamos presença online em oportunidades reais de vendas.",
+          "data": "2025-06-20T23:15:04.626835Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEM-z5dm4majN_wE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipNl08pWjcgLxWPivZEqUCrOQ5NIyeCdH8yHDpbB"
+        },
+        {
+          "id": "9193410160147639577",
+          "texto": "Muitos empresários acreditam que só é possível crescer online com altos investimentos, mas isso não é verdade. Na Agência de marketing na Paulista Bela Vista, São Paulo, mostramos diariamente que resultados sólidos vêm de estratégia, consistência e posicionamento bem feito.\n\nCom ações otimizadas no Google Meu Negócio, SEO local e marketing de conteúdo, ajudamos empresas a alcançarem mais visibilidade e atraírem clientes sem depender exclusivamente de mídia paga.\n\nSe você quer fortalecer sua presença no Google e conquistar novos clientes todos os dias, fale com especialistas. Conte com a Agência MK para desenvolver uma presença digital que realmente gera resultados.",
+          "data": "2025-06-18T10:43:45.932452Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEJuvstOT_5ek7AE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMrxmdQ4Q8Wpw9G8s5iZAhPRK2rllW7XRzikjkP"
+        },
+        {
+          "id": "5633607985438490115",
+          "texto": "Se a sua empresa ainda não investe em marketing digital, talvez esteja na hora de repensar sua estratégia. O cenário atual exige presença online e, principalmente, visibilidade. E uma das formas mais eficazes de crescer é contratar um gestor de tráfego com foco em resultado.\n\nMuitos empresários percebem que precisam vender mais, mas não sabem por onde começar. A resposta pode estar justamente nessa pergunta: “Preciso de um gestor de tráfego?” Se você deseja alcançar mais clientes, investir de forma inteligente e aumentar suas vendas, então sim — você precisa contratar um gestor de tráfego.\n\nEsse profissional entende como posicionar sua empresa nos anúncios do Google, Facebook, Instagram e outras plataformas, usando estratégias que realmente funcionam. Ao contratar um gestor de tráfego em São Paulo, por exemplo, sua empresa ganha um parceiro que conhece o mercado e aplica técnicas avançadas de segmentação e otimização.\n\nNão se trata apenas de aparecer, mas de aparecer para as pessoas certas, no momento certo, com a mensagem certa. E para isso, contratar um gestor de tráfego qualificado é o passo mais estratégico que sua empresa pode dar agora.\n\nMeu trabalho é focado em levar resultados reais para empresas que desejam crescer com consistência. Se você quer entender como isso pode funcionar para o seu negócio, acesse o meu site. Lá você vai encontrar mais informações sobre resultados alcançados, pode entrar em contato pelo WhatsApp ou agendar diretamente uma conversa.",
+          "data": "2025-04-08T03:24:00.101637Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEICAgMDInNW6KQ",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipP3PVu9almlIZ_-UnNZXxEI17kCwFz_U83R_55H"
+        },
+        {
+          "id": "2778366832287927889",
+          "texto": "Metodologia de Sucesso da Anúncios MK 🚀\n\n🔍 1. Descoberta: Identifique as necessidades do seu público e mostre que você tem a solução. Desenvolvemos anúncios que refletem exatamente o que seus clientes estão procurando.\n\n🤝 2. Conexão: Estabeleça um vínculo sólido com seu público. Nossos anúncios são projetados para criar uma conexão real e engajar seu target desde o primeiro contato.\n\n💬 3. Comunicação: Se necessário, colaboramos para aprimorar a estratégia da sua equipe comercial. Se sua equipe já for eficaz, trabalhamos juntos para otimizar ainda mais a comunicação e atendimento ao cliente.\n\n💼 4. Conversão: Após entender todas as etapas, seu cliente realiza a compra do serviço ou produto, aproveitando a estratégia bem ajustada.\n\n🎯 5. Fidelização: Após a compra, implementamos estratégias para manter seus clientes satisfeitos e leais, utilizando feedback para aprimorar constantemente.\n\n🌟 6. Recomendação: Clientes satisfeitos promovem sua marca. Potencializamos essa recomendação para expandir seu alcance e crescer de forma orgânica.\n\n📈 7. Escala: Com uma base sólida, ajudamos a escalar suas operações, alcançar novos mercados e aumentar sua capacidade de atendimento de forma eficiente.\n\nPronto para transformar e escalar seu negócio? Na Anúncios MK, criamos estratégias personalizadas desde o início, garantindo o sucesso do seu negócio, seja ele pequeno ou grande. Reserve uma reunião no botão abaixo!!!",
+          "data": "2024-09-04T14:38:24.052478Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEICAgICHlrC20QE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMWw5lt-ckVmaaFfTNa4A0zeEOuLgVDuHCMdf_x"
+        },
+        {
+          "id": "8681057309794412260",
+          "texto": "**Revolucione Sua Empresa com Inteligência Artificial: Automatize Conversas e Processos**\n\nA transformação digital já molda o futuro dos negócios, e a Inteligência Artificial (IA) é um dos principais recursos para potencializar essa mudança. A IA automatiza processos e interações com clientes, liberando tempo e recursos para focar no crescimento e inovação.\n\n**Como a IA Pode Automatizar Conversas e Processos:**\n\n1. **Chatbots e Assistentes Virtuais:** Chatbots automatizam atendimento ao cliente, respondendo perguntas, fornecendo suporte em tempo real e auxiliando nas vendas. Isso melhora a experiência do cliente e reduz a necessidade de grandes equipes de suporte.\n\n2. **Automação de Marketing:** A IA otimiza campanhas de marketing, enviando e-mails personalizados e segmentando anúncios para públicos específicos, aumentando as conversões e economizando tempo.\n\n3. **Gerenciamento de Processos:** A IA automatiza tarefas internas, priorizando atividades e realizando tarefas repetitivas, aumentando a eficiência e permitindo que equipes se concentrem em atividades estratégicas.\n\n**Vantagens da IA:**\n- Redução de custos com automação de processos.\n- Aumento da produtividade ao liberar a equipe para tarefas estratégicas.\n- Melhoria na experiência do cliente com atendimento 24/7.\n- Decisões baseadas em dados, com insights em tempo real.\n\n**Conclusão:** A IA já transforma as empresas, otimizando processos e interações. Adotar e",
+          "data": "2024-09-01T15:49:56.731450Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEICAgICH1OqBIw",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipPTMwWsFjMxYCf596m_DWDxqOlsJIbN14iXMB0W"
+        },
+        {
+          "id": "4606822823909674911",
+          "texto": "🚦📊 Entenda como um Gestor de Tráfego pode ser o aliado estratégico para alavancar sua empresa!\n\nVocê sabia que um Gestor de Tráfego especializado tem o poder de transformar a visibilidade e as vendas da sua marca? Ao analisar minuciosamente os dados e comportamentos do público-alvo, este profissional elabora estratégias precisas para atrair mais clientes, aumentando assim as oportunidades de negócio.\n\nCom habilidades em campanhas pagas e orgânicas, o Gestor de Tráfego otimiza investimentos em anúncios nas plataformas digitais mais relevantes. Ele monitora constantemente as métricas para ajustar as ações em tempo real, garantindo melhores resultados com eficiência no custo-benefício.\n\nSeu negócio merece estar na frente! 🎯 Invista na expertise de um Gestor de Tráfego e veja sua empresa crescer em visibilidade e lucratividade. #GestordeTráfego #EstratégiaDigital #NegóciosOnline\n\n✅ Quer saber mais? Entre em contato conosco e descubra como podemos ajudar a impulsionar sua empresa através de uma gestão de tráfego eficaz.",
+          "data": "2024-04-18T14:42:29.894520Z",
+          "link": "https://local.google.com/place?id=17770409940020379722&use=posts&lpsid=CIHM0ogKEICAgICjrODURA",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipORlo3U_oK4KAmc6QY93DUVyY_2zxM879gAGEZ0"
+        }
+      ]
+    },
+    {
+      "chave": "sassup",
+      "nome": "Sassup Shop",
+      "ativo": false,
+      "media": 5,
+      "total": 10,
+      "sem_resposta": [
+        {
+          "id": "AbFvOqmhuxxWYJlgdOGQN_8x9v-VI-mTa167bKTdXSsBM_qwQ7z8uIGWiImd6arKZKy8oWI-6uGnBw",
+          "autor": "Larissa Freitas",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWyMsh1kmo3rexw20yKEa2wj-vMp9lgXNbLnpMnWVn63qKbieCpYw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "I absolutely love this jewelry store! I’ve been shopping here for a while and every single piece I’ve purchased has been beautiful and high quality. Auri is always friendly and helpful, making the shopping experience even better. I can always trust her to have unique, elegant pieces that I adore. Highly recommend to anyone looking for stunning jewelry!",
+          "data": "2025-12-11T02:13:30.962500Z",
+          "resposta": null
+        }
+      ],
+      "recentes": [
+        {
+          "id": "AbFvOqmtHln1354qqji1TB2GZ7JBpHvlYHzjokHzuJDyNGGvlN3p9hOJ-8qTsPexVKezbe_0o75ZMA",
+          "autor": "Gabriela Barbato",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjW6BxKMc6fh50OaynxpZBeNwPw7kW-pDWYKKxD2HushAFFenUmUsw=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "I highly recommend Sassup pieces. Excellent quality.",
+          "data": "2025-09-04T22:22:21.614150Z",
+          "resposta": "Gabriela, thank you so much for recommending us! We’re thrilled to know you appreciate the excellent quality of our pieces. Your support means the world, and we’ll be happy to welcome you back anytime at Sassup Shop!"
+        },
+        {
+          "id": "AbFvOqmhuxxWYJlgdOGQN_8x9v-VI-mTa167bKTdXSsBM_qwQ7z8uIGWiImd6arKZKy8oWI-6uGnBw",
+          "autor": "Larissa Freitas",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWyMsh1kmo3rexw20yKEa2wj-vMp9lgXNbLnpMnWVn63qKbieCpYw=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "I absolutely love this jewelry store! I’ve been shopping here for a while and every single piece I’ve purchased has been beautiful and high quality. Auri is always friendly and helpful, making the shopping experience even better. I can always trust her to have unique, elegant pieces that I adore. Highly recommend to anyone looking for stunning jewelry!",
+          "data": "2025-12-11T02:13:30.962500Z",
+          "resposta": null
+        },
+        {
+          "id": "AbFvOqm8hDUqnKNLRxxxVJtCE6iVt5wP9i9bpdAg-bTXId7PZCaebEl0U35FazyyheFF0epc_Ezo_A",
+          "autor": "Alexandre Moraes",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUVlui4YyaJ7FjdGEGZM2FCh0yGaGBFsg0kCoXytEoYU42tWw4a=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "I love Sassup Shop! Auri’s necklaces are so\nbeautiful, unique, and such good quality! The jewelry have good prices! Auri is amazing. She is so welcoming, helpful, and so thoughtful!\n\n- Maria Morais",
+          "data": "2025-09-05T21:58:25.580539Z",
+          "resposta": "Thank you so much for your lovely review! We’re delighted that you love our necklaces and appreciate their quality and uniqueness. At Sassup Shop, we do everything with care to make your experience special. Your support means the world to us!"
+        },
+        {
+          "id": "AbFvOqlGVuaYsAS4MZ9OEiLAXZ7UEq_V4WccENUnuBnS1HB0rdljq92lJAWC-me6sqkTThRzJYUaBg",
+          "autor": "Andreia Oliveira",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjXZcqZemOjpmEUL1CBNoZDwR3pzX81ILQBfmMUjNQvXiArvDveF=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Gorgeous incredibly fabulous everything very beautiful starting with the super lovely hostess and the cozy atmosphere and every wonderful gem I really love it 🥰⭐️⭐️⭐️⭐️⭐️",
+          "data": "2025-09-05T15:08:59.822161Z",
+          "resposta": "Andreia, thank you so much for your amazing words! 🥰 We’re thrilled that you loved the atmosphere, the jewelry, and the service. Creating a welcoming space with beautiful pieces is what we love most at Sassup Shop. We can’t wait to welcome you back soon!\""
+        },
+        {
+          "id": "AbFvOqniIdgUei2PnaBfZNHcWE1SNRcaqVDU_KIvSxMq0uoE5nwRfw8Xw95jwX9pe5r0dL3Qf9bBLw",
+          "autor": "Vanessa USA",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocI_Lt8rA-f9rpza4eVBHBgl2xTvoQtmYVJQOk4Ko1lEt9ZEIg=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "I personally think it's the best semi-jewelry brand. One piece more beautiful than the other and with a special price, wonderful service and a great gift idea too. I highly recommend it.",
+          "data": "2023-11-21T04:10:00.532873Z",
+          "resposta": "Love this. Thank you for shopping with us Vanessa. I hope to see you again soon. Also thank you for leaving us a review. Appreciate it. "
+        },
+        {
+          "id": "AbFvOqk42zwyv7Iei4X0nDuuS3kDN6onSAF7WHf2iMelK1zhJyB745hGRaNXbh5sBNsqQLXdGLXp7Q",
+          "autor": "Geanine Lorenceti",
+          "foto": "https://lh3.googleusercontent.com/a/ACg8ocLv_Q_XA2TdJMU1RqQGeztzRgG3hqdFdnQET6iYqXejzhoYSA=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "My experience with the store was excellent. The service is wonderful, the products are high quality, always with the perfect color and shine! And the prices are great.",
+          "data": "2025-09-05T00:48:56.718808Z",
+          "resposta": "Geanine, thank you so much for your wonderful review! We’re so happy to know you had an excellent experience and that you value the quality, shine, and fair prices of our pieces. Your words motivate us to keep offering the best. We look forward to seeing you again soon at Sassup Shop!"
+        },
+        {
+          "id": "AbFvOqnWmOzszb-HtScQQD6UMCyKioZesEWVfqX4xBG566MdLOqv3gBLvQru_zfwylNxFcUhSVSqxA",
+          "autor": "Valdirene Braz",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVS9cZTHsAV4orz0AkbK-mnbG1uTsGd89SHQmvEXbrMvcWvMdVp3Q=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Absolutely amazing, super good, always look good with any piece of clothing and style, and good quality and good service.",
+          "data": "2025-09-05T00:16:37.324083Z",
+          "resposta": "Valdirene, thank you so much for your kind words! We’re delighted to know that our pieces make you feel amazing and go well with any style. It’s wonderful to hear you also appreciate the quality and service. We can’t wait to welcome you back at Sassup Shop!"
+        },
+        {
+          "id": "AbFvOqnyVv0KqkaTl21dKEQsGsesq-ShcbrTkYDCRdMycIxeEiV2Re0MsDNUj8CMnn9dwSlKc2xDdQ",
+          "autor": "Isabel strobel",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjXwFx7LnHoKbvIEpawLluxgzNx9AHclrugwK9RI3wBxEh3m8ps=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "Sassup have the most beautiful jewelry. The quality are perfect.",
+          "data": "2025-09-04T22:39:38.422221Z",
+          "resposta": "Isabel, thank you so much for your lovely words! We’re so happy you enjoy the beauty and quality of our jewelry. Your support means a lot to us, and we look forward to seeing you again at Sassup Shop!"
+        },
+        {
+          "id": "AbFvOqn30g84NbDkKdZXRfdmfd6eckKSp1R5puyFw5a59o5MGT_stzRqiWre0-f8OgiwKhXjIUjRfg",
+          "autor": "Marcia Ma",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjV4SvKmYbs1G6jn3NArZVvJD81S1cfVDeVlmhoQtiv_JGvGiKiESQ=s120-c-rp-mo-br100",
+          "nota": 5,
+          "texto": "O atendimento da Auri é personalizado e maravilhoso, as peças de muita beleza e qualidade, coisas lindas fica difícil escolher😍😍😍",
+          "data": "2025-09-04T22:29:02.800656Z",
+          "resposta": "Márcia, muito obrigada pelo carinho! 🥰 Fico feliz em saber que você gostou do atendimento e das peças. Realmente, nossa coleção é feita com muito cuidado para trazer beleza e qualidade em cada detalhe. Vai ser sempre um prazer recebê-la aqui na Sassup Shop!"
+        },
+        {
+          "id": "AbFvOqmV-CROicfPNwVBEk02CX8TpHWMHIWp3l0Tknl1QD1kOKc2pqjkysq0R0XCrnF_LB7RfEm0IQ",
+          "autor": "Andrea A Jackson",
+          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWKax9-6JmvR70chUMxx1-JUNkrIbq4ElNvN504o280roXuhm9BaA=s120-c-rp-mo-ba12-br100",
+          "nota": 5,
+          "texto": "Thanks Sassup, for bringing me amazing jewelry pieces from Brazil. I love my new pair of earrings. I appreciated the assistance Auri provided, and I'll be wearing my new piece of jewelry during the holiday season. I will definitely be getting more pieces based on my fantastic first experience with Sassup, for myself, as well as for gifts for my friends and family.",
+          "data": "2023-12-14T22:51:29.663078Z",
+          "resposta": "Andrea, thank you so much for sharing your experience! We’re delighted that you loved your earrings and that Auri’s assistance made your visit special. It’s wonderful to know Sassup jewelry will be part of your holiday season. We’ll be thrilled to help you find more beautiful pieces for yourself and your loved ones!"
+        }
+      ],
+      "posts": [
+        {
+          "id": "223619375639313331",
+          "texto": "In the heart of Homewood, Alabama, Sassup Shop shines as a premier destination for luxurious semi-jewelry and elegant accessories. The boutique showcases an exceptional collection of earrings, necklaces, bracelets, and rings, each crafted with superior quality and unique design. Sassup earrings are especially admired for their perfect balance of brilliance and comfort — ideal for daily wear or special occasions.\nEvery Sassup piece tells a story of elegance and durability, made to highlight individuality and sophistication. From minimalist styles to bold statement designs, the store offers something for every personality and taste. With excellent customer reviews and a warm, personalized service, Sassup Shop ensures a shopping experience as delightful as its jewelry.\n Discover Sassup Shop in Homewood and explore semi-jewelry that combines luxury, quality, and irresistible charm. Choose your favorite earrings and shine with confidence wherever you go!",
+          "data": "2025-10-16T13:32:54.289253Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEIOU9qfuroXkOA",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipPd0Oy0pBFV73v1LecXn1xerMOH40diSYhKqoFy"
+        },
+        {
+          "id": "1308565479846711165",
+          "texto": "Located in Homewood, Alabama, Sassup Shop stands out as a modern and elegant jewelry store specializing in premium semi-jewelry. With a diverse collection, the shop offers a wide range of pieces that blend sophistication, brilliance, and durability. You’ll find delicate necklaces, classic earrings, luxurious rings, and charming bracelets, each designed to enhance your style and elevate any look.\nEvery detail of Sassup’s semi-jewelry reflects a commitment to quality, design, and longevity, delivering the perfect touch of elegance that every woman deserves. These timeless accessories are ideal for daily wear or as thoughtful gifts filled with beauty and meaning.\nAt Sassup Shop, you’ll enjoy a personalized shopping experience with friendly service and an atmosphere of sophistication. With excellent reviews and loyal customers, Sassup has become a trusted name in semi-jewelry in Homewood.\n Visit Sassup Shop today and experience the brilliance of semi-jewelry that combines beauty, quality, and style. Add the perfect finishing touch to your look with Sassup elegance!",
+          "data": "2025-10-16T13:24:42.210631Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEKvLgoO9gcr8qgE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMCuF0VmmTnRBk9GiVAwaAGZNGjC0Hvw4gNDjCa"
+        },
+        {
+          "id": "5705145168508055671",
+          "texto": "Layering That Elevates Every Look – Sassup Shop\n\nAt Sassup Shop, we believe that jewelry is the ultimate way to express your personality. Our collection is designed for effortless layering, combining sleek chains, bold pendants, and statement pieces that elevate any outfit. Each item is carefully crafted to let you mix, match, and create looks that reflect your unique style with Brazilian sophistication.\n\nWhether you’re dressing for a casual day out or a special evening event, our pieces make layering simple and stylish. From minimalist chains that add subtle elegance to bold pendants that make a statement, Sassup Shop’s curated selection ensures every layer adds personality and charm to your ensemble.\n\nQuality and durability are at the heart of our collection, allowing you to build layers of jewelry that keep up with your lifestyle without compromising style. Discover how the right combination of pieces can transform your outfit, turning everyday moments into unforgettable statements.\n\nDon’t wait to elevate your style! Explore our exclusive collection at Sassup Shop, pick your favorite pieces, and start layering like a pro. Shop now and embrace the effortless elegance of Brazilian-inspired jewelry!",
+          "data": "2025-10-14T04:13:23.164722Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEIGa2Zr3ucSGMQ",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipMvR5o2UCAl-KUysZNPcyCi1nR4kT8ONXcBuoZD"
+        },
+        {
+          "id": "4044187425638273374",
+          "texto": "There’s something truly magical about opening a Sassup Shop bag — the soft glow, the irresistible scent, and that delightful little Brazilian chocolate treat waiting just for you. ✨ Every detail is thoughtfully crafted to create more than just a purchase — it’s an experience designed to make you feel seen, loved, and effortlessly radiant.\n\nAt Sassup Shop, beauty isn’t only about how you look, but how you feel. From skincare favorites to glow-boosting essentials, every product is carefully selected to inspire confidence, self-love, and joy. Our signature packaging, unique aromas, and premium formulas celebrate your individuality — because you deserve a touch of luxury in your everyday moments.\n\nWhether you’re treating yourself or surprising someone special, Sassup Shop transforms every order into a meaningful ritual of self-care. Discover why so many are falling in love with the Sassup experience — a perfect mix of Brazilian warmth and modern elegance.\n\n💌 Have you had your Sassup moment yet? Visit our website, explore our exclusive collections, and let your beauty shine from the inside out.\n\n👉 Shop now at sassupshop.com\n and feel the difference that’s made with love, detail, and a little sweetness from Brazil. 🇧🇷",
+          "data": "2025-10-10T02:20:22.520547Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEO7h9vndkrDyNg",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipPtyvUWuB2Ctp2P9fnG3BQLw4wL5Iq0iSWDXmF5"
+        },
+        {
+          "id": "7891664787526715154",
+          "texto": "At Sassup Shop, jewelry is more than an accessory — it’s a statement of elegance, individuality, and Brazilian creativity. Our curated selection of necklaces, earrings, bracelets, and rings brings together vibrant colors, exclusive textures, and 18k gold-plated finishes, designed to highlight your natural beauty with sophistication. Each semi-jewel is carefully chosen to reflect the essence of modern women who value authenticity and versatility in their style.\n\nFrom minimalistic chains that complement your everyday outfits to bold earrings that transform your evening looks, our collection allows you to mix and match pieces effortlessly, creating endless combinations that express your personality. With high-quality plating and detailed craftsmanship, Sassup Shop semi-jewelry provides durability without compromising on elegance, making each item a timeless addition to your collection.\n\nBy choosing Sassup, you embrace Brazilian design, authenticity, and uniqueness, bringing jewelry that tells a story and adds charm to every moment of your life. Whether you’re gifting someone special or indulging yourself with a new favorite accessory, we’re here to make every choice meaningful. ✨\n\n💎 Explore our collection today and find the piece that speaks to you. Don’t wait — visit our website through the link and bring home your next statement jewel with Sassup Shop!",
+          "data": "2025-10-01T22:52:58.135979Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEMSGksmWjoSC-AE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipN7MSlrfb1R5eLZj7RmvKkEe0Qg1Q6HsG7VbE1M"
+        },
+        {
+          "id": "4930178326748706405",
+          "texto": "At Sassup Shop, jewelry is more than an accessory — it’s a celebration of identity, culture, and self-expression. Born from the desire to connect women in the U.S. with the strength, elegance, and authenticity of Brazilian roots, every piece in our collection tells a story. From handcrafted earrings and necklaces to unique bracelets, our jewelry is carefully curated with attention to detail, so you feel as if it was selected just for you.\n\nWe believe women deserve more than trends. You deserve jewelry that highlights your confidence, beauty, and uniqueness, making you shine even on the most ordinary days. Each design is infused with purpose and authenticity, a reflection of Brazil’s artistry and a reminder of the power you carry within.\n\nWhen you wear Sassup jewelry, you don’t just accessorize — you embody empowerment, elegance, and individuality. Our mission is to inspire women everywhere to feel radiant, valued, and connected to something deeper.\n\nDiscover jewelry with meaning. Embrace accessories that are as unique as you are.\n✨ Shop now and find your piece at 👉 www.sassup.shop",
+          "data": "2025-09-25T03:40:58.355469Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEM78luCS4PvDnAE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipNxWhn14-Xpu4SgmC0DCVceTQLVZaNj_W9Kx-em"
+        },
+        {
+          "id": "3015788878332618934",
+          "texto": "At Sassup Shop, jewelry is more than just an accessory – it’s a way to express your personality and elevate your style. Our exclusive collection of gold-plated rings is crafted with care and precision, ensuring every piece stands out for its beauty, quality, and timeless elegance. From delicate rings that add subtle charm to bold designs that make a statement, Sassup Shop offers options for every taste and occasion. Each ring is made with high-quality plating and a flawless finish, guaranteeing both durability and shine that lasts. Perfect for everyday wear, gifts, or adding a touch of luxury to your special moments, our rings are designed to inspire confidence and sophistication. Choosing Sassup Shop means investing in jewelry that reflects who you are while enhancing your natural beauty. ✨ Whether you’re building your collection or looking for that one special piece, we have the perfect design waiting for you. Don’t wait to transform your style with jewelry that speaks louder than words. 👉 Explore our collection at Sassup Shop today and let your hands tell your story with elegance and grace!",
+          "data": "2025-09-18T03:24:58.048876Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEPP3uZKP09uoxwE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipNEXardaLjptwd5sODAZtdYkRA8Qg_aWdz173uF"
+        },
+        {
+          "id": "8069470555144425460",
+          "texto": "At Sassup Shop, we believe your jewelry deserves the same care and love as the moments it represents. ✨ That’s why we are here to share simple, effective tips to keep your favorite pieces shining like new. Taking care of your jewelry doesn’t need to be complicated – with just warm water and mild soap, you can safely clean most of your accessories, removing daily residues while preserving their brilliance. 💧💍\n\nOur curated collection at Sassup Shop is crafted with attention to detail and quality, designed to make you feel confident and radiant every day. But even the most stunning pieces need a little maintenance to retain their glow. Regular gentle cleaning not only protects the beauty of your jewelry but also extends its durability, ensuring your investment keeps shining for years to come.\n\nRemember: a glowing piece is a loved piece. Whether it’s a delicate necklace, sparkling earrings, or a statement bracelet, proper care keeps your jewelry looking flawless and ready for every occasion.\n\n👉 Explore the elegance of our collection at Sassup Shop and start treating your jewelry with the love it deserves. Shop now and enjoy timeless pieces that shine just like you. Visit Sassup Shop today and let your style sparkle brighter than ever!",
+          "data": "2025-09-04T19:45:22.959210Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEK7Fq8ao08LS4QE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipM-rZjKfY6UkDOAEjYs5nqxRvKNrasxq5ep7jVZ"
+        },
+        {
+          "id": "687311333843165874",
+          "texto": "If you love your jewelry, you need to take care of it the right way! At Sassoup Shop, located at 350 19th St S Suite 61, Homewood, AL 35209, United States, we believe that every piece you wear is more than just an accessory—it’s a reflection of your unique style. That’s why we share the essential Do’s & Don’ts for jewelry care, helping you keep your favorite rings, necklaces, and bracelets shining for years. Many people don’t realize that small habits, like storing jewelry incorrectly or wearing it during daily activities, can damage the finish, reduce the shine, or even affect the structure of their beloved pieces. By following simple care tips, you can protect your investment and enjoy your jewelry for longer.\n\n💍 At Sassoup Shop, we offer high-quality, elegant, and timeless jewelry designed to make every moment special. Visit us in Homewood, AL, and discover pieces that combine sophistication with durability.\n\n👉 Ready to find your next favorite piece? Explore our collection today and let Sassoup Shop help you shine with style and confidence!",
+          "data": "2025-09-01T18:38:41.742366Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKEP-J64r747jZ4QE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipOJhSAm0yOPUXE90xSqG3js470Go5tjZSnOGa5-"
+        },
+        {
+          "id": "8389151980667212053",
+          "texto": "True sophistication doesn’t always mean extravagance; often, it’s found in life’s simplest and most meaningful moments. At Sassoup Shop, we know that whether you’re enjoying a quiet coffee with friends, a casual brunch, or an intimate get-together, the right jewelry can transform these experiences into unforgettable memories. ✨\n\nOur curated collection of fine jewelry is crafted to celebrate your individuality. From elegant rings and delicate bracelets to bold statement pieces, every accessory is designed to enhance your personal style. The true luxury lies not in labels or prices, but in embracing who you are and shining with confidence at every moment.\n\nChoosing the perfect piece is easy with Sassoup Shop. Make every occasion special, express your personality, and leave a lasting impression. Whether it’s a subtle touch of elegance or a sparkling statement, our jewelry ensures you feel remarkable in your own skin.\n\nDiscover your next favorite accessory today. Visit Sassoup Shop and let your style speak volumes—because the best luxury is simply being yourself. Which piece will you choose for your next unforgettable moment? Shop now!",
+          "data": "2025-08-27T16:56:59.998065Z",
+          "link": "https://local.google.com/place?id=18211013552796702288&use=posts&lpsid=CIHM0ogKENatsvuBqs--kgE",
+          "foto": "https://lh3.googleusercontent.com/p/AF1QipOA6dE9xKiqiN9_i5O7m2E16us2A3tvHxq9eyle"
+        }
+      ]
+    }
+  ]
+}
