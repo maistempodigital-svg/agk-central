@@ -1,5 +1,37 @@
 [
   {
+    "quando": "2026-11-25T17:18:17+00:00",
+    "tipo": "rodada",
+    "cliente": "todos",
+    "texto": "5 perfis lidos, 0 avaliacoes sem resposta nos clientes ativos",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T17:18:10+00:00",
+    "tipo": "erro",
+    "cliente": "desentupidora",
+    "texto": "Ranking falhou: Google respondeu 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The caller does not have permission\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n",
+    "ok": false,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T17:18:10+00:00",
+    "tipo": "erro",
+    "cliente": "quiroleste",
+    "texto": "Ranking falhou: 'NoneType' object is not subscriptable",
+    "ok": false,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T17:18:09+00:00",
+    "tipo": "erro",
+    "cliente": "equilibrio",
+    "texto": "Ranking falhou: Google respondeu 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The caller does not have permission\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n",
+    "ok": false,
+    "onde": "nuvem"
+  },
+  {
     "quando": "2026-11-25T17:13:07+00:00",
     "tipo": "rodada",
     "cliente": "todos",
