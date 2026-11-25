@@ -188,6 +188,15 @@ def publicar():
                     corpo["media"] = [{"mediaFormat": "PHOTO", "sourceUrl": item["foto"]}]
                 g("POST", f"{v4(c)}/localPosts", corpo)
                 registrar("post", item["chave"], f"Post publicado: {item['texto'][:120]}")
+            elif item["tipo"] == "perfil":
+                campo = item.get("campo", "descricao")
+                mapa = {"descricao": ("profile.description", {"profile": {"description": item["texto"]}}),
+                        "site": ("websiteUri", {"websiteUri": item["texto"]})}
+                if campo not in mapa:
+                    raise RuntimeError(f"campo do perfil nao suportado: {campo}")
+                mask, corpo = mapa[campo]
+                g("PATCH", f"{INFO}/{c['local']}?updateMask={mask}", corpo)
+                registrar("perfil", item["chave"], f"Perfil atualizado ({campo}): {item['texto'][:120]}")
             feitas[item["id"]] = {"ok": True, "quando": agora()}
             n += 1
         except Exception as e:
