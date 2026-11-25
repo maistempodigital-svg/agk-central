@@ -1,0 +1,45 @@
+name: Meta (Instagram e Facebook)
+
+on:
+  schedule:
+    # Horario de Brasilia 8h17 a 20h17, de hora em hora (posts agendados). O robo nao publica de sexta 15h a sabado 20h.
+    - cron: "17 11-23 * * *"
+  workflow_dispatch: {}
+  push:
+    paths: ["fila/meta.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: meta
+  cancel-in-progress: false
+
+jobs:
+  rodar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publicar o que foi aprovado
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python meta.py publicar
+      - name: Contas e ultimos posts
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: |
+          python meta.py contas
+          python meta.py coletar
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "jarvis-agk"
+          git config user.email "jarvis@agkvendas.com"
+          git add dados
+          git diff --cached --quiet || git commit -m "Jarvis: rodada da Meta"
+          git pull --rebase --autostash || true
+          git push
