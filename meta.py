@@ -262,6 +262,11 @@ def coletar():
                                     "link": m.get("permalink"), "data": m.get("timestamp"), "curtidas": m.get("like_count"), "comentarios": m.get("comments_count")}
                                    for m in r.get("data", [])]
     gravar("dados/meta_posts.json", saida)
+    c = ler("dados/meta_contas.json", {})
+    gravar("dados/meta_painel.json", {"atualizado": c.get("atualizado"), "chave_expira": c.get("chave_expira"), "contas": [
+        {"page_id": x["page_id"], "nome": (x["nome"] or "").strip(), "ig_user": x["ig_user"], "seguidores": x["seguidores"],
+         "posts": [{"link": m["link"], "data": (m["data"] or "")[:10], "curtidas": m["curtidas"], "comentarios": m["comentarios"], "tipo": m["tipo"], "texto": m["texto"][:60]}
+                   for m in saida["contas"].get(x["page_id"], [])[:3]]} for x in c.get("contas", [])]})
     print("Posts lidos de", len(saida["contas"]), "Instagrams")
 
 
