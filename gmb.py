@@ -74,7 +74,7 @@ def http(metodo, url, corpo=None, cab=None, form=False, tentativas=3):
                 t = r.read().decode()
                 return json.loads(t) if t else {}
         except urllib.error.HTTPError as e:
-            msg = e.read().decode()[:300]
+            msg = e.read().decode()[:900]
             if e.code in (429, 500, 502, 503) and n < tentativas - 1:
                 time.sleep(20 * (n + 1))
                 continue
@@ -396,7 +396,12 @@ def ranking(so=None):
             continue
         try:
             p = perfil(c)
-            lat, lng, meu = p["latlng"]["latitude"], p["latlng"]["longitude"], p.get("place_id")
+            meu = p.get("place_id")
+            if p.get("latlng"):
+                lat, lng = p["latlng"]["latitude"], p["latlng"]["longitude"]
+            else:
+                loc = http("GET", f"https://places.googleapis.com/v1/places/{meu}", None, {"X-Goog-Api-Key": chave_api, "X-Goog-FieldMask": "location"})["location"]
+                lat, lng = loc["latitude"], loc["longitude"]
             cfg = c["ranking"]; n = cfg.get("grade", 5); raio = cfg.get("raio_km", 3)
             passo = (2 * raio) / (n - 1)
             pontos = [(lat + (raio - i * passo) / 111.0, lng + (-raio + j * passo) / (111.0 * math.cos(math.radians(lat)))) for i in range(n) for j in range(n)]
@@ -429,6 +434,7 @@ def ranking(so=None):
             registrar("ranking", c["chave"], "Ranking medido: " + ", ".join(f"{h['palavra']} média {h['media']}" for h in hist[-len(cfg['palavras']):]))
         except Exception as e:
             registrar("erro", c["chave"], f"Ranking falhou: {e}", ok=False)
+            print("ERRO RANKING", c["chave"], e)
     gravar("dados/ranking.json", tudo)
     print("Ranking ok")
 
