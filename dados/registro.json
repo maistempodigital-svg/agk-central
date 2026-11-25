@@ -1,5 +1,21 @@
 [
   {
+    "quando": "2026-11-25T17:23:43+00:00",
+    "tipo": "rodada",
+    "cliente": "todos",
+    "texto": "5 perfis lidos, 0 avaliacoes sem resposta nos clientes ativos",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T17:23:36+00:00",
+    "tipo": "erro",
+    "cliente": "equilibrio",
+    "texto": "Ranking falhou: [places] Google respondeu 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The caller does not have permission\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n",
+    "ok": false,
+    "onde": "nuvem"
+  },
+  {
     "quando": "2026-11-25T17:22:10+00:00",
     "tipo": "rodada",
     "cliente": "todos",
