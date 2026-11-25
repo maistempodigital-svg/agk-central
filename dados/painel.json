@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T18:05:19+00:00",
+  "atualizado": "2026-11-25T19:39:42+00:00",
   "clientes": [
     {
       "chave": "equilibrio",
@@ -75,7 +75,33 @@
       },
       "fotos": {
         "total": 9,
-        "ultima": "2026-03-07T23:01:22Z"
+        "ultima": "2026-03-07T23:01:22Z",
+        "recentes": [
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfPR0fkwWFv2zztyUCe2OuBfniQvkjvDsnoS9OtML1vwMhAgTjeRh1_tl6hwBemOZcSpDvQ2rql8ayFJK5a5YRFtSQ8DDlKZ3DWLIMgh33Ixn7MP2JYpYAXyAS5VbJ94Op2WUuC2Q5TBEfe=s300",
+            "data": "2026-03-07T23:01:22Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLcrJhVLMR2Xgn_K37mdD9QBTex5iTg7rK2FKq5z719_Ea6FUFzVWf3ezRw-KYe3qVS-Y1S-51e8IgUeoTNZplyfnWpPYeqHIMDMsjd1pf-DwtFbW4a3pU-bsrlwSvs_VtrlQarfCUrUQyGW=s300",
+            "data": "2026-03-07T23:00:33Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfeyBZCCnW3qLQCLwjT0HOXIJ2SZNDKxOkC5qkYbWS3q_15idqBSdLU9Qx-l3vZawCjbMKArxPUFHmS1Nf81-ix20MaAyRgXtnJ0oBF7jqIo8KfvOo3Xv7rw8f0lCmt4C0GF4ftFA5Z2ulH=s300",
+            "data": "2026-03-07T22:57:56Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLdCOVA532ESfWqrma3crLqlbZogdcrSVg8TysN5qTC_FPGuKek1nrcIRKWzbra731MJ5JlzMNqSBHVZtBu6H9kXf1xDwRVOs4mqNnN6WTLmRQ-ZQIBZbekjCnUvta8dYdartMrG6KQIeqpb=s300",
+            "data": "2026-03-07T22:04:38Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLdtDRBz7rlHO23YhrL8ImU-M88tDtAqKMIppWa5moY4vlfhMLpXAuLWjYUKBow8rMh02VqyWxKA__4otFyxXGrpVWivNbaoYY3J1rcdwDP4LP1q3oP67bhjkR-BK4HBQFkEyjh4TfSD_uz8=s300",
+            "data": "2026-03-07T22:04:37Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLek7i3o9gh0xu0WofFi_jYhKYXRohj2JkwiNjhor-0YykO6TArUPwbUoQZm-H22Z4jgmUWc8oNajjtREVN0W4L4g9zqcoYrEGUSsH_M5gi61uagIvZU5RygtmYFeVjdRhiFaqVpjPsacqTS=s300",
+            "data": "2026-03-07T22:04:36Z"
+          }
+        ]
       },
       "saude": {
         "geral": 68,
@@ -331,7 +357,33 @@
       },
       "fotos": {
         "total": 261,
-        "ultima": "2026-11-19T14:00:14Z"
+        "ultima": "2026-11-19T14:00:14Z",
+        "recentes": [
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe0u3ZlER9jIjGE0B0hxz84fYx3EzyiS90qQIXb82IONvtbg6lb_nTnqIpBt5gtRHcrw079a9ZC94D3M45EJ8yV94zqSPZ170hn393BgCjEVMq-A4f9tCB0RhlVXBIKSGIApZXIrnn6v7E=s300",
+            "data": "2026-11-19T14:00:14Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLeaf_KJsDHPPTHrz-EPgH5IXo68yt5JZnTMcAVtPg56sanPal8xxpm1fA_I_NBvz8efs92gpOkD5kZhZ2MoQ5H6GTWJ0h013CkX2iVwGnP34ccAICdPBW6Q5ybqv2Al5oVKPSRFCgXQSv2m=s300",
+            "data": "2026-11-18T00:06:01Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLf8rWrdaV3UgK3_aN_HTKUY73pc_LlpL2o3BjTEiUwqwQT7njbqNlhoeyTUUaXX4E5lvWQjUCNfCy1Gv5_aG62ic89uszOp6Y0xA5I_4jMNde7dRluu6WoCDfXtXKD2gYA8rVw9sD9NY_hc=s300",
+            "data": "2026-11-17T23:52:33Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLf0a0pqUKzWGbwqI6r_QkJkwfrTX8U33NUIK3fBxeYhIfZFTcRlgU-kHwn8b6vQkgSUUgMBRqArZ0ZJvoMk7osozrhNOqHYuyK0tlqKN9V-uMEk0lpiCl1GwhKVAdDexTlohGLFqEPTSb7A=s300",
+            "data": "2026-11-11T19:58:52Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLcOZNrtSgFtBZ876eFFT5pdWpQgjMQ1RECvKK-A7JcJPM7qGxtZMVIhQhJFhuN8jeKE832nUERz8y7GZzJa3Z3YonstAV86UNLDCDNp0zvCd9NpzO9d3m27xAtIuErfoF0klUKJ8RqrhLyD=s300",
+            "data": "2026-11-09T11:52:08Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfSgIRhqoGp_JNdCyDWLXpyjN9sw4dW-XjpyThtmv3Tc-WzBWRx-dNSb23F4L9ziusfspFCNWJrxm4HmjQn84xVyRC6RDmmF4i6_TG2KGcBH5UZjZ4O0C9Zwy8hB3pki2Nz755OFWFWhn4i=s300",
+            "data": "2026-11-05T02:38:54Z"
+          }
+        ]
       },
       "saude": {
         "geral": 79,
@@ -559,7 +611,8 @@
       },
       "fotos": {
         "total": 0,
-        "ultima": null
+        "ultima": null,
+        "recentes": []
       },
       "saude": {
         "geral": 45,
