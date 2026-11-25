@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "AbFvOqkQIlUAOg6Wl_nkYQ--NqjkMNGad5P9v8cQ9Jqfk8b_Jx6ueplsVIrB8pmKEeYJPyi8B5MnWA",
+    "tipo": "resposta",
+    "chave": "equilibrio",
+    "review_id": "AbFvOqkQIlUAOg6Wl_nkYQ--NqjkMNGad5P9v8cQ9Jqfk8b_Jx6ueplsVIrB8pmKEeYJPyi8B5MnWA",
+    "autor": "Ricardo Ferreira",
+    "texto": "Ricardo, muito obrigado pela avaliação! Ficamos felizes que sua experiência com a quiropraxia aqui na Equilíbrio da Coluna, na Vila Olímpia. Conte com a gente sempre que a coluna pedir um cuidado."
+  },
+  {
+    "id": "AbFvOqkqismFolMX7fAXaHzJSH05IJcbeuZjsA1bTUvMTZfLmTTlScJIBbmt5qzKqRSsaLuFntjNIA",
+    "tipo": "resposta",
+    "chave": "equilibrio",
+    "review_id": "AbFvOqkqismFolMX7fAXaHzJSH05IJcbeuZjsA1bTUvMTZfLmTTlScJIBbmt5qzKqRSsaLuFntjNIA",
+    "autor": "Caio Sabino",
+    "texto": "Caio, obrigado pelas 5 estrelas! É muito bom saber que você aprovou o atendimento da Equilíbrio da Coluna. Estamos aqui na Vila Olímpia sempre que precisar cuidar da sua coluna."
+  },
+  {
+    "id": "AbFvOqkw1sm0stTj7ME2pgm0Au3znaRHUKz5KmsgivVVhkIuaotwnpuxC1zNYGqrEbkxfYfoXtqT",
+    "tipo": "resposta",
+    "chave": "equilibrio",
+    "review_id": "AbFvOqkw1sm0stTj7ME2pgm0Au3znaRHUKz5KmsgivVVhkIuaotwnpuxC1zNYGqrEbkxfYfoXtqT",
+    "autor": "Jheniffer Martins",
+    "texto": "Jheniffer, que alegria ler isso! Nossa recepção e nossa quiropraxista vão adorar saber que você se sentiu acolhida e teve todas as dúvidas respondidas, e que o café agradou. Esperamos você nas próximas sessões aqui na Vila Olímpia!"
+  },
+  {
+    "id": "AbFvOqlwgsf291zvx90YfTJaw0fm58oO-0joDKsKlJJx8faP8OmOcizbPWFs_5paFpAeAXTQKmK3Tg",
+    "tipo": "resposta",
+    "chave": "equilibrio",
+    "review_id": "AbFvOqlwgsf291zvx90YfTJaw0fm58oO-0joDKsKlJJx8faP8OmOcizbPWFs_5paFpAeAXTQKmK3Tg",
+    "autor": "Rodrigo Rodrigues",
+    "texto": "Rodrigo, nota 1000 é a sua avaliação! Que bom que você chegou com dor nas costas e saiu bem melhor. Nossa equipe e a recepção agradecem o carinho. Conte com a Equilíbrio da Coluna para manter sua coluna em dia."
+  },
+  {
+    "id": "AbFvOqn52Nd77tDPI0qyEhD3zrIhnY3bfRgE925fjVSoJQ6W8o0IvkujFE-suNnxscJqNou37QvY",
+    "tipo": "resposta",
+    "chave": "equilibrio",
+    "review_id": "AbFvOqn52Nd77tDPI0qyEhD3zrIhnY3bfRgE925fjVSoJQ6W8o0IvkujFE-suNnxscJqNou37QvY",
+    "autor": "Luana Barbosa",
+    "texto": "Luana, muito obrigado! Ficamos felizes que você sentiu o ambiente acolhedor e a experiência da nossa equipe de quiropraxia. E sim, estamos pertinho da estação e do shopping na Vila Olímpia, fácil de encaixar na rotina. Até a próxima!"
+  },
+  {
+    "id": "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx",
+    "tipo": "resposta",
+    "chave": "equilibrio",
+    "review_id": "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx",
+    "autor": "jr assessoria esportiva",
+    "texto": "Muito obrigado pela confiança de um ano de acompanhamento! O Lucas vai ficar muito feliz com esse reconhecimento. Para quem treina e se cobra no esporte, cuidar da coluna faz toda a diferença, e é um prazer fazer parte disso aqui na Vila Olímpia."
+  }
+]
