@@ -1,0 +1,32 @@
+{
+  "equilibrio": [
+    {
+      "semana": "2026-S48",
+      "media": 5,
+      "total": 51,
+      "saude": 68,
+      "fotos": 9,
+      "posts30": 0
+    }
+  ],
+  "quiroleste": [
+    {
+      "semana": "2026-S48",
+      "media": 4.900000095367432,
+      "total": 265,
+      "saude": 77,
+      "fotos": 261,
+      "posts30": 10
+    }
+  ],
+  "desentupidora": [
+    {
+      "semana": "2026-S48",
+      "media": 5,
+      "total": 12,
+      "saude": 45,
+      "fotos": 0,
+      "posts30": 0
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T15:50:23+00:00",
+  "atualizado": "2026-11-25T17:09:06+00:00",
   "clientes": [
     {
       "chave": "equilibrio",
@@ -145,7 +145,267 @@
           "resposta": "Agradecemos muito pelo seu retorno e pela confiança no nosso trabalho! 💙\nFicamos felizes em saber que sua experiência de saúde conosco tem sido positiva. Nosso propósito na Clínica Equilíbrio da Coluna, aqui na Vila Olímpia, é oferecer serviços personalizados em quiropraxia e massoterapia, sempre com um cuidado próximo e um acompanhamento de saúde completo.\n\nO Lucas e o Daniel vão adorar saber do seu reconhecimento — seguimos comprometidos em proporcionar momentos de bem-estar e equilíbrio em cada sessão. ✨"
         }
       ],
-      "posts": []
+      "posts": [],
+      "perfil": {
+        "titulo": "Clínica Equilíbrio da Coluna - Quiropraxia & Massoterapia",
+        "categoria": "Clínica de Quiropraxia",
+        "categorias_extra": [
+          "Centro de bem-estar",
+          "Massagista esportivo"
+        ],
+        "telefone": "(11) 91333-0826",
+        "site": "https://www.equilibriodacoluna.com.br/",
+        "descricao": "Equilíbrio da Coluna - Quiropraxia e Saúde Integrativa\n\nLocalizada na Vila Olímpia, somos um refúgio de bem-estar para quem busca alta performance e cuidado humanizado. Nosso diferencial é o cuidado profundo: unimos a precisão da Quiropraxia ao acolhimento da Massoterapia em um único atendimento focado na causa raiz das suas tensões.\n\nPor que escolher a Equilíbrio Da Coluna?\n- Até 90 min: Tempo dedicado para tratar seu corpo como uma unidade.\n- Cuidado Integrativo: Alinhamento articular e soltura muscular profunda.\n- Performance: Ideal para líderes e atletas que buscam energia máxima.\n- Conveniência: No coração corporativo da Vila Olímpia.\n\nResgate seu equilíbrio com um acompanhamento que respeita o seu tempo.",
+        "dias_com_horario": 6,
+        "feriados": true,
+        "status": "OPEN",
+        "latlng": {
+          "latitude": -23.5969245,
+          "longitude": -46.6874511
+        },
+        "endereco": "Avenida Doutor Cardoso de Melo, 1470 - Sala 201 - 2° Andar, Vila Olímpia, São Paulo",
+        "area_atendida": 4,
+        "servicos": 3,
+        "place_id": "ChIJCZIdUURXzpQRcUeySpgDDGg",
+        "mapa": "https://maps.google.com/maps?cid=7497371432288143217",
+        "avaliar": "https://search.google.com/local/writereview?placeid=ChIJCZIdUURXzpQRcUeySpgDDGg"
+      },
+      "fotos": {
+        "total": 9,
+        "ultima": "2026-03-07T23:01:22Z",
+        "recentes": [
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfPR0fkwWFv2zztyUCe2OuBfniQvkjvDsnoS9OtML1vwMhAgTjeRh1_tl6hwBemOZcSpDvQ2rql8ayFJK5a5YRFtSQ8DDlKZ3DWLIMgh33Ixn7MP2JYpYAXyAS5VbJ94Op2WUuC2Q5TBEfe=s300",
+            "data": "2026-03-07T23:01:22Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLcg_0Hk87RI6DfLQVg2v_LOP1J3Q-NrKh7_tHFia-l5Z0UYqNgm7_fuIpA5taGSL34QBpb-4VXshpST3c_GXcyq1VEl4gUHcqEIwmVak1RlIS20G75Y-aZj7EYratwbh3BnjvSaX69iLTdi=s300",
+            "data": "2026-03-07T23:00:33Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfeyBZCCnW3qLQCLwjT0HOXIJ2SZNDKxOkC5qkYbWS3q_15idqBSdLU9Qx-l3vZawCjbMKArxPUFHmS1Nf81-ix20MaAyRgXtnJ0oBF7jqIo8KfvOo3Xv7rw8f0lCmt4C0GF4ftFA5Z2ulH=s300",
+            "data": "2026-03-07T22:57:56Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLdCOVA532ESfWqrma3crLqlbZogdcrSVg8TysN5qTC_FPGuKek1nrcIRKWzbra731MJ5JlzMNqSBHVZtBu6H9kXf1xDwRVOs4mqNnN6WTLmRQ-ZQIBZbekjCnUvta8dYdartMrG6KQIeqpb=s300",
+            "data": "2026-03-07T22:04:38Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLdtDRBz7rlHO23YhrL8ImU-M88tDtAqKMIppWa5moY4vlfhMLpXAuLWjYUKBow8rMh02VqyWxKA__4otFyxXGrpVWivNbaoYY3J1rcdwDP4LP1q3oP67bhjkR-BK4HBQFkEyjh4TfSD_uz8=s300",
+            "data": "2026-03-07T22:04:37Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLek7i3o9gh0xu0WofFi_jYhKYXRohj2JkwiNjhor-0YykO6TArUPwbUoQZm-H22Z4jgmUWc8oNajjtREVN0W4L4g9zqcoYrEGUSsH_M5gi61uagIvZU5RygtmYFeVjdRhiFaqVpjPsacqTS=s300",
+            "data": "2026-03-07T22:04:36Z"
+          }
+        ]
+      },
+      "saude": {
+        "geral": 68,
+        "areas": [
+          {
+            "id": "reputacao",
+            "nome": "Reputação",
+            "nota": 88
+          },
+          {
+            "id": "atividade",
+            "nome": "Atividade",
+            "nota": 30
+          },
+          {
+            "id": "perfil",
+            "nome": "Perfil completo",
+            "nota": 85
+          },
+          {
+            "id": "visibilidade",
+            "nome": "Visibilidade",
+            "nota": null
+          },
+          {
+            "id": "concorrencia",
+            "nome": "Concorrência",
+            "nota": null
+          }
+        ],
+        "checks": [
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 9,
+            "titulo": "Nota 5: excelente",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 10,
+            "titulo": "51 avaliações",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 8,
+            "titulo": "Nenhuma avaliação negativa recente",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "atividade",
+            "ok": true,
+            "peso": 9,
+            "titulo": "4 avaliação(ões) nova(s) no último mês",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "peso": 8,
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "peso": 4,
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 7,
+            "titulo": "Categoria: Clínica de Quiropraxia",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 3,
+            "titulo": "2 categoria(s) extra",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 6,
+            "titulo": "Horário de funcionamento completo",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 2,
+            "titulo": "Horário de feriados cadastrado",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 5,
+            "titulo": "Telefone cadastrado",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 5,
+            "titulo": "Tem site próprio",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 4,
+            "titulo": "Descrição completa",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 6,
+            "titulo": "9 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 3,
+            "titulo": "3 serviço(s) cadastrados",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "visibilidade",
+            "ok": null,
+            "peso": 5,
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "area": "concorrencia",
+            "ok": null,
+            "peso": 4,
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ],
+        "plano": [
+          {
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "titulo": "9 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ]
+      },
+      "evolucao": [
+        {
+          "semana": "2026-S48",
+          "media": 5,
+          "total": 51,
+          "saude": 68,
+          "fotos": 9,
+          "posts30": 0
+        }
+      ],
+      "novas_30d": 4
     },
     {
       "chave": "quiroleste",
@@ -362,7 +622,261 @@
           "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDprckxvM0o0dk9ESnREYWdIQXV5bmd3",
           "foto": "https://lh3.googleusercontent.com/p/AF1QipMR93NwjCvPbYK_wfGi5rca2dWyoDOiPl0xHowo"
         }
-      ]
+      ],
+      "perfil": {
+        "titulo": "Quiro Leste Quiropraxia",
+        "categoria": "Clínica de Quiropraxia",
+        "categorias_extra": [],
+        "telefone": "(11) 97109-4308",
+        "site": "https://quirolestequiropraxia.com.br/v2",
+        "descricao": "Quiro Leste Quiropraxia no Tatuapé, cuidado para sua saúde especialmente coluna vertebral. Realizamos atendimentos diáriamente, nossos profissionais são graduados pela faculdade Anhembi Morumbi e estão no mercado de trabalho há muitos anos cuidando e reabilitando muitas vidas!",
+        "dias_com_horario": 6,
+        "feriados": true,
+        "status": "OPEN",
+        "latlng": null,
+        "endereco": "Rua Apucarana, 282, Tatuapé, São Paulo",
+        "area_atendida": 20,
+        "servicos": 14,
+        "place_id": "ChIJe7yCMWBnzpQRq2GKqfxMnpo",
+        "mapa": "https://maps.google.com/maps?cid=11141427176221073835",
+        "avaliar": "https://search.google.com/local/writereview?placeid=ChIJe7yCMWBnzpQRq2GKqfxMnpo"
+      },
+      "fotos": {
+        "total": 261,
+        "ultima": "2026-11-19T14:00:14Z",
+        "recentes": [
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe0u3ZlER9jIjGE0B0hxz84fYx3EzyiS90qQIXb82IONvtbg6lb_nTnqIpBt5gtRHcrw079a9ZC94D3M45EJ8yV94zqSPZ170hn393BgCjEVMq-A4f9tCB0RhlVXBIKSGIApZXIrnn6v7E=s300",
+            "data": "2026-11-19T14:00:14Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLeaf_KJsDHPPTHrz-EPgH5IXo68yt5JZnTMcAVtPg56sanPal8xxpm1fA_I_NBvz8efs92gpOkD5kZhZ2MoQ5H6GTWJ0h013CkX2iVwGnP34ccAICdPBW6Q5ybqv2Al5oVKPSRFCgXQSv2m=s300",
+            "data": "2026-11-18T00:06:01Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLf8rWrdaV3UgK3_aN_HTKUY73pc_LlpL2o3BjTEiUwqwQT7njbqNlhoeyTUUaXX4E5lvWQjUCNfCy1Gv5_aG62ic89uszOp6Y0xA5I_4jMNde7dRluu6WoCDfXtXKD2gYA8rVw9sD9NY_hc=s300",
+            "data": "2026-11-17T23:52:33Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLf0a0pqUKzWGbwqI6r_QkJkwfrTX8U33NUIK3fBxeYhIfZFTcRlgU-kHwn8b6vQkgSUUgMBRqArZ0ZJvoMk7osozrhNOqHYuyK0tlqKN9V-uMEk0lpiCl1GwhKVAdDexTlohGLFqEPTSb7A=s300",
+            "data": "2026-11-11T19:58:52Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLcOZNrtSgFtBZ876eFFT5pdWpQgjMQ1RECvKK-A7JcJPM7qGxtZMVIhQhJFhuN8jeKE832nUERz8y7GZzJa3Z3YonstAV86UNLDCDNp0zvCd9NpzO9d3m27xAtIuErfoF0klUKJ8RqrhLyD=s300",
+            "data": "2026-11-09T11:52:08Z"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfSgIRhqoGp_JNdCyDWLXpyjN9sw4dW-XjpyThtmv3Tc-WzBWRx-dNSb23F4L9ziusfspFCNWJrxm4HmjQn84xVyRC6RDmmF4i6_TG2KGcBH5UZjZ4O0C9Zwy8hB3pki2Nz755OFWFWhn4i=s300",
+            "data": "2026-11-05T02:38:54Z"
+          }
+        ]
+      },
+      "saude": {
+        "geral": 77,
+        "areas": [
+          {
+            "id": "reputacao",
+            "nome": "Reputação",
+            "nota": 90
+          },
+          {
+            "id": "atividade",
+            "nome": "Atividade",
+            "nota": 48
+          },
+          {
+            "id": "perfil",
+            "nome": "Perfil completo",
+            "nota": 93
+          },
+          {
+            "id": "visibilidade",
+            "nome": "Visibilidade",
+            "nota": null
+          },
+          {
+            "id": "concorrencia",
+            "nome": "Concorrência",
+            "nota": null
+          }
+        ],
+        "checks": [
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 9,
+            "titulo": "Nota 4,900000095367432: excelente",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 10,
+            "titulo": "265 avaliações",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "reputacao",
+            "ok": false,
+            "peso": 8,
+            "titulo": "1 avaliação(ões) de 1 a 3 estrelas nos últimos 6 meses",
+            "detalhe": "Responda com calma: quem lê a resposta decide se confia.",
+            "acao": "Responder as negativas"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "peso": 9,
+            "titulo": "1 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "area": "atividade",
+            "ok": true,
+            "peso": 8,
+            "titulo": "Postou nos últimos 7 dias",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "atividade",
+            "ok": true,
+            "peso": 4,
+            "titulo": "Foto nova no último mês",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 7,
+            "titulo": "Categoria: Clínica de Quiropraxia",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 3,
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 6,
+            "titulo": "Horário de funcionamento completo",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 2,
+            "titulo": "Horário de feriados cadastrado",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 5,
+            "titulo": "Telefone cadastrado",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 5,
+            "titulo": "Tem site próprio",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 4,
+            "titulo": "Descrição completa",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 6,
+            "titulo": "261 fotos no perfil",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 3,
+            "titulo": "14 serviço(s) cadastrados",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "visibilidade",
+            "ok": null,
+            "peso": 5,
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "area": "concorrencia",
+            "ok": null,
+            "peso": 4,
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ],
+        "plano": [
+          {
+            "titulo": "1 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "titulo": "1 avaliação(ões) de 1 a 3 estrelas nos últimos 6 meses",
+            "detalhe": "Responda com calma: quem lê a resposta decide se confia.",
+            "acao": "Responder as negativas"
+          },
+          {
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
+          },
+          {
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ]
+      },
+      "evolucao": [
+        {
+          "semana": "2026-S48",
+          "media": 4.900000095367432,
+          "total": 265,
+          "saude": 77,
+          "fotos": 261,
+          "posts30": 10
+        }
+      ],
+      "novas_30d": 1
     },
     {
       "chave": "desentupidora",
@@ -481,7 +995,244 @@
           "resposta": "Obrigado! Nosso objetivo aqui na desentupidora rápida é realmente fazer serviço e com excelência."
         }
       ],
-      "posts": []
+      "posts": [],
+      "perfil": {
+        "titulo": "Desentupidora Rápida",
+        "categoria": "Desentupidora",
+        "categorias_extra": [],
+        "telefone": "(13) 99169-4990",
+        "site": "https://24hdesentupidorarapida.com.br/",
+        "descricao": "A Desentupidora Itanhaém atende Itanhaém e também realiza atendimentos em Santos, Praia Grande, Peruíbe, Mongaguá e outras regiões próximas. Agende uma visita presencial para avaliação do problema e orçamento no local.",
+        "dias_com_horario": 7,
+        "feriados": false,
+        "status": "OPEN",
+        "latlng": {
+          "latitude": -24.1770821,
+          "longitude": -46.7857387
+        },
+        "endereco": "Avenida Alberto Simões, 1047 - Loja 5, Jd. Anchieta, Itanhaém",
+        "area_atendida": 0,
+        "servicos": 0,
+        "place_id": "ChIJpZcCa_LV0ZQRmPZXWzLdxJM",
+        "mapa": "https://maps.google.com/maps?cid=10647878627361289880",
+        "avaliar": "https://search.google.com/local/writereview?placeid=ChIJpZcCa_LV0ZQRmPZXWzLdxJM"
+      },
+      "fotos": {
+        "total": 0,
+        "ultima": null,
+        "recentes": []
+      },
+      "saude": {
+        "geral": 45,
+        "areas": [
+          {
+            "id": "reputacao",
+            "nome": "Reputação",
+            "nota": 78
+          },
+          {
+            "id": "atividade",
+            "nome": "Atividade",
+            "nota": 0
+          },
+          {
+            "id": "perfil",
+            "nome": "Perfil completo",
+            "nota": 56
+          },
+          {
+            "id": "visibilidade",
+            "nome": "Visibilidade",
+            "nota": null
+          },
+          {
+            "id": "concorrencia",
+            "nome": "Concorrência",
+            "nota": null
+          }
+        ],
+        "checks": [
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 9,
+            "titulo": "Nota 5: excelente",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "reputacao",
+            "ok": false,
+            "peso": 10,
+            "titulo": "12 avaliações",
+            "detalhe": "Meta inicial: 50 (faltam 38).",
+            "acao": "Pedir avaliações agora"
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "peso": 8,
+            "titulo": "Nenhuma avaliação negativa recente",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "peso": 9,
+            "titulo": "0 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "peso": 8,
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "peso": 4,
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 7,
+            "titulo": "Categoria: Desentupidora",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 3,
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 6,
+            "titulo": "Horário de funcionamento completo",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 2,
+            "titulo": "Sem horário de feriados",
+            "detalhe": "O Google valoriza quem informa feriados.",
+            "acao": "Cadastrar feriados"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 5,
+            "titulo": "Telefone cadastrado",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "peso": 5,
+            "titulo": "Tem site próprio",
+            "detalhe": null,
+            "acao": null
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 4,
+            "titulo": "Descrição curta (218 letras)",
+            "detalhe": "Diga o que faz, para quem e em qual bairro, com as palavras-chave.",
+            "acao": "Reescrever descrição"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 6,
+            "titulo": "0 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "peso": 3,
+            "titulo": "0 serviço(s) cadastrados",
+            "detalhe": "Serviços cadastrados ajudam o Google a entender o que você faz.",
+            "acao": "Cadastrar serviços"
+          },
+          {
+            "area": "visibilidade",
+            "ok": null,
+            "peso": 5,
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "area": "concorrencia",
+            "ok": null,
+            "peso": 4,
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ],
+        "plano": [
+          {
+            "titulo": "12 avaliações",
+            "detalhe": "Meta inicial: 50 (faltam 38).",
+            "acao": "Pedir avaliações agora"
+          },
+          {
+            "titulo": "0 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "titulo": "0 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "titulo": "Descrição curta (218 letras)",
+            "detalhe": "Diga o que faz, para quem e em qual bairro, com as palavras-chave.",
+            "acao": "Reescrever descrição"
+          }
+        ]
+      },
+      "evolucao": [
+        {
+          "semana": "2026-S48",
+          "media": 5,
+          "total": 12,
+          "saude": 45,
+          "fotos": 0,
+          "posts30": 0
+        }
+      ],
+      "novas_30d": 0
     },
     {
       "chave": "agk",
