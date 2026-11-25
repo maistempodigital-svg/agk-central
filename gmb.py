@@ -377,10 +377,17 @@ def historico(item):
 
 # ---------------------------------------------------------------- ranking (Places API)
 def places_busca(chave_api, texto, lat, lng, raio_m):
-    return http("POST", "https://places.googleapis.com/v1/places:searchText",
+    return _places("POST", "https://places.googleapis.com/v1/places:searchText",
                 {"textQuery": texto, "languageCode": "pt-BR", "regionCode": "BR", "pageSize": 20,
                  "locationBias": {"circle": {"center": {"latitude": lat, "longitude": lng}, "radius": raio_m}}},
                 {"X-Goog-Api-Key": chave_api, "X-Goog-FieldMask": "places.id,places.displayName,places.rating,places.userRatingCount,places.googleMapsUri,places.formattedAddress"}).get("places", [])
+
+
+def _places(*a):
+    try:
+        return http(*a)
+    except Exception as e:
+        raise RuntimeError(f"[places] {e}")
 
 
 def ranking(so=None):
@@ -395,7 +402,10 @@ def ranking(so=None):
         if not c.get("ativo") or not c.get("ranking") or (so and c["chave"] != so):
             continue
         try:
-            p = perfil(c)
+            try:
+                p = perfil(c)
+            except Exception as e:
+                raise RuntimeError(f"[perfil] {e}")
             meu = p.get("place_id")
             if p.get("latlng"):
                 lat, lng = p["latlng"]["latitude"], p["latlng"]["longitude"]
