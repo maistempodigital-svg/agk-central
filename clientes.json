@@ -1,0 +1,50 @@
+[
+  {
+    "chave": "equilibrio",
+    "nome": "Equilíbrio da Coluna",
+    "ativo": true,
+    "conta": "accounts/112149884153467654575",
+    "local": "locations/10874869634747077033",
+    "ramo": "clínica de quiropraxia e massoterapia na Vila Olímpia, São Paulo",
+    "tom": "acolhedor, cuidadoso e profissional; fala de saúde da coluna sem prometer cura",
+    "palavras_chave": ["quiropraxia Vila Olímpia", "dor nas costas", "coluna", "dor no pescoço", "massoterapia"],
+    "whatsapp": "5511913330826"
+  },
+  {
+    "chave": "quiroleste",
+    "nome": "Quiro Leste",
+    "ativo": true,
+    "conta": "accounts/112149884153467654575",
+    "local": "locations/5835206416650760208",
+    "ramo": "clínica de quiropraxia no Tatuapé, Zona Leste de São Paulo",
+    "tom": "acolhedor e profissional; cita o nome do cliente e a equipe",
+    "palavras_chave": ["quiropraxia Tatuapé", "Quiro Leste Quiropraxia", "dor nas costas", "coluna"],
+    "whatsapp": "5511971094308"
+  },
+  {
+    "chave": "desentupidora",
+    "nome": "Desentupidora Rápida",
+    "ativo": true,
+    "conta": "accounts/112149884153467654575",
+    "local": "locations/15086127251677700741",
+    "ramo": "desentupidora 24h em Itanhaém, Santos e região",
+    "tom": "direto, simpático e prestativo; destaca rapidez e atendimento 24h",
+    "palavras_chave": ["desentupidora Itanhaém", "desentupidora 24h", "desentupimento"],
+    "whatsapp": "5513991694990"
+  },
+  {
+    "chave": "agk",
+    "nome": "AGK Vendas",
+    "ativo": false,
+    "conta": "accounts/112149884153467654575",
+    "local": "locations/1218238692160512184",
+    "whatsapp": "5511971648120"
+  },
+  {
+    "chave": "sassup",
+    "nome": "Sassup Shop",
+    "ativo": false,
+    "conta": "accounts/112149884153467654575",
+    "local": "locations/13825472332362056345"
+  }
+]

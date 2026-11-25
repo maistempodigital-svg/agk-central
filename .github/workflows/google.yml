@@ -1,0 +1,44 @@
+name: Google Meu Negocio
+
+on:
+  schedule:
+    - cron: "40 11 * * *"   # 08:40 Brasilia
+    - cron: "40 15 * * *"   # 12:40 Brasilia
+    - cron: "40 21 * * *"   # 18:40 Brasilia
+  workflow_dispatch: {}
+  push:
+    paths: ["fila/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google
+  cancel-in-progress: false
+
+jobs:
+  rodar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publicar o que foi aprovado
+        env:
+          GOOGLE_SEGREDOS: ${{ secrets.GOOGLE_SEGREDOS }}
+        run: python gmb.py publicar
+      - name: Ler perfis e avaliacoes
+        env:
+          GOOGLE_SEGREDOS: ${{ secrets.GOOGLE_SEGREDOS }}
+        run: python gmb.py coletar
+      - name: Guardar os dados
+        if: always()
+        run: |
+          git config user.name "jarvis-agk"
+          git config user.email "jarvis@agkvendas.com"
+          git add dados
+          git diff --cached --quiet || git commit -m "Jarvis: rodada do Google"
+          git pull --rebase --autostash || true
+          git push
