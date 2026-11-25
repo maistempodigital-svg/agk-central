@@ -1,12 +1,12 @@
 {
-  "atualizado": "2026-11-25T20:05:57+00:00",
+  "atualizado": "2026-11-25T21:34:39+00:00",
   "chave_expira": "2027-02-23T19:20:51+00:00",
   "contas": [
     {
       "page_id": "1038094626051636",
       "nome": "Elisabeth Planejados",
       "ig_user": "elisabethplanejados",
-      "seguidores": 8150,
+      "seguidores": 8149,
       "posts": [
         {
           "link": "https://www.instagram.com/reel/DgIFfwmBJ4U/",
@@ -273,7 +273,7 @@
         {
           "link": "https://www.instagram.com/reel/DXsNmfDkemo/",
           "data": "2026-04-28",
-          "curtidas": 7,
+          "curtidas": 6,
           "comentarios": 0,
           "tipo": "REELS",
           "texto": ""
@@ -303,6 +303,14 @@
       "seguidores": 487,
       "posts": [
         {
+          "link": "https://www.instagram.com/p/DgLgNgqGlr-/",
+          "data": "2026-11-25",
+          "curtidas": 0,
+          "comentarios": 0,
+          "tipo": "FEED",
+          "texto": "Vender mais não é sorte. É estar no lugar certo, do jeito ce"
+        },
+        {
           "link": "https://www.instagram.com/reel/DgKsdxEREMa/",
           "data": "2026-11-25",
           "curtidas": 2,
@@ -317,14 +325,6 @@
           "comentarios": 0,
           "tipo": "REELS",
           "texto": "O cliente ligou, o número estava errado. Ele comprou do conc"
-        },
-        {
-          "link": "https://www.instagram.com/reel/DgJQVS5IdT3/",
-          "data": "2026-11-25",
-          "curtidas": 0,
-          "comentarios": 0,
-          "tipo": "REELS",
-          "texto": "Você sabe quanto do dinheiro do anúncio volta para o seu cai"
         }
       ]
     },
@@ -412,7 +412,7 @@
       "page_id": "1803402906445483",
       "nome": "Instituto Fios de Ouro",
       "ig_user": "institutofiosdeouromatriz",
-      "seguidores": 18726,
+      "seguidores": 18727,
       "posts": [
         {
           "link": "https://www.instagram.com/reel/DgGA5wRPCOp/",
