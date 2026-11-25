@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T15:27:18+00:00",
+  "atualizado": "2026-11-25T15:50:23+00:00",
   "clientes": [
     {
       "chave": "equilibrio",
@@ -7,62 +7,7 @@
       "ativo": true,
       "media": 5,
       "total": 51,
-      "sem_resposta": [
-        {
-          "id": "AbFvOqkQIlUAOg6Wl_nkYQ--NqjkMNGad5P9v8cQ9Jqfk8b_Jx6ueplsVIrB8pmKEeYJPyi8B5MnWA",
-          "autor": "Ricardo Ferreira",
-          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIZJcZ-jBonHLMUK4AiPWVOerhSe-mxLrTL8crmxc5kEWI6GA=s120-c-rp-mo-br100",
-          "nota": 5,
-          "texto": "Ótima",
-          "data": "2026-11-17T20:48:06.272036Z",
-          "resposta": null
-        },
-        {
-          "id": "AbFvOqkqismFolMX7fAXaHzJSH05IJcbeuZjsA1bTUvMTZfLmTTlScJIBbmt5qzKqRSsaLuFntjNIA",
-          "autor": "Caio Sabino",
-          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjUlpSXEIt1j2udbwDq6UNR6PIUfhvK0Ydy93OB9hLm6jPNstoZrIA=s120-c-rp-mo-ba12-br100",
-          "nota": 5,
-          "texto": "",
-          "data": "2026-10-29T18:56:15.512598Z",
-          "resposta": null
-        },
-        {
-          "id": "AbFvOqkw1sm0stTj7ME2pgm0Au3znaRHUKz5KmsgivVVhkIuaotwnpuxC1zNYGqrEbkxfYfoXtqT",
-          "autor": "Jheniffer Martins",
-          "foto": "https://lh3.googleusercontent.com/a/ACg8ocIcZFLTSq1qqDIB6EdoxbbJ6ffytJ0TrId_zkn0GUrS74PdyMy0=s120-c-rp-mo-br100",
-          "nota": 5,
-          "texto": "Fui muito bem atendida pela recepcionista, com direito a café muito gostoso. Na hora de falar com o quiro, ela foi muito simpática e me explicou tudo, tirando todas as minhas dúvidas.\nSuper recomendo.",
-          "data": "2026-10-29T18:28:07.247733Z",
-          "resposta": null
-        },
-        {
-          "id": "AbFvOqn52Nd77tDPI0qyEhD3zrIhnY3bfRgE925fjVSoJQ6W8o0IvkujFE-suNnxscJqNou37QvY",
-          "autor": "Luana Barbosa",
-          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjWbpIKGZW4DmDc2hXCbJC1RVmh5kDHfvM3YKcwgpzZFRbLteA32Tg=s120-c-rp-mo-ba12-br100",
-          "nota": 5,
-          "texto": "Clínica com profissionais experientes. Ambiente acolhedor e muito próximo da estação e do shopping.",
-          "data": "2026-10-29T15:26:19.241928Z",
-          "resposta": null
-        },
-        {
-          "id": "AbFvOqlwgsf291zvx90YfTJaw0fm58oO-0joDKsKlJJx8faP8OmOcizbPWFs_5paFpAeAXTQKmK3Tg",
-          "autor": "Rodrigo Rodrigues",
-          "foto": "https://lh3.googleusercontent.com/a/ACg8ocI_u7tNuRrc1nvriCTLz7JwqAcB7yGxAnSMQTKAFZpnVYcECw=s120-c-rp-mo-br100",
-          "nota": 5,
-          "texto": "Atendimento maravilhoso, entrei com dor e sai 100% sem dor.\n\nProfissionais atenciosos e recepção que acolhe\n\nNota 1000",
-          "data": "2026-10-14T18:27:33.576515Z",
-          "resposta": null
-        },
-        {
-          "id": "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx",
-          "autor": "jr assessoria esportiva",
-          "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVQWwV8Oxtcpcemez77uPdct7OOvu5WfNqspYWjo9OFgHnKfMU=s120-c-rp-mo-ba12-br100",
-          "nota": 5,
-          "texto": "Já passo com o Lucas a  um ano e sempre saio restaurado. Profissional estudioso, com ótima energia.\nSuper recomendo!",
-          "data": "2026-04-24T20:25:19.085576Z",
-          "resposta": null
-        }
-      ],
+      "sem_resposta": [],
       "recentes": [
         {
           "id": "AbFvOqkQIlUAOg6Wl_nkYQ--NqjkMNGad5P9v8cQ9Jqfk8b_Jx6ueplsVIrB8pmKEeYJPyi8B5MnWA",
@@ -71,7 +16,7 @@
           "nota": 5,
           "texto": "Ótima",
           "data": "2026-11-17T20:48:06.272036Z",
-          "resposta": null
+          "resposta": "Ricardo, muito obrigado pela avaliação! Ficamos felizes que sua experiência com a quiropraxia aqui na Equilíbrio da Coluna, na Vila Olímpia. Conte com a gente sempre que a coluna pedir um cuidado."
         },
         {
           "id": "AbFvOqkqismFolMX7fAXaHzJSH05IJcbeuZjsA1bTUvMTZfLmTTlScJIBbmt5qzKqRSsaLuFntjNIA",
@@ -80,7 +25,7 @@
           "nota": 5,
           "texto": "",
           "data": "2026-10-29T18:56:15.512598Z",
-          "resposta": null
+          "resposta": "Caio, obrigado pelas 5 estrelas! É muito bom saber que você aprovou o atendimento da Equilíbrio da Coluna. Estamos aqui na Vila Olímpia sempre que precisar cuidar da sua coluna."
         },
         {
           "id": "AbFvOqkw1sm0stTj7ME2pgm0Au3znaRHUKz5KmsgivVVhkIuaotwnpuxC1zNYGqrEbkxfYfoXtqT",
@@ -89,7 +34,7 @@
           "nota": 5,
           "texto": "Fui muito bem atendida pela recepcionista, com direito a café muito gostoso. Na hora de falar com o quiro, ela foi muito simpática e me explicou tudo, tirando todas as minhas dúvidas.\nSuper recomendo.",
           "data": "2026-10-29T18:28:07.247733Z",
-          "resposta": null
+          "resposta": "Jheniffer, que alegria ler isso! Nossa recepção e nossa quiropraxista vão adorar saber que você se sentiu acolhida e teve todas as dúvidas respondidas, e que o café agradou. Esperamos você nas próximas sessões aqui na Vila Olímpia!"
         },
         {
           "id": "AbFvOqn52Nd77tDPI0qyEhD3zrIhnY3bfRgE925fjVSoJQ6W8o0IvkujFE-suNnxscJqNou37QvY",
@@ -98,7 +43,7 @@
           "nota": 5,
           "texto": "Clínica com profissionais experientes. Ambiente acolhedor e muito próximo da estação e do shopping.",
           "data": "2026-10-29T15:26:19.241928Z",
-          "resposta": null
+          "resposta": "Luana, muito obrigado! Ficamos felizes que você sentiu o ambiente acolhedor e a experiência da nossa equipe de quiropraxia. E sim, estamos pertinho da estação e do shopping na Vila Olímpia, fácil de encaixar na rotina. Até a próxima!"
         },
         {
           "id": "AbFvOqlwgsf291zvx90YfTJaw0fm58oO-0joDKsKlJJx8faP8OmOcizbPWFs_5paFpAeAXTQKmK3Tg",
@@ -107,7 +52,7 @@
           "nota": 5,
           "texto": "Atendimento maravilhoso, entrei com dor e sai 100% sem dor.\n\nProfissionais atenciosos e recepção que acolhe\n\nNota 1000",
           "data": "2026-10-14T18:27:33.576515Z",
-          "resposta": null
+          "resposta": "Rodrigo, nota 1000 é a sua avaliação! Que bom que você chegou com dor nas costas e saiu bem melhor. Nossa equipe e a recepção agradecem o carinho. Conte com a Equilíbrio da Coluna para manter sua coluna em dia."
         },
         {
           "id": "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx",
@@ -116,7 +61,7 @@
           "nota": 5,
           "texto": "Já passo com o Lucas a  um ano e sempre saio restaurado. Profissional estudioso, com ótima energia.\nSuper recomendo!",
           "data": "2026-04-24T20:25:19.085576Z",
-          "resposta": null
+          "resposta": "Muito obrigado pela confiança de um ano de acompanhamento! O Lucas vai ficar muito feliz com esse reconhecimento. Para quem treina e se cobra no esporte, cuidar da coluna faz toda a diferença, e é um prazer fazer parte disso aqui na Vila Olímpia."
         },
         {
           "id": "AbFvOqlbu_YgX5aGXqKh8BtI-sq5-kLxl0pFuBfO5g9txEiu7_fSPNbc5XMiyYcXsZIMfijctNuweA",

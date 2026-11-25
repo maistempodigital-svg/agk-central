@@ -1,5 +1,61 @@
 [
   {
+    "quando": "2026-11-25T15:50:29+00:00",
+    "tipo": "rodada",
+    "cliente": "todos",
+    "texto": "5 perfis lidos, 0 avaliacoes sem resposta nos clientes ativos",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T15:50:23+00:00",
+    "tipo": "resposta",
+    "cliente": "equilibrio",
+    "texto": "Respondeu jr assessoria esportiva: Muito obrigado pela confiança de um ano de acompanhamento! O Lucas vai ficar muito feliz com esse reconhecimento. Para q",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T15:50:22+00:00",
+    "tipo": "resposta",
+    "cliente": "equilibrio",
+    "texto": "Respondeu Luana Barbosa: Luana, muito obrigado! Ficamos felizes que você sentiu o ambiente acolhedor e a experiência da nossa equipe de quiroprax",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T15:50:21+00:00",
+    "tipo": "resposta",
+    "cliente": "equilibrio",
+    "texto": "Respondeu Rodrigo Rodrigues: Rodrigo, nota 1000 é a sua avaliação! Que bom que você chegou com dor nas costas e saiu bem melhor. Nossa equipe e a rec",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T15:50:21+00:00",
+    "tipo": "resposta",
+    "cliente": "equilibrio",
+    "texto": "Respondeu Jheniffer Martins: Jheniffer, que alegria ler isso! Nossa recepção e nossa quiropraxista vão adorar saber que você se sentiu acolhida e tev",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T15:50:20+00:00",
+    "tipo": "resposta",
+    "cliente": "equilibrio",
+    "texto": "Respondeu Caio Sabino: Caio, obrigado pelas 5 estrelas! É muito bom saber que você aprovou o atendimento da Equilíbrio da Coluna. Estamos aqui ",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
+    "quando": "2026-11-25T15:50:19+00:00",
+    "tipo": "resposta",
+    "cliente": "equilibrio",
+    "texto": "Respondeu Ricardo Ferreira: Ricardo, muito obrigado pela avaliação! Ficamos felizes que sua experiência com a quiropraxia aqui na Equilíbrio da Colu",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
     "quando": "2026-11-25T15:27:25+00:00",
     "tipo": "rodada",
     "cliente": "todos",
