@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T17:09:06+00:00",
+  "atualizado": "2026-11-25T17:12:59+00:00",
   "clientes": [
     {
       "chave": "equilibrio",
@@ -250,7 +250,7 @@
             "area": "reputacao",
             "ok": true,
             "peso": 8,
-            "titulo": "Nenhuma avaliação negativa recente",
+            "titulo": "Nenhuma avaliação negativa sem resposta",
             "detalhe": null,
             "acao": null
           },
@@ -672,12 +672,12 @@
         ]
       },
       "saude": {
-        "geral": 77,
+        "geral": 79,
         "areas": [
           {
             "id": "reputacao",
             "nome": "Reputação",
-            "nota": 90
+            "nota": 95
           },
           {
             "id": "atividade",
@@ -705,7 +705,7 @@
             "area": "reputacao",
             "ok": true,
             "peso": 9,
-            "titulo": "Nota 4,900000095367432: excelente",
+            "titulo": "Nota 4,9: excelente",
             "detalhe": null,
             "acao": null
           },
@@ -719,11 +719,11 @@
           },
           {
             "area": "reputacao",
-            "ok": false,
+            "ok": true,
             "peso": 8,
-            "titulo": "1 avaliação(ões) de 1 a 3 estrelas nos últimos 6 meses",
-            "detalhe": "Responda com calma: quem lê a resposta decide se confia.",
-            "acao": "Responder as negativas"
+            "titulo": "Nenhuma avaliação negativa sem resposta",
+            "detalhe": null,
+            "acao": null
           },
           {
             "area": "atividade",
@@ -845,11 +845,6 @@
             "acao": "Pedir avaliações esta semana"
           },
           {
-            "titulo": "1 avaliação(ões) de 1 a 3 estrelas nos últimos 6 meses",
-            "detalhe": "Responda com calma: quem lê a resposta decide se confia.",
-            "acao": "Responder as negativas"
-          },
-          {
             "titulo": "0 categoria(s) extra",
             "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
             "acao": "Adicionar categorias"
@@ -869,9 +864,9 @@
       "evolucao": [
         {
           "semana": "2026-S48",
-          "media": 4.900000095367432,
+          "media": 4.9,
           "total": 265,
-          "saude": 77,
+          "saude": 79,
           "fotos": 261,
           "posts30": 10
         }
@@ -1072,7 +1067,7 @@
             "area": "reputacao",
             "ok": true,
             "peso": 8,
-            "titulo": "Nenhuma avaliação negativa recente",
+            "titulo": "Nenhuma avaliação negativa sem resposta",
             "detalhe": null,
             "acao": null
           },

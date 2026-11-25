@@ -1,0 +1,762 @@
+{
+  "atualizado": "2026-11-25T17:12:59+00:00",
+  "clientes": [
+    {
+      "chave": "equilibrio",
+      "nome": "Equilíbrio da Coluna",
+      "ativo": true,
+      "media": 5,
+      "total": 51,
+      "whatsapp": "5511913330826",
+      "erro": null,
+      "sem_resposta": [],
+      "recentes": [
+        {
+          "autor": "Ricardo Ferreira",
+          "nota": 5,
+          "data": "2026-11-17T20:48:06",
+          "texto": "Ótima",
+          "resposta": "Ricardo, muito obrigado pela avaliação! Ficamos felizes que sua experiência com a quiropraxia aqui na Equilíbrio da Coluna, na Vila Olímpia. Conte com a gente sempre que a coluna pedir um cuidado."
+        },
+        {
+          "autor": "Caio Sabino",
+          "nota": 5,
+          "data": "2026-10-29T18:56:15",
+          "texto": "",
+          "resposta": "Caio, obrigado pelas 5 estrelas! É muito bom saber que você aprovou o atendimento da Equilíbrio da Coluna. Estamos aqui na Vila Olímpia sempre que precisar cuidar da sua coluna."
+        },
+        {
+          "autor": "Jheniffer Martins",
+          "nota": 5,
+          "data": "2026-10-29T18:28:07",
+          "texto": "Fui muito bem atendida pela recepcionista, com direito a café muito gostoso. Na hora de falar com o quiro, ela foi muito simpática e me explicou tudo,",
+          "resposta": "Jheniffer, que alegria ler isso! Nossa recepção e nossa quiropraxista vão adorar saber que você se sentiu acolhida e teve todas as dúvidas respondidas, e que o café agradou. Esperamos você nas próximas sessões aqui na Vi"
+        },
+        {
+          "autor": "Luana Barbosa",
+          "nota": 5,
+          "data": "2026-10-29T15:26:19",
+          "texto": "Clínica com profissionais experientes. Ambiente acolhedor e muito próximo da estação e do shopping.",
+          "resposta": "Luana, muito obrigado! Ficamos felizes que você sentiu o ambiente acolhedor e a experiência da nossa equipe de quiropraxia. E sim, estamos pertinho da estação e do shopping na Vila Olímpia, fácil de encaixar na rotina. A"
+        },
+        {
+          "autor": "Rodrigo Rodrigues",
+          "nota": 5,
+          "data": "2026-10-14T18:27:33",
+          "texto": "Atendimento maravilhoso, entrei com dor e sai 100% sem dor.\n\nProfissionais atenciosos e recepção que acolhe\n\nNota 1000",
+          "resposta": "Rodrigo, nota 1000 é a sua avaliação! Que bom que você chegou com dor nas costas e saiu bem melhor. Nossa equipe e a recepção agradecem o carinho. Conte com a Equilíbrio da Coluna para manter sua coluna em dia."
+        },
+        {
+          "autor": "jr assessoria esportiva",
+          "nota": 5,
+          "data": "2026-04-24T20:25:19",
+          "texto": "Já passo com o Lucas a  um ano e sempre saio restaurado. Profissional estudioso, com ótima energia.\nSuper recomendo!",
+          "resposta": "Muito obrigado pela confiança de um ano de acompanhamento! O Lucas vai ficar muito feliz com esse reconhecimento. Para quem treina e se cobra no esporte, cuidar da coluna faz toda a diferença, e é um prazer fazer parte d"
+        }
+      ],
+      "posts": [],
+      "perfil": {
+        "categoria": "Clínica de Quiropraxia",
+        "categorias_extra": [
+          "Centro de bem-estar",
+          "Massagista esportivo"
+        ],
+        "telefone": "(11) 91333-0826",
+        "site": "https://www.equilibriodacoluna.com.br/",
+        "dias_com_horario": 6,
+        "feriados": true,
+        "status": "OPEN",
+        "endereco": "Avenida Doutor Cardoso de Melo, 1470 - Sala 201 - 2° Andar, Vila Olímpia, São Paulo",
+        "area_atendida": 4,
+        "servicos": 3,
+        "mapa": "https://maps.google.com/maps?cid=7497371432288143217",
+        "avaliar": "https://search.google.com/local/writereview?placeid=ChIJCZIdUURXzpQRcUeySpgDDGg",
+        "descricao": "Equilíbrio da Coluna - Quiropraxia e Saúde Integrativa\n\nLocalizada na Vila Olímpia, somos um refúgio de bem-estar para quem busca alta performance e cuidado humanizado. Nosso diferencial é o cuidado profundo: unimos a precisão da Quiropraxia ao acolhimento da Massoterapia em um único atendimento focado na causa raiz das suas tensões.\n\nPor que escolher a Equilíbrio Da Coluna?\n- Até 90 min: Tempo dedicado para tratar seu corpo como uma unidade.\n- Cuidado Integrativo: Alinhamento articular e soltura muscular profunda.\n- Performance: Ideal para líderes e atletas que buscam energia máxima.\n- Conveniência: No coração corporativo da Vila Olímpia.\n\nResgate seu equilíbrio com um acompanhamento que respeita o seu tempo."
+      },
+      "fotos": {
+        "total": 9,
+        "ultima": "2026-03-07T23:01:22Z"
+      },
+      "saude": {
+        "geral": 68,
+        "areas": [
+          {
+            "id": "reputacao",
+            "nome": "Reputação",
+            "nota": 88
+          },
+          {
+            "id": "atividade",
+            "nome": "Atividade",
+            "nota": 30
+          },
+          {
+            "id": "perfil",
+            "nome": "Perfil completo",
+            "nota": 85
+          },
+          {
+            "id": "visibilidade",
+            "nome": "Visibilidade",
+            "nota": null
+          },
+          {
+            "id": "concorrencia",
+            "nome": "Concorrência",
+            "nota": null
+          }
+        ],
+        "checks": [
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "Nota 5: excelente"
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "51 avaliações"
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "Nenhuma avaliação negativa sem resposta"
+          },
+          {
+            "area": "atividade",
+            "ok": true,
+            "titulo": "4 avaliação(ões) nova(s) no último mês"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Categoria: Clínica de Quiropraxia"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "2 categoria(s) extra"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Horário de funcionamento completo"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Horário de feriados cadastrado"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Telefone cadastrado"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Tem site próprio"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Descrição completa"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "9 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "3 serviço(s) cadastrados"
+          },
+          {
+            "area": "visibilidade",
+            "titulo": "Posição no mapa ainda não medida",
+            "acao": "Medir posição"
+          },
+          {
+            "area": "concorrencia",
+            "titulo": "Concorrentes ainda não analisados",
+            "acao": "Ver concorrentes"
+          }
+        ],
+        "plano": [
+          {
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "titulo": "9 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ]
+      },
+      "evolucao": [
+        {
+          "semana": "2026-S48",
+          "media": 5,
+          "total": 51,
+          "saude": 68,
+          "fotos": 9,
+          "posts30": 0
+        }
+      ],
+      "novas_30d": 4
+    },
+    {
+      "chave": "quiroleste",
+      "nome": "Quiro Leste",
+      "ativo": true,
+      "media": 4.9,
+      "total": 265,
+      "whatsapp": "5511971094308",
+      "erro": null,
+      "sem_resposta": [],
+      "recentes": [
+        {
+          "autor": "Marisa Cruz",
+          "nota": 5,
+          "data": "2026-10-30T17:18:44",
+          "texto": "Excelente atendimento, sou atendida por Thiago  massagem e já passei Quiro com Bruno, minha mãe passou com Renato, recomendo!",
+          "resposta": "Marisa, muito obrigado por compartilhar sua experiência e recomendar a Quiro Leste! Ficamos felizes com a confiança sua e da sua mãe em nossa equipe. Vamos compartilhar seu carinho com o Thiago, o Bruno e o Renato. Será "
+        },
+        {
+          "autor": "Gilsimas Santana",
+          "nota": 5,
+          "data": "2026-10-17T18:27:00",
+          "texto": "Muito boa essa eu recomendo",
+          "resposta": "Gilsimas, muito obrigado pela recomendação e pela confiança no nosso trabalho. Ficamos felizes em saber que sua experiência na Quiro Leste Quiropraxia, no Tatuapé, São Paulo, foi positiva. Será sempre um prazer receber v"
+        },
+        {
+          "autor": "kah reis",
+          "nota": 5,
+          "data": "2026-10-17T18:26:08",
+          "texto": "",
+          "resposta": "Kah, agradecemos muito pela sua avaliação. Sua confiança é muito importante para toda a equipe da Quiro Leste Quiropraxia, no Tatuapé, São Paulo. Esperamos continuar proporcionando um atendimento acolhedor, profissional "
+        },
+        {
+          "autor": "Leonardo Colombo",
+          "nota": 5,
+          "data": "2026-10-02T16:42:18",
+          "texto": "Fui muito bem atendido, excelente ambiente, extremamente profissionais.",
+          "resposta": "Leonardo, agradecemos pelas palavras e pela confiança. Ficamos muito felizes em saber que você se sentiu bem atendido, encontrou um ambiente agradável e percebeu o profissionalismo da nossa equipe. Na Quiro Leste Quiropr"
+        },
+        {
+          "autor": "Marília Jéssica Silva Cunha",
+          "nota": 5,
+          "data": "2026-09-26T18:25:20",
+          "texto": "Super recomendo a quiropraxia! 🙌✨ Eu sentia muitas dores na lombar, no pescoço e no meio das costas. Tenho uma leve escoliose e, depois das sessões, s",
+          "resposta": "Marília, muito obrigado por compartilhar sua experiência e por recomendar a Quiro Leste Quiropraxia! Ficamos muito felizes em saber que as sessões contribuíram para diminuir seus desconfortos na lombar, pescoço e região "
+        },
+        {
+          "autor": "Denis Leardi",
+          "nota": 5,
+          "data": "2026-08-08T18:19:43",
+          "texto": "Muito bom recomendo",
+          "resposta": "Denis, muito obrigado pelas 5 estrelas e pela recomendação! Ficamos muito felizes em saber que você teve uma ótima experiência com a Quiro Leste Quiropraxia. Nossa equipe trabalha com atenção, cuidado e profissionalismo "
+        }
+      ],
+      "posts": [
+        {
+          "texto": "Quantas sessões de quiropraxia são necessárias para sentir alívio? Essa é uma das perguntas mais comuns de quem procura atendimento pela primeira vez. A verdade",
+          "data": "2026-11-19T14:03:15",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDo0LXN4cHJZUFVYZ3RLamtfc2VJUm13"
+        },
+        {
+          "texto": "Seu corpo dá sinais todos os dias. Às vezes, eles aparecem como uma dor nas costas depois de horas de trabalho, uma tensão no pescoço, rigidez ao acordar ou dif",
+          "data": "2026-11-18T00:09:12",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDpRMW9sNmxKNjd3REg4blVvdEE4U3Jn"
+        },
+        {
+          "texto": "Você sabe qual hábito pode estar prejudicando a sua coluna todos os dias? Muitas vezes, o problema não começa em um grande esforço, mas em pequenas atitudes rep",
+          "data": "2026-11-17T23:54:53",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDo5ZGVlWnJYSlRZZ1drNXpkVDZsZjRn"
+        },
+        {
+          "texto": "Será que a Quiro Leste foi aprovada? Dessa vez, recebemos a visita do Rapaligo do Arturo para viver de perto a experiência de uma sessão de quiropraxia na **Qui",
+          "data": "2026-11-11T20:02:11",
+          "link": "https://local.google.com/place?id=11141427176221073835&use=posts&lpsid=CAIQACoeChxtc3BfaDozM2dHTHVFbWlsOHM4M0tZTzhnWHVR"
+        }
+      ],
+      "perfil": {
+        "categoria": "Clínica de Quiropraxia",
+        "categorias_extra": [],
+        "telefone": "(11) 97109-4308",
+        "site": "https://quirolestequiropraxia.com.br/v2",
+        "dias_com_horario": 6,
+        "feriados": true,
+        "status": "OPEN",
+        "endereco": "Rua Apucarana, 282, Tatuapé, São Paulo",
+        "area_atendida": 20,
+        "servicos": 14,
+        "mapa": "https://maps.google.com/maps?cid=11141427176221073835",
+        "avaliar": "https://search.google.com/local/writereview?placeid=ChIJe7yCMWBnzpQRq2GKqfxMnpo",
+        "descricao": "Quiro Leste Quiropraxia no Tatuapé, cuidado para sua saúde especialmente coluna vertebral. Realizamos atendimentos diáriamente, nossos profissionais são graduados pela faculdade Anhembi Morumbi e estão no mercado de trabalho há muitos anos cuidando e reabilitando muitas vidas!"
+      },
+      "fotos": {
+        "total": 261,
+        "ultima": "2026-11-19T14:00:14Z"
+      },
+      "saude": {
+        "geral": 79,
+        "areas": [
+          {
+            "id": "reputacao",
+            "nome": "Reputação",
+            "nota": 95
+          },
+          {
+            "id": "atividade",
+            "nome": "Atividade",
+            "nota": 48
+          },
+          {
+            "id": "perfil",
+            "nome": "Perfil completo",
+            "nota": 93
+          },
+          {
+            "id": "visibilidade",
+            "nome": "Visibilidade",
+            "nota": null
+          },
+          {
+            "id": "concorrencia",
+            "nome": "Concorrência",
+            "nota": null
+          }
+        ],
+        "checks": [
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "Nota 4,9: excelente"
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "265 avaliações"
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "Nenhuma avaliação negativa sem resposta"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "titulo": "1 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "area": "atividade",
+            "ok": true,
+            "titulo": "Postou nos últimos 7 dias"
+          },
+          {
+            "area": "atividade",
+            "ok": true,
+            "titulo": "Foto nova no último mês"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Categoria: Clínica de Quiropraxia"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Horário de funcionamento completo"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Horário de feriados cadastrado"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Telefone cadastrado"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Tem site próprio"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Descrição completa"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "261 fotos no perfil"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "14 serviço(s) cadastrados"
+          },
+          {
+            "area": "visibilidade",
+            "titulo": "Posição no mapa ainda não medida",
+            "acao": "Medir posição"
+          },
+          {
+            "area": "concorrencia",
+            "titulo": "Concorrentes ainda não analisados",
+            "acao": "Ver concorrentes"
+          }
+        ],
+        "plano": [
+          {
+            "titulo": "1 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
+          },
+          {
+            "titulo": "Posição no mapa ainda não medida",
+            "detalhe": null,
+            "acao": "Medir posição"
+          },
+          {
+            "titulo": "Concorrentes ainda não analisados",
+            "detalhe": null,
+            "acao": "Ver concorrentes"
+          }
+        ]
+      },
+      "evolucao": [
+        {
+          "semana": "2026-S48",
+          "media": 4.9,
+          "total": 265,
+          "saude": 79,
+          "fotos": 261,
+          "posts30": 10
+        }
+      ],
+      "novas_30d": 1
+    },
+    {
+      "chave": "desentupidora",
+      "nome": "Desentupidora Rápida",
+      "ativo": true,
+      "media": 5,
+      "total": 12,
+      "whatsapp": "5513991694990",
+      "erro": null,
+      "sem_resposta": [],
+      "recentes": [
+        {
+          "autor": "Cássio Aparecido Vitório Vitório",
+          "nota": 5,
+          "data": "2026-10-21T02:21:12",
+          "texto": "Só tenho que agradecer uma excelente Desitupidora eu indico pra qualquer pessoa",
+          "resposta": "Nosso objetivo é sempre resolver o problema dos nossos clientes muito obrigado."
+        },
+        {
+          "autor": "Jean Santos",
+          "nota": 5,
+          "data": "2026-10-20T16:16:52",
+          "texto": "Obrigado pelo serviço,  muito bom trabalho !",
+          "resposta": "Nosso objetivo é sempre resolver o problema do nosso cliente aqui em Itanhaém e obrigado "
+        },
+        {
+          "autor": "Julio Neto",
+          "nota": 5,
+          "data": "2026-10-18T19:54:56",
+          "texto": "Essa eu confio pôde acreditar deixaram a minha casa 🏠 Limpinha depois que limparam a minha Caixa de gordura em Itanhaém obrigado",
+          "resposta": "Obrigado seu julho por confiar pela segunda vez em aqui em Itanhaém obrigado."
+        },
+        {
+          "autor": "fabio molero",
+          "nota": 5,
+          "data": "2026-10-17T03:45:00",
+          "texto": "Obrigado pela ótima  prestação de serviços prestados",
+          "resposta": "Muito obrigado pela confiança "
+        },
+        {
+          "autor": "Katarina Rocha",
+          "nota": 5,
+          "data": "2026-10-16T16:58:18",
+          "texto": "empresa maravilhosa excelente trabalho super recomendo",
+          "resposta": "Muito obrigado dona Katarina estamos sempre aqui em Itanhaém "
+        },
+        {
+          "autor": "Hudson Ferreira",
+          "nota": 5,
+          "data": "2026-10-06T23:57:52",
+          "texto": "Super profissionais e um ótimo preço, recomendo para quem estiver precisando.",
+          "resposta": "Obrigado Hudson! Agradaçemos a sua avaliação. A desentupidora rapida está a suas ordens."
+        }
+      ],
+      "posts": [],
+      "perfil": {
+        "categoria": "Desentupidora",
+        "categorias_extra": [],
+        "telefone": "(13) 99169-4990",
+        "site": "https://24hdesentupidorarapida.com.br/",
+        "dias_com_horario": 7,
+        "feriados": false,
+        "status": "OPEN",
+        "endereco": "Avenida Alberto Simões, 1047 - Loja 5, Jd. Anchieta, Itanhaém",
+        "area_atendida": 0,
+        "servicos": 0,
+        "mapa": "https://maps.google.com/maps?cid=10647878627361289880",
+        "avaliar": "https://search.google.com/local/writereview?placeid=ChIJpZcCa_LV0ZQRmPZXWzLdxJM",
+        "descricao": "A Desentupidora Itanhaém atende Itanhaém e também realiza atendimentos em Santos, Praia Grande, Peruíbe, Mongaguá e outras regiões próximas. Agende uma visita presencial para avaliação do problema e orçamento no local."
+      },
+      "fotos": {
+        "total": 0,
+        "ultima": null
+      },
+      "saude": {
+        "geral": 45,
+        "areas": [
+          {
+            "id": "reputacao",
+            "nome": "Reputação",
+            "nota": 78
+          },
+          {
+            "id": "atividade",
+            "nome": "Atividade",
+            "nota": 0
+          },
+          {
+            "id": "perfil",
+            "nome": "Perfil completo",
+            "nota": 56
+          },
+          {
+            "id": "visibilidade",
+            "nome": "Visibilidade",
+            "nota": null
+          },
+          {
+            "id": "concorrencia",
+            "nome": "Concorrência",
+            "nota": null
+          }
+        ],
+        "checks": [
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "Nota 5: excelente"
+          },
+          {
+            "area": "reputacao",
+            "ok": false,
+            "titulo": "12 avaliações",
+            "detalhe": "Meta inicial: 50 (faltam 38).",
+            "acao": "Pedir avaliações agora"
+          },
+          {
+            "area": "reputacao",
+            "ok": true,
+            "titulo": "Nenhuma avaliação negativa sem resposta"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "titulo": "0 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "area": "atividade",
+            "ok": false,
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Categoria: Desentupidora"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Horário de funcionamento completo"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "Sem horário de feriados",
+            "detalhe": "O Google valoriza quem informa feriados.",
+            "acao": "Cadastrar feriados"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Telefone cadastrado"
+          },
+          {
+            "area": "perfil",
+            "ok": true,
+            "titulo": "Tem site próprio"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "Descrição curta (218 letras)",
+            "detalhe": "Diga o que faz, para quem e em qual bairro, com as palavras-chave.",
+            "acao": "Reescrever descrição"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "0 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "area": "perfil",
+            "ok": false,
+            "titulo": "0 serviço(s) cadastrados",
+            "detalhe": "Serviços cadastrados ajudam o Google a entender o que você faz.",
+            "acao": "Cadastrar serviços"
+          },
+          {
+            "area": "visibilidade",
+            "titulo": "Posição no mapa ainda não medida",
+            "acao": "Medir posição"
+          },
+          {
+            "area": "concorrencia",
+            "titulo": "Concorrentes ainda não analisados",
+            "acao": "Ver concorrentes"
+          }
+        ],
+        "plano": [
+          {
+            "titulo": "12 avaliações",
+            "detalhe": "Meta inicial: 50 (faltam 38).",
+            "acao": "Pedir avaliações agora"
+          },
+          {
+            "titulo": "0 avaliação(ões) nova(s) no último mês",
+            "detalhe": "O Google favorece perfis que recebem avaliações toda semana. Meta: 1 por semana.",
+            "acao": "Pedir avaliações esta semana"
+          },
+          {
+            "titulo": "Nenhum post no Google",
+            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
+            "acao": "Criar post"
+          },
+          {
+            "titulo": "0 fotos no perfil",
+            "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
+            "acao": "Postar fotos"
+          },
+          {
+            "titulo": "Nenhuma foto nova há mais de 1 mês",
+            "detalhe": "Fotos novas todo mês ajudam no ranking e nos cliques.",
+            "acao": "Postar fotos novas"
+          },
+          {
+            "titulo": "Descrição curta (218 letras)",
+            "detalhe": "Diga o que faz, para quem e em qual bairro, com as palavras-chave.",
+            "acao": "Reescrever descrição"
+          }
+        ]
+      },
+      "evolucao": [
+        {
+          "semana": "2026-S48",
+          "media": 5,
+          "total": 12,
+          "saude": 45,
+          "fotos": 0,
+          "posts30": 0
+        }
+      ],
+      "novas_30d": 0
+    },
+    {
+      "chave": "agk",
+      "nome": "AGK Vendas",
+      "ativo": false,
+      "media": 5,
+      "total": 6,
+      "whatsapp": "5511971648120",
+      "erro": null
+    },
+    {
+      "chave": "sassup",
+      "nome": "Sassup Shop",
+      "ativo": false,
+      "media": 5,
+      "total": 10,
+      "whatsapp": null,
+      "erro": null
+    }
+  ]
+}

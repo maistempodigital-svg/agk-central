@@ -1,5 +1,13 @@
 [
   {
+    "quando": "2026-11-25T17:13:07+00:00",
+    "tipo": "rodada",
+    "cliente": "todos",
+    "texto": "5 perfis lidos, 0 avaliacoes sem resposta nos clientes ativos",
+    "ok": true,
+    "onde": "nuvem"
+  },
+  {
     "quando": "2026-11-25T17:09:14+00:00",
     "tipo": "rodada",
     "cliente": "todos",
