@@ -10,6 +10,7 @@ Chaves: variavel GOOGLE_SEGREDOS (o conteudo do segredos.json) ou o arquivo segr
 Nada aqui escreve texto sozinho: quem escreve as respostas e o Claude, e so sai o que foi aprovado.
 """
 import json, os, re, sys, time, urllib.parse, urllib.request, urllib.error
+import regras
 from datetime import datetime, timezone
 
 PASTA = os.path.dirname(os.path.abspath(__file__))
@@ -32,7 +33,16 @@ def problema(texto):
     for padrao, motivo in PROIBIDO:
         if re.search(padrao, texto, re.I):
             return motivo
-    return None
+    return regras.checar(texto, "google")
+
+
+def ja_feitos(feitas, chave, tipos, dias):
+    """Quantas acoes deste tipo o robo ja fez para o cliente nos ultimos dias (limite de seguranca)."""
+    n = 0
+    for f in feitas.values():
+        if f.get("ok") and f.get("chave") == chave and f.get("tipo") in tipos and dias_desde(f.get("quando")) < dias:
+            n += 1
+    return n
 
 
 def ler(nome, padrao):
@@ -180,7 +190,7 @@ def painel(saida):
             o["perfil"] = {k: p.get(k) for k in ["categoria", "categorias_extra", "telefone", "site", "dias_com_horario", "feriados", "status", "endereco", "area_atendida", "servicos", "mapa", "avaliar"]}
             o["perfil"]["descricao"] = cut(p.get("descricao"), 750)
             f = c.get("fotos") or {}
-            o["fotos"] = {"total": f.get("total"), "ultima": f.get("ultima")}
+            o["fotos"] = {"total": f.get("total"), "ultima": f.get("ultima"), "recentes": [x for x in (f.get("recentes") or []) if (x.get("url") or "").startswith("https://")][:6]}
             sd = c.get("saude")
             if sd:
                 sd = dict(sd); sd["checks"] = [{k: v for k, v in x.items() if v is not None and k != "peso"} for x in sd["checks"]]
@@ -206,9 +216,20 @@ def publicar():
         try:
             if not c:
                 raise RuntimeError("cliente desconhecido")
-            motivo = problema(item["texto"])
+            motivo = problema(item.get("texto", "")) if item["tipo"] != "foto" else None
             if motivo:
                 raise RuntimeError(f"texto bloqueado: parece {motivo}")
+            L = regras.LIMITES
+            limite = None
+            if item["tipo"] == "perfil" and (ja_feitos(feitas, item["chave"], ["perfil"], 1) >= L["google_perfil_dia"] or ja_feitos(feitas, item["chave"], ["perfil"], 7) >= L["google_perfil_semana"]):
+                limite = "limite de alteracoes no perfil (1 por dia, 3 por semana)"
+            elif item["tipo"] == "foto" and ja_feitos(feitas, item["chave"], ["foto"], 1) >= L["google_foto_dia"]:
+                limite = "limite de 5 fotos por dia"
+            elif item["tipo"] == "post" and ja_feitos(feitas, item["chave"], ["post"], 1) >= L["google_post_dia"]:
+                limite = "limite de 1 post por dia"
+            if limite:
+                registrar("aviso", item["chave"], f"Adiado para amanha por seguranca ({limite}): {item.get('texto', item.get('url', ''))[:80]}")
+                continue
             if item["tipo"] == "resposta":
                 g("PUT", f"{v4(c)}/reviews/{urllib.parse.quote(item['review_id'], safe='')}/reply", {"comment": item["texto"]})
                 registrar("resposta", item["chave"], f"Respondeu {item.get('autor', 'cliente')}: {item['texto'][:120]}")
@@ -220,16 +241,25 @@ def publicar():
                     corpo["media"] = [{"mediaFormat": "PHOTO", "sourceUrl": item["foto"]}]
                 g("POST", f"{v4(c)}/localPosts", corpo)
                 registrar("post", item["chave"], f"Post publicado: {item['texto'][:120]}")
+            elif item["tipo"] == "foto":
+                g("POST", f"{v4(c)}/media", {"mediaFormat": "PHOTO", "locationAssociation": {"category": item.get("categoria", "ADDITIONAL")}, "sourceUrl": item["url"]})
+                registrar("foto", item["chave"], f"Foto publicada no perfil: {item.get('texto', '')[:80]}")
             elif item["tipo"] == "perfil":
                 campo = item.get("campo", "descricao")
-                mapa = {"descricao": ("profile.description", {"profile": {"description": item["texto"]}}),
-                        "site": ("websiteUri", {"websiteUri": item["texto"]})}
+                v = item.get("valor")
+                mapa = {"descricao": ("profile.description", {"profile": {"description": item.get("texto", "")}}),
+                        "site": ("websiteUri", {"websiteUri": item.get("texto", "")}),
+                        "telefone": ("phoneNumbers", {"phoneNumbers": {"primaryPhone": item.get("texto", "")}}),
+                        "horario": ("regularHours", {"regularHours": v}),
+                        "feriados": ("specialHours", {"specialHours": v})}
+                if campo in ("horario", "feriados") and not isinstance(v, dict):
+                    raise RuntimeError("faltou o horario no formato certo")
                 if campo not in mapa:
                     raise RuntimeError(f"campo do perfil nao suportado: {campo}")
                 mask, corpo = mapa[campo]
                 g("PATCH", f"{INFO}/{c['local']}?updateMask={mask}", corpo)
                 registrar("perfil", item["chave"], f"Perfil atualizado ({campo}): {item['texto'][:120]}")
-            feitas[item["id"]] = {"ok": True, "quando": agora()}
+            feitas[item["id"]] = {"ok": True, "quando": agora(), "tipo": item["tipo"], "chave": item["chave"]}
             n += 1
         except Exception as e:
             tent = feitas.get(item["id"], {}).get("tentativas", 0) + 1

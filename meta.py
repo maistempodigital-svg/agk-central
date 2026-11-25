@@ -11,6 +11,7 @@ A chave nunca e gravada em arquivo, log ou commit.
 Sabado (sexta 15h ate sabado 20h, horario de Brasilia): nada e publicado.
 """
 import json, os, re, sys, time, urllib.parse, urllib.request, urllib.error
+import regras
 from datetime import datetime, timezone, timedelta
 
 PASTA = os.path.dirname(os.path.abspath(__file__))
@@ -227,9 +228,13 @@ def publicar():
             try:
                 if not pg:
                     raise RuntimeError("a chave nao alcanca essa pagina")
-                for padrao, motivo in PROIBIDO:
-                    if re.search(padrao, item.get("legenda", ""), re.I):
-                        raise RuntimeError("legenda bloqueada: " + motivo)
+                motivo = regras.checar(item.get("legenda", ""), "meta")
+                if motivo:
+                    raise RuntimeError("legenda bloqueada: " + motivo)
+                hoje = [f for f in feitas.values() if f.get("ok") and f.get("page_id") == str(item["page_id"]) and f.get("rede") == rede and (agora() - datetime.fromisoformat(f["quando"])).total_seconds() < 86400]
+                if len(hoje) >= regras.LIMITES["meta_post_dia"]:
+                    registrar("aviso", item.get("cliente", "meta"), "Post adiado: limite de 3 posts por dia nessa conta (seguranca).")
+                    continue
                 if rede == "ig":
                     ig = (pg.get("instagram_business_account") or {}).get("id")
                     if not ig:
@@ -237,7 +242,7 @@ def publicar():
                     res = postar_ig(ig, pg["access_token"], item)
                 else:
                     res = postar_fb(pg["id"], pg["access_token"], item)
-                feitas[chave] = {"ok": True, "quando": agora().isoformat(timespec="seconds"), **res}
+                feitas[chave] = {"ok": True, "quando": agora().isoformat(timespec="seconds"), "page_id": str(item["page_id"]), "rede": rede, **res}
                 registrar("post", item.get("cliente", pg.get("name")), f"{'Instagram' if rede == 'ig' else 'Facebook'} ({item['tipo']}): {item.get('legenda', '')[:100]}")
                 n += 1
             except Exception as e:
