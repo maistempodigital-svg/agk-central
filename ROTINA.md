@@ -48,3 +48,16 @@ FOTOS E MAIS CAMPOS DO GOOGLE (sempre com aprovação e com os limites de segura
 RELATÓRIO DE TUDO QUE FOI FEITO (obrigatório)
 Para cada coisa feita nesta rodada (resposta escrita, post criado, publicação confirmada, pedido concluído, erro), grave no painel atividades/<id> = {"cliente": id, "area": "google"|"postagem"|"anuncios"|"geral", "titulo": frase curta, "detalhe": o que e como foi feito, "como": "tarefa agendada", "quem": "Jarvis (tarefa)", "quando": ISO}.
 Ids dos clientes: quiroleste, equilibrio, desentupidora, fiosdeouro, anacarla, alfa, docelar, elizabeth, gr, agk, vozamiga (Google: chave do clientes.json; Instagram: page_id → veja meta/contas).
+
+AGENTE DE ANÚNCIOS (Meta) — quando houver anuncios/<id> com status "pedido"
+1. Marque "montando". Leia o documento: cliente, conta (ad_account_id), objetivo (whatsapp | direct | leads | site | alcance), valor_dia (R$), dias, local, pedido, midia_id/midia_url.
+2. Mídia: se tiver midia_id, baixe com read_asset do painel (slug acima); se não tiver, use o último Reels do Instagram do cliente ou peça no aviso. Suba o vídeo/imagem na Meta (ads_create_upload_url + ads_finalize_upload, ou o link público via repositório videos-anuncios, apagando depois).
+3. Escreva o texto (gancho, dor, benefício, chamada para o WhatsApp; sem promessa de cura/resultado, sem afirmar condição de quem lê) e confira com regras.checar(texto, "meta"). Nunca passe do limite de config/anuncios.limite_dia (padrão R$ 100).
+4. Crie TUDO PAUSADO: campanha (objetivo certo; WhatsApp = mensagens), conjunto (local + raio, orçamento diário = valor_dia, data de fim = hoje + dias, Advantage+ Audience ligado), criativo e anúncio. Pegue a prévia com ads_get_ad_preview (preview_url).
+5. Grave no anuncios/<id>: status "pronto", texto, publico (resumo em português), campaign_id, adset_id, ad_id, preview_url. Grave atividade e avise no celular: "Anúncio da <cliente> pronto para aprovar: abra o painel → Aprovar" + link do painel. O Adriano aprova e o painel ativa direto na Meta.
+6. anuncios "recusado" com campaign_id: apague a campanha pausada (status DELETED) e marque "recusado_limpo". Erro: status "erro" com o motivo.
+
+RELATÓRIOS DOS CLIENTES
+- config/relatorios = {id_cliente: "semanal" | "quinzenal" | "mensal"}. Na primeira rodada de segunda (semanal), a cada 15 dias (quinzenal, segundas pares do ano) ou no dia 1º (mensal), gere o relatório de cada cliente agendado. Também gere na hora quando o pedido for "gerar AGORA o relatório".
+- Conteúdo (português simples, até 2.500 letras, pronto para mandar ao cliente): período; anúncios (investido, resultados, custo por resultado, melhor e pior campanha, comparação com o período anterior); o que mudou nas contas (ads_account_get_activity_logs); Google (nota, avaliações novas, posts, saúde); Instagram (posts publicados, seguidores); o que deu certo; o que precisa de atenção; plano para o próximo período.
+- Grave relatorios/<id> = {cliente, titulo ("Relatório semanal 18 a 24/11"), periodo, texto, quando} + atividade, e avise no celular.
