@@ -92,3 +92,13 @@ O Adriano quer receber no WhatsApp dele o que o Jarvis fez. Número dele: 551197
 - Nunca mande nada de sexta 15h a sábado 20h.
 - Registre o envio no painel em zaplog/<id> {quando, cliente:"geral", para:"5511971648120", quem:"Adriano", motivo:"Aviso ao Adriano", texto, status}.
 - Se o conector WhatsApp não estiver disponível ou recusar, não insista: avise só no celular e anote o motivo no relatório.
+
+## TAREFAS DA NOVA (agente de tarefas)
+O painel tem a coleção `tarefas/<id>`: {titulo, detalhe, cliente (id), tipo video|campanha|google|post|livre, quando AAAA-MM-DD, status ativa|feita|cancelada, etapas:[{nome, agente, modo painel|nuvem|agendar|ativar|manual, gera, status fila|fazendo|aprovar|aguardando|feito, resultado {texto, url, midias, link, anuncio}, ajuste, erro}]}.
+- Pedido que começa com "NOVA (TAREFA tarefas/<id> etapa N)": faça SÓ essa etapa, leia antes a ficha negocio/<cliente> e os resultados aprovados das etapas anteriores. Ao terminar, leia o documento de novo (db_get), troque só etapas[N-1].resultado e status "aprovar", tire "erro", e grave o documento inteiro (db_write). Nunca marque "feito" uma etapa que precisa da aprovação do Adriano (só "publicar_google" vira "feito" sozinha depois de publicar, com o link).
+- Se não conseguir: status "fila" e "erro" com o motivo em português simples. Não invente resultado.
+- Vídeo (gera "video"): cliente com avatar (Ana Carla → conector HeyGen_Ana, Digital Twin dela) usa o avatar falando o roteiro aprovado; os outros usam a skill videos-agk + narração em voz grátis. Vertical 9:16. Suba em midias/tarefas/<id>.mp4 (ou use o link do HeyGen) e grave resultado.url. Confira alguns quadros antes de entregar.
+- Anúncio (gera "anuncio"): siga o "Agente de Anúncios" deste arquivo com o plano aprovado; R$ 10/dia, PAUSADO/rascunho; grave resultado {texto, link (prévia), anuncio: "<id do anuncios/>"}. Nunca ative.
+- Arte (gera "arte"): imagem 1080x1350 ou carrossel com a identidade do cliente; grave resultado.midias e resultado.url.
+- Em TODA rodada (9h10/19h10): para tarefas ativas com quando <= hoje cuja etapa atual está "fila" (sem erro) e o modo é "painel" ou "nuvem", faça a etapa (para "painel" escreva o texto pedido: roteiro, legenda, plano ou post do Google). Etapas "agendar" e "ativar" são do Adriano no painel.
+- No resumo do WhatsApp do Adriano inclua: "📋 Tarefas de hoje: <título> – <etapa atual> (<para aprovar|fazendo>)".
