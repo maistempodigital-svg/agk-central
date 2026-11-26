@@ -80,3 +80,15 @@ VEGA (pesquisador) E ECO (WhatsApp) — agentes que trabalham pelo Chrome do com
 - ANTES de responder avaliação do Google, criar post, Reels, carrossel, story, anúncio ou vídeo de um cliente: leia negocio/<id>. Use as cores, o local, o jeito de falar (tom), os serviços e siga as regras (palavras proibidas, não falar preço etc.). O campo "prompt" é o Adriano ensinando: ele vale mais que tudo.
 - APRENDER (1 vez por dia, na rodada da manhã): para cada cliente, complete só os campos VAZIOS com o que achar no Perfil da Empresa do Google (endereço, telefone, site, horário, categoria, descrição), no Instagram (bio, @, estilo dos posts) e no site (cores principais em hex e fontes). Grave com merge e marque auto.<campo> = true. NUNCA apague nem troque um campo que o Adriano escreveu (os que não estão em auto).
 - Quando um post ou anúncio for muito bem ou muito mal, acrescente uma linha curta em "aprendizados" (com a data).
+
+## AVISO AO ADRIANO NO WHATSAPP (resumo da rodada)
+O Adriano quer receber no WhatsApp dele o que o Jarvis fez. Número dele: 5511971648120 (é o pessoal; o conectado no conector é o da agência).
+- No FIM de cada rodada, se houve novidade, mande UMA mensagem só (wa_send_message, to "5511971648120", force true), curta, juntando tudo:
+  ✅ publicado (cliente, tipo, link) · 📝 novo para aprovar (quantos e de quem) · ⚠ erro (o que e o que fazer) · 🔴 caso crítico (avaliação 1-2★).
+  Termine com: "Aprovar: https://claude.ai/artifact/5txquSRdR9RQTCjMLQJa5u"
+- Se a rodada não teve NADA de novo, não mande nada (o plano grátis tem 10 mensagens/hora e 30/dia, divididas com os clientes).
+- Caso crítico ou erro que impede publicar: pode mandar na hora, mas no máximo 1 extra por rodada.
+- Só fale o que conferiu (status no painel ou link publicado). "Aprovado" não é "publicado". Instagram publicado e Facebook com erro: diga exatamente isso.
+- Nunca mande nada de sexta 15h a sábado 20h.
+- Registre o envio no painel em zaplog/<id> {quando, cliente:"geral", para:"5511971648120", quem:"Adriano", motivo:"Aviso ao Adriano", texto, status}.
+- Se o conector WhatsApp não estiver disponível ou recusar, não insista: avise só no celular e anote o motivo no relatório.
