@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-26T12:22:20+00:00",
+  "atualizado": "2026-11-26T13:05:21+00:00",
   "clientes": [
     {
       "chave": "equilibrio",
@@ -593,7 +593,13 @@
           "resposta": "Obrigado Hudson! Agradaçemos a sua avaliação. A desentupidora rapida está a suas ordens."
         }
       ],
-      "posts": [],
+      "posts": [
+        {
+          "texto": "Pia entupida, ralo transbordando ou vaso que não desce? Não espere piorar. A Desentupidora Rápida atende 24 horas em Itanhaém, Santos e região, com equipe pront",
+          "data": "2026-11-26T13:05:21",
+          "link": "https://local.google.com/place?id=10647878627361289880&use=posts&lpsid=CAIQACoeChxtc3BfaDpHLW1oSnlMcUVvN1ZGWWZ6eVBfczZB"
+        }
+      ],
       "perfil": {
         "categoria": "Desentupidora",
         "categorias_extra": [],
@@ -615,7 +621,7 @@
         "recentes": []
       },
       "saude": {
-        "geral": 45,
+        "geral": 58,
         "areas": [
           {
             "id": "reputacao",
@@ -625,7 +631,7 @@
           {
             "id": "atividade",
             "nome": "Atividade",
-            "nota": 0
+            "nota": 40
           },
           {
             "id": "perfil",
@@ -670,10 +676,8 @@
           },
           {
             "area": "atividade",
-            "ok": false,
-            "titulo": "Nenhum post no Google",
-            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
-            "acao": "Criar post"
+            "ok": true,
+            "titulo": "Postou nos últimos 7 dias"
           },
           {
             "area": "atividade",
@@ -760,11 +764,6 @@
             "acao": "Pedir avaliações esta semana"
           },
           {
-            "titulo": "Nenhum post no Google",
-            "detalhe": "Postar 1 vez por semana mostra ao Google que a empresa está ativa.",
-            "acao": "Criar post"
-          },
-          {
             "titulo": "0 fotos no perfil",
             "detalhe": "Perfis com muitas fotos recebem mais cliques e rotas.",
             "acao": "Postar fotos"
@@ -778,6 +777,11 @@
             "titulo": "Descrição curta (218 letras)",
             "detalhe": "Diga o que faz, para quem e em qual bairro, com as palavras-chave.",
             "acao": "Reescrever descrição"
+          },
+          {
+            "titulo": "0 categoria(s) extra",
+            "detalhe": "Categorias extras certas fazem aparecer em mais buscas.",
+            "acao": "Adicionar categorias"
           }
         ]
       },
@@ -786,9 +790,9 @@
           "semana": "2026-S48",
           "media": 5,
           "total": 12,
-          "saude": 45,
+          "saude": 58,
           "fotos": 0,
-          "posts30": 0
+          "posts30": 1
         }
       ],
       "novas_30d": 0

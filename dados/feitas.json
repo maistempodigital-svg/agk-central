@@ -22,5 +22,11 @@
   "AbFvOqnd2Pw1MlORfAR8Jpymm9nFT0PbVs7YewA24-ADJUXajCgu2Xsou86eDZH5UYCsFAPtCcIx": {
     "ok": true,
     "quando": "2026-11-25T15:50:23+00:00"
+  },
+  "post-desentupidora-20261126-1": {
+    "ok": true,
+    "quando": "2026-11-26T13:05:21+00:00",
+    "tipo": "post",
+    "chave": "desentupidora"
   }
 }
