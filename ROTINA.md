@@ -11,7 +11,7 @@ PEÇAS
 PASSOS
 1. APROVADAS → FILA. Para cada sugestão "aprovada", acrescente em fila/aprovadas.json:
    resposta: {"id": id, "tipo": "resposta", "chave", "review_id", "autor", "texto": texto_final}
-   post: {"id": id, "tipo": "post", "chave", "texto": texto_final, "foto": foto se houver}
+   post: {"id": id, "tipo": "post", "chave", "texto": texto_final, "foto": foto (OBRIGATÓRIA: nunca publique post do Google sem foto)}
    perfil: {"id": id, "tipo": "perfil", "chave", "campo", "texto": texto_final}
    Se houver alguma: commit ("Jarvis: aprovados") + push na main, marque "enviada", espere ~90 s, git pull.
 2. CONFERIR. Sugestão "enviada": dados/feitas.json com ok=true → "publicada" (publicado_em); ok=false com 3+ tentativas → "erro" com o motivo.
@@ -24,6 +24,7 @@ PASSOS
    - Análise, relatório ou plano: responda no campo resposta do pedido (até 900 caracteres, simples, com números reais de dados/google.json e dados/ranking.json).
    - O que a API ainda não faz pelo robô (categorias, horários, feriados, serviços, fotos do perfil, ligar/desligar empresa): prepare a sugestão exata no campo resposta e diga "Para aplicar, peça no chat do Claude que eu faço pelo seu Chrome."
    Marque "feito" com a resposta (o que foi feito e onde aprovar) ou "erro" com o motivo.
+   - FOTO OBRIGATÓRIA EM TODO POST DO GOOGLE: cada sugestão de post leva o campo "foto" (link da imagem). Use de preferência foto real do cliente (perfil do Google, Instagram, Drive ou site) que combine com o texto; se não houver, crie uma imagem 1200x900 com a identidade do cliente, sem texto grande em cima, e suba em videos-anuncios/gmb/. Sem foto, o post fica "pendente" com o aviso "falta foto" e NÃO vai para o robô.
 6. POST DA SEMANA. Se hoje for segunda-feira (primeira rodada do dia): para cada cliente ATIVO cujo último post no Google tem mais de 6 dias e que não tem post "pendente" no painel, prepare 1 post (regras do passo 5) e grave "pendente".
 7. REGISTRO. Junte em registro/eventos as entradas novas de dados/registro.json (sem repetir) e o que você fez.
 8. NUNCA publique nada que não esteja "aprovada" pelo Adriano. Não mexa em clientes inativos. Falhou: tente de novo uma vez e registre o erro no painel.
