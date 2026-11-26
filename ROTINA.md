@@ -74,3 +74,9 @@ VEGA (pesquisador) E ECO (WhatsApp) — agentes que trabalham pelo Chrome do com
   campanha subiu, já está rodando, R$ 10 por dia, fica em análise/aprendizado nos próximos dias, resumo em breve.
 - No painel aparece o botão "📲 Eco: avisar o cliente no WhatsApp"; o Adriano toca, confere e aperta enviar.
 - Números ficam em config/whatsapp (aba WhatsApp do cliente).
+
+## FICHA DO NEGÓCIO DE CADA CLIENTE (ler sempre antes de criar)
+- Banco do painel: negocio/<id do cliente> com { nicho, sobre, servicos, ofertas, publico, local, regiao, horario, whatsapp, site, instagram, cores, fontes, tom, diferenciais, regras, aprendizados, prompt, auto: {campo: true}, atualizado }.
+- ANTES de responder avaliação do Google, criar post, Reels, carrossel, story, anúncio ou vídeo de um cliente: leia negocio/<id>. Use as cores, o local, o jeito de falar (tom), os serviços e siga as regras (palavras proibidas, não falar preço etc.). O campo "prompt" é o Adriano ensinando: ele vale mais que tudo.
+- APRENDER (1 vez por dia, na rodada da manhã): para cada cliente, complete só os campos VAZIOS com o que achar no Perfil da Empresa do Google (endereço, telefone, site, horário, categoria, descrição), no Instagram (bio, @, estilo dos posts) e no site (cores principais em hex e fontes). Grave com merge e marque auto.<campo> = true. NUNCA apague nem troque um campo que o Adriano escreveu (os que não estão em auto).
+- Quando um post ou anúncio for muito bem ou muito mal, acrescente uma linha curta em "aprendizados" (com a data).
