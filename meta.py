@@ -231,9 +231,18 @@ def publicar():
                 motivo = regras.checar(item.get("legenda", ""), "meta")
                 if motivo:
                     raise RuntimeError("legenda bloqueada: " + motivo)
-                hoje = [f for f in feitas.values() if f.get("ok") and f.get("page_id") == str(item["page_id"]) and f.get("rede") == rede and (agora() - datetime.fromisoformat(f["quando"])).total_seconds() < 86400]
-                if len(hoje) >= regras.LIMITES["meta_post_dia"]:
+                hoje = [f for f in feitas.values() if f.get("ok") and f.get("tipo") != "resposta" and f.get("page_id") == str(item["page_id"]) and f.get("rede") == rede and (agora() - datetime.fromisoformat(f["quando"])).total_seconds() < 86400]
+                if item.get("tipo") != "resposta" and len(hoje) >= regras.LIMITES["meta_post_dia"]:
                     registrar("aviso", item.get("cliente", "meta"), "Post adiado: limite de 3 posts por dia nessa conta (seguranca).")
+                    continue
+                if item.get("tipo") == "resposta":
+                    # resposta a um comentario do Instagram (aprovada pelo Adriano no painel)
+                    r = chamar("POST", f"{item['comentario_id']}/replies", pg["access_token"], message=item.get("legenda", ""))
+                    if "error" in r:
+                        raise RuntimeError(erro_txt(r))
+                    feitas[chave] = {"ok": True, "quando": agora().isoformat(timespec="seconds"), "page_id": str(item["page_id"]), "rede": rede, "tipo": "resposta", "id": r.get("id")}
+                    registrar("post", item.get("cliente", pg.get("name")), f"Resposta a comentario no Instagram: {item.get('legenda', '')[:100]}")
+                    n += 1
                     continue
                 if rede == "ig":
                     ig = (pg.get("instagram_business_account") or {}).get("id")
@@ -253,7 +262,27 @@ def publicar():
     print("Publicados:", n)
 
 
+def _insights(mid, tok, tipo):
+    """Alcance, visualizacoes, salvos, compartilhamentos e interacoes de um post (o que a Meta liberar)."""
+    met = "reach,saved,shares,total_interactions" + (",views" if tipo in ("REELS", "VIDEO", "FEED") else "")
+    r = chamar("GET", f"{mid}/insights", tok, metric=met)
+    if "error" in r:
+        r = chamar("GET", f"{mid}/insights", tok, metric="reach,saved")
+    return {x["name"]: (x.get("values") or [{}])[0].get("value") for x in r.get("data", [])} if "data" in r else {}
+
+
+def _comentarios(mid, tok):
+    r = chamar("GET", f"{mid}/comments", tok, fields="id,text,username,timestamp,like_count,replies{id,text,username,timestamp}", limit=15)
+    out = []
+    for c in r.get("data", []):
+        out.append({"id": c.get("id"), "quem": c.get("username"), "texto": (c.get("text") or "")[:300], "data": c.get("timestamp"),
+                    "curtidas": c.get("like_count"),
+                    "respostas": [{"quem": x.get("username"), "texto": (x.get("text") or "")[:300], "data": x.get("timestamp")} for x in (c.get("replies") or {}).get("data", [])]})
+    return out
+
+
 def coletar():
+    """Canal completo de cada Instagram: posts, curtidas, comentarios (com o texto), alcance, salvos, compartilhamentos."""
     if not TOKEN:
         return
     saida = {"atualizado": agora().isoformat(timespec="seconds"), "contas": {}}
@@ -261,18 +290,34 @@ def coletar():
         ig = (p.get("instagram_business_account") or {}).get("id")
         if not ig:
             continue
-        r = chamar("GET", f"{ig}/media", p["access_token"], fields="id,caption,media_type,media_product_type,thumbnail_url,media_url,permalink,timestamp,like_count,comments_count", limit=6)
-        saida["contas"][p["id"]] = [{"id": m["id"], "texto": (m.get("caption") or "")[:140], "tipo": m.get("media_product_type") or m.get("media_type"),
-                                    "img": m.get("thumbnail_url") or (m.get("media_url") if m.get("media_type") == "IMAGE" else None),
-                                    "link": m.get("permalink"), "data": m.get("timestamp"), "curtidas": m.get("like_count"), "comentarios": m.get("comments_count")}
-                                   for m in r.get("data", [])]
+        tok = p["access_token"]
+        r = chamar("GET", f"{ig}/media", tok, fields="id,caption,media_type,media_product_type,thumbnail_url,media_url,permalink,timestamp,like_count,comments_count", limit=12)
+        posts = []
+        for n, m in enumerate(r.get("data", [])):
+            tipo = m.get("media_product_type") or m.get("media_type")
+            item = {"id": m["id"], "texto": (m.get("caption") or "")[:300], "tipo": tipo,
+                    "img": m.get("thumbnail_url") or (m.get("media_url") if m.get("media_type") != "VIDEO" else None),
+                    "link": m.get("permalink"), "data": m.get("timestamp"), "curtidas": m.get("like_count"), "comentarios": m.get("comments_count")}
+            if n < 8:
+                try:
+                    item["numeros"] = _insights(m["id"], tok, tipo)
+                except Exception:
+                    item["numeros"] = {}
+                if (m.get("comments_count") or 0) > 0:
+                    try:
+                        item["lista_comentarios"] = _comentarios(m["id"], tok)
+                    except Exception:
+                        pass
+            posts.append(item)
+        saida["contas"][p["id"]] = posts
     gravar("dados/meta_posts.json", saida)
     c = ler("dados/meta_contas.json", {})
-    gravar("dados/meta_painel.json", {"atualizado": c.get("atualizado"), "chave_expira": c.get("chave_expira"), "contas": [
+    gravar("dados/meta_painel.json", {"atualizado": saida["atualizado"], "chave_expira": c.get("chave_expira"), "contas": [
         {"page_id": x["page_id"], "nome": (x["nome"] or "").strip(), "ig_user": x["ig_user"], "seguidores": x["seguidores"],
-         "posts": [{"link": m["link"], "data": (m["data"] or "")[:10], "curtidas": m["curtidas"], "comentarios": m["comentarios"], "tipo": m["tipo"], "texto": m["texto"][:60]}
-                   for m in saida["contas"].get(x["page_id"], [])[:3]]} for x in c.get("contas", [])]})
-    print("Posts lidos de", len(saida["contas"]), "Instagrams")
+         "posts": [{"id": m["id"], "link": m["link"], "data": (m["data"] or "")[:16], "curtidas": m["curtidas"], "comentarios": m["comentarios"], "tipo": m["tipo"],
+                    "texto": m["texto"][:200], "img": m.get("img"), "numeros": m.get("numeros") or {}, "lista_comentarios": (m.get("lista_comentarios") or [])[:10]}
+                   for m in saida["contas"].get(x["page_id"], [])[:12]]} for x in c.get("contas", [])]})
+    print("Canal lido de", len(saida["contas"]), "Instagrams")
 
 
 if __name__ == "__main__":
