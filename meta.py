@@ -244,15 +244,16 @@ def publicar():
                     registrar("post", item.get("cliente", pg.get("name")), f"Resposta a comentario no Instagram: {item.get('legenda', '')[:100]}")
                     n += 1
                     continue
-                if rede == "ig":
+                if rede in ("ig", "igs"):
                     ig = (pg.get("instagram_business_account") or {}).get("id")
                     if not ig:
                         raise RuntimeError("essa pagina nao tem Instagram profissional ligado")
-                    res = postar_ig(ig, pg["access_token"], item)
+                    # "igs" = o MESMO video tambem no Stories do Instagram (um video so: Reels + Stories + Facebook)
+                    res = postar_ig(ig, pg["access_token"], {**item, "tipo": "story"} if rede == "igs" else item)
                 else:
                     res = postar_fb(pg["id"], pg["access_token"], item)
                 feitas[chave] = {"ok": True, "quando": agora().isoformat(timespec="seconds"), "page_id": str(item["page_id"]), "rede": rede, **res}
-                registrar("post", item.get("cliente", pg.get("name")), f"{'Instagram' if rede == 'ig' else 'Facebook'} ({item['tipo']}): {item.get('legenda', '')[:100]}")
+                registrar("post", item.get("cliente", pg.get("name")), f"{ {'ig': 'Instagram', 'igs': 'Stories do Instagram'}.get(rede, 'Facebook')} ({item['tipo']}): {item.get('legenda', '')[:100]}")
                 n += 1
             except Exception as e:
                 t = feitas.get(chave, {}).get("tentativas", 0) + 1

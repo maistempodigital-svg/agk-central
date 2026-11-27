@@ -22,5 +22,13 @@ Cada cliente da AGK Vendas tem a sua tarefa agendada "AGK · Central <cliente>".
 5. Atividade no painel (atividades/<id>, quem "Central <cliente>") e aviso curto no WhatsApp do Adriano (wa_send_message to "5511971648120", force true), UMA linha só: "👤 *Para: <cliente>* · <o que ficou pronto> · aprove no painel: https://claude.ai/artifact/5txquSRdR9RQTCjMLQJa5u". Sem detalhes técnicos (nada de "repositório", "fila", "workflow").
 6. Nunca publique, ative anúncio, gaste ou mande mensagem para cliente sem aprovação do Adriano. Sabbath: de sexta 15h a sábado 20h não publica nem manda mensagem (só prepara).
 
+## VOZ DO ADRIANO (AGK Vendas e clientes com "voz: adriano" na FICHA)
+- Todo vídeo da AGK é narrado com a VOZ CLONADA DO ADRIANO, que só existe no computador dele. A central NÃO usa Kokoro nem outra voz para a AGK.
+- A central escreve o roteiro: falas curtas (uma por cena, por extenso, 3 a 6 falas, vídeo de 15 a 30 s) + o visual de cada cena + a legenda do post. Grava videos/<id> = {cliente, titulo, falas: [...], cenas: [...], legenda, formato "9:16", status "falta_voz", criado} e acorda a tarefa "AGK · Voz do Adriano (computador)" (fire_trigger trig_01WSTZDGperFTMFAJWPna7Jv com o texto "videos/<id>"). Essa tarefa roda no computador, grava a voz, monta o vídeo no tempo da voz e deixa para aprovar.
+- Responda na conversa: "Roteiro pronto; a voz do Adriano está sendo gravada no computador (uns 20–30 min). Se o computador estiver desligado, sai quando ele ligar."
+
+## UM VÍDEO SÓ: REELS + STORIES + FACEBOOK
+- Não faça dois vídeos iguais (um para Reels e outro para Stories). Faça UM vídeo vertical 1080x1920 e grave UMA postagem redes/<id> com tipo "reels" e redes ["ig","igs","fb"]: "ig" = Reels do Instagram, "igs" = o mesmo vídeo no Stories do Instagram, "fb" = vídeo na página do Facebook. O robô (meta.py) publica nos três depois que o Adriano aprova.
+
 ## CLIENTE NOVO
 Quando a AGK ganhar um cliente novo (ele aparece no painel em CLIENTES ou o Adriano pede), a sessão que fizer o cadastro: cria clientes/<id>/FICHA.md e HISTORICO.md aqui, a pasta videos-anuncios/clientes/<id>/, e a tarefa agendada "AGK · Central <cliente>" (sem horário, só acordada pelo painel) com o mesmo texto das outras centrais; depois grava o id da tarefa em config/centrais do painel ({"<id do cliente>": "trig_..."}).

@@ -7,3 +7,5 @@
 - Pasta de vídeos e mídias (pública): videos-anuncios/clientes/agk/
 
 - Mais detalhes do negócio (cores, tom, serviços, regras): banco do painel `negocio/agk`. O campo "prompt" é o Adriano ensinando e vale mais que tudo.
+- voz: adriano (todo vídeo da AGK com a voz clonada do Adriano, gravada no computador dele)
+- postagem padrão de vídeo: um vídeo só → Reels + Stories do Instagram + Facebook
