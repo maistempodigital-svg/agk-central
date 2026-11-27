@@ -11,6 +11,7 @@ Cada cliente da AGK Vendas tem a sua tarefa agendada "AGK · Central <cliente>".
   - negocio/<id> (ficha do negócio: cores, tom, serviços, regras, prompt do Adriano), redes/<id>, sugestoes/<id>, anuncios/<id>, atividades/<id>, zaplog/<id> — como no ROTINA.md.
 
 ## PASSOS DE CADA PEDIDO
+(Horários: use sempre a hora real de agora, tirada com `date -u +%Y-%m-%dT%H:%M:%SZ`; nunca invente horário.)
 1. Leia FICHA.md, HISTORICO.md e negocio/<id>. Grave em central/<id>: status "trabalhando" e acrescente {de:"central", texto:"Recebi: <pedido em 1 frase>. Começando."}.
 2. Faça o pedido como o agente certo faria (ROTINA.md):
    - VÍDEO (Íris): roteiro com gancho nos 2 primeiros segundos; vertical 1080x1920 (Reels 15–60 s, Story até 15 s) com motion, legenda grande na tela e narração em voz grátis pt-BR (skills videos-agk e narracao-voz-gratis). Ana Carla: avatar dela no HeyGen (conector HeyGen_Ana). Confira alguns quadros antes. Salve em videos-anuncios/clientes/<id>/, commit + push, e grave videos/<id-do-video> status "pronto".
